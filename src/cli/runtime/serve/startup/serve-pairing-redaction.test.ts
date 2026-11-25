@@ -6,13 +6,13 @@ import { afterEach, describe, expect, it, vi } from 'vitest'
 import { createPairingRedactor, redactingSpawn } from './serve-pairing-redaction'
 
 const READY = [
-  'Orca server ready',
+  'Coto server ready',
   'Bound endpoint: ws://0.0.0.0:6768',
   'Web client URL: https://host/web#pairing=secret',
   'Mobile pairing QR:',
   '█▀▀▀▀▀█ secret-qr',
   '█ ███ █',
-  'Pairing URL: orca://pair?code=secret',
+  'Pairing URL: coto://pair?code=secret',
   '[serve] later log line'
 ]
 
@@ -30,7 +30,7 @@ describe('supervised pairing redaction', () => {
     const line = JSON.stringify({
       type: 'orca_server_ready',
       endpoint: 'ws://x',
-      pairing: { available: true, url: 'orca://pair?code=secret' }
+      pairing: { available: true, url: 'coto://pair?code=secret' }
     })
     const kept = createPairingRedactor()(line)
     expect(kept).not.toContain('secret')

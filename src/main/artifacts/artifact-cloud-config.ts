@@ -1,7 +1,5 @@
 import { app } from 'electron'
 
-const PRODUCTION_ARTIFACTS_API_URL = 'https://share.onorca.dev'
-
 function isPackaged(): boolean {
   try {
     return app?.isPackaged === true
@@ -15,17 +13,17 @@ export function resolveArtifactCloudApiUrl(
   env: NodeJS.ProcessEnv = process.env,
   packaged = isPackaged()
 ): string {
-  const candidate = override?.trim() || env.ORCA_ARTIFACTS_API_URL?.trim()
-  const url = new URL(candidate || PRODUCTION_ARTIFACTS_API_URL)
+  const candidate = override?.trim() || (!packaged ? env.ORCA_ARTIFACTS_API_URL?.trim() : undefined)
+  if (!candidate) {
+    throw new Error('Cloud sharing is disabled in Coto.')
+  }
+  const url = new URL(candidate)
   const loopback = ['127.0.0.1', 'localhost', '[::1]'].includes(url.hostname)
-  const firstParty = ['onorca.dev', 'orca.dev'].some(
-    (domain) => url.hostname === domain || url.hostname.endsWith(`.${domain}`)
-  )
   if (url.protocol !== 'https:' && !(url.protocol === 'http:' && loopback && !packaged)) {
     throw new Error('Artifact API URLs must use HTTPS; local development may use loopback HTTP.')
   }
-  if (!firstParty && !loopback) {
-    throw new Error('Artifact API URLs must use an onorca.dev, orca.dev, or loopback host.')
+  if (!loopback || packaged) {
+    throw new Error('Cloud sharing is disabled in Coto.')
   }
   if (url.username || url.password || url.search || url.hash || url.pathname !== '/') {
     throw new Error('Artifact API URL must be an origin without credentials, paths, or parameters.')

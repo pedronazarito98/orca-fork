@@ -24,9 +24,8 @@ export type OrcaInstallIdentityInput = {
 }
 
 // Every channel (stable, RC, dev builds) ships this bundle id; see config/electron-builder.config.cjs.
-const ORCA_BUNDLE_ID = 'com.stablyai.orca'
-// Cask tokens from Casks/orca.rb and Casks/orca@rc.rb.
-const ORCA_CASKS = ['orca', 'orca@rc']
+const ORCA_BUNDLE_ID = 'com.coto.app'
+const ORCA_CASKS = ['coto', 'coto@rc']
 const CASKROOMS = ['/opt/homebrew/Caskroom', '/usr/local/Caskroom']
 const LINUX_PACKAGE_NAME = 'orca-ide'
 const LINUX_PACKAGE_EXECUTABLE = '/opt/Orca/orca-ide'
@@ -72,8 +71,8 @@ async function otherMacBuild(
 
 function windowsInstallDirs(env: NodeJS.ProcessEnv): string[] {
   return [
-    env.LOCALAPPDATA ? win32.join(env.LOCALAPPDATA, 'Programs', 'Orca') : null,
-    env.ProgramFiles ? win32.join(env.ProgramFiles, 'Orca') : null
+    env.LOCALAPPDATA ? win32.join(env.LOCALAPPDATA, 'Programs', 'Coto') : null,
+    env.ProgramFiles ? win32.join(env.ProgramFiles, 'Coto') : null
   ].filter((dir): dir is string => dir !== null)
 }
 
@@ -85,9 +84,9 @@ async function otherWindowsBuild(
   for (const dir of windowsInstallDirs(input.env)) {
     if (
       dir.toLowerCase() !== own?.toLowerCase() &&
-      (await input.exists(win32.join(dir, 'Orca.exe')))
+      (await input.exists(win32.join(dir, 'Coto.exe')))
     ) {
-      return `Orca in ${dir}`
+      return `Coto in ${dir}`
     }
   }
   return null
@@ -105,7 +104,7 @@ async function homebrewCask(input: Required<OrcaInstallIdentityInput>): Promise<
 }
 
 async function hasLinuxPackage(input: Required<OrcaInstallIdentityInput>): Promise<string | null> {
-  return (await input.exists(LINUX_PACKAGE_EXECUTABLE)) ? 'Orca (system package)' : null
+  return (await input.exists(LINUX_PACKAGE_EXECUTABLE)) ? 'Coto (system package)' : null
 }
 
 export async function resolveOrcaInstallIdentity(

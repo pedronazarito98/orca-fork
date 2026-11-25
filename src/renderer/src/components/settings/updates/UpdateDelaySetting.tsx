@@ -213,10 +213,10 @@ export function DelayedUpdatePanel({
         <div className="space-y-0.5">
           <p className="text-xs font-medium text-foreground">
             {cleared
-              ? t('settings.updateDelay.clearedTitle', 'Orca {{version}} is ready', {
+              ? t('settings.updateDelay.clearedTitle', 'Coto {{version}} is ready', {
                   version: delayedUpdate.version
                 })
-              : t('settings.updateDelay.heldTitle', 'Orca {{version}} is on hold', {
+              : t('settings.updateDelay.heldTitle', 'Coto {{version}} is on hold', {
                   version: delayedUpdate.version
                 })}
           </p>
@@ -232,7 +232,7 @@ export function DelayedUpdatePanel({
             className="h-1"
             aria-label={t(
               'settings.updateDelay.progress',
-              'Time until Orca {{version}} is available',
+              'Time until Coto {{version}} is available',
               { version: delayedUpdate.version }
             )}
           />

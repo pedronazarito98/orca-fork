@@ -3,7 +3,7 @@ import { createHash } from 'node:crypto'
 import { dirname, join } from 'node:path'
 
 /** launchd label prefix `orca serve service install` writes; only those supervisors register. */
-export const SERVE_LAUNCHD_LABEL_PREFIX = 'com.stablyai.orca.serve'
+export const SERVE_LAUNCHD_LABEL_PREFIX = 'com.coto.app.serve'
 export const SERVE_COORDINATION_PROTOCOL = 1
 /** orcad restarts its own browser helper; under the serve prefix so older installers park it too. */
 export const ORCAD_BROWSER_PARK_LABEL = `${SERVE_LAUNCHD_LABEL_PREFIX}.orcad-browser`
@@ -46,7 +46,7 @@ export function macAppBundleOf(executable: string): string | null {
 
 /** Electron's default macOS userData base, shared by every profile of one user. */
 export function macCoordinationRoot(homeDir: string): string {
-  return join(homeDir, 'Library', 'Application Support', 'orca')
+  return join(homeDir, 'Library', 'Application Support', 'coto')
 }
 
 export function bundleCoordinationDir(realBundlePath: string, macUserDataRoot: string): string {

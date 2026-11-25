@@ -260,7 +260,7 @@ export async function completeRuntimeGitMerge(
         success: false,
         error: translate(
           'auto.runtime.runtimeGitSyncClient.completeMergeNeedsNewerHost',
-          'Completing a merge needs a newer Orca on this host. Update Orca on that host.'
+          'Completing a merge needs a newer Coto on this host. Update Coto on that host.'
         )
       }
     }

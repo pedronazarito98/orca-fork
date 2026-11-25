@@ -18,7 +18,7 @@ export const getThemeEntries = createLocalizedCatalog((): SettingsSearchEntry[] 
     title: translate('auto.components.settings.appearance.search.71e06350b4', 'Theme'),
     description: translate(
       'auto.components.settings.appearance.search.0709c794f7',
-      'Choose how Orca looks in the app window.'
+      'Choose how Coto looks in the app window.'
     ),
     keywords: [
       ...translateSearchKeyword('auto.components.settings.appearance.search.262fe1d24f', 'dark'),
@@ -60,13 +60,13 @@ export const getLanguageEntries = createLocalizedCatalog((): SettingsSearchEntry
     title: translate('settings.appearance.language.title', 'Language'),
     description: translate(
       'settings.appearance.language.description',
-      'Choose the language used by the Orca interface.'
+      'Choose the language used by the Coto interface.'
     ),
     keywords: [
       ...translateSearchKeyword('settings.appearance.language.title', 'Language'),
       ...translateSearchKeyword(
         'settings.appearance.language.description',
-        'Choose the language used by the Orca interface.'
+        'Choose the language used by the Coto interface.'
       ),
       ...translateSearchKeyword('settings.appearance.language.system', 'System'),
       ...translateSearchKeyword('settings.appearance.language.english', 'English'),
@@ -126,7 +126,7 @@ export const getTypographyEntries = createLocalizedCatalog((): SettingsSearchEnt
     title: translate('auto.components.settings.appearance.search.aff6e6afdf', 'IDE font'),
     description: translate(
       'auto.components.settings.appearance.search.07c7c38fac',
-      'Choose the font used by the Orca interface.'
+      'Choose the font used by the Coto interface.'
     ),
     keywords: [
       ...translateSearchKeyword('auto.components.settings.appearance.search.24094af355', 'font'),
@@ -139,7 +139,7 @@ export const getTypographyEntries = createLocalizedCatalog((): SettingsSearchEnt
         'typography'
       ),
       ...translateSearchKeyword('auto.components.settings.appearance.search.fab91464dd', 'ide'),
-      ...translateSearchKeyword('auto.components.settings.appearance.search.1f2880a9d5', 'orca'),
+      ...translateSearchKeyword('auto.components.settings.appearance.search.1f2880a9d5', 'coto'),
       ...translateSearchKeyword(
         'auto.components.settings.appearance.search.5095258df2',
         'interface'
@@ -219,14 +219,14 @@ export const getTitlebarEntries = createLocalizedCatalog((): SettingsSearchEntry
     title: translate('auto.components.settings.appearance.search.fb2353b8dd', 'Titlebar app name'),
     description: translate(
       'auto.components.settings.appearance.search.18b4c4c30b',
-      'Show Orca in the titlebar.'
+      'Show Coto in the titlebar.'
     ),
     keywords: [
       ...translateSearchKeyword(
         'auto.components.settings.appearance.search.bed343b03e',
         'titlebar'
       ),
-      ...translateSearchKeyword('auto.components.settings.appearance.search.1f2880a9d5', 'orca'),
+      ...translateSearchKeyword('auto.components.settings.appearance.search.1f2880a9d5', 'coto'),
       ...translateSearchKeyword('auto.components.settings.appearance.search.36e006efc1', 'app'),
       ...translateSearchKeyword('auto.components.settings.appearance.search.51f957ce39', 'name'),
       ...translateSearchKeyword('auto.components.settings.appearance.search.a895d0f938', 'brand')

@@ -67,7 +67,7 @@ export function AntigravityChatGcpFields(props: Props): React.JSX.Element {
         <p className="text-xs text-muted-foreground">
           {t(
             'accounts.antigravity.adcHint',
-            'Optional. Orca uses your gcloud project and the global location. Run gcloud auth application-default login once first.'
+            'Optional. Coto uses your gcloud project and the global location. Run gcloud auth application-default login once first.'
           )}
         </p>
       )}

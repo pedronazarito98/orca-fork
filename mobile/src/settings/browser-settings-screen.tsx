@@ -22,12 +22,12 @@ function linkModeOptions(t: Translate): PickerOption<MobileLinkOpenMode>[] {
       label: t('settings.browserSettingsScreen.askEachTime', 'Ask each time'),
       subtitle: t(
         'settings.browserSettingsScreen.askEachTimeDescription',
-        'Choose Orca browser, phone browser, or copy the link each time.'
+        'Choose Coto browser, phone browser, or copy the link each time.'
       )
     },
     {
       value: 'orca-browser',
-      label: t('settings.browserSettingsScreen.desktopBrowser', 'Orca browser on desktop'),
+      label: t('settings.browserSettingsScreen.desktopBrowser', 'Coto browser on desktop'),
       subtitle: t(
         'settings.browserSettingsScreen.desktopBrowserDescription',
         'Open in the streamed browser from your paired desktop.'

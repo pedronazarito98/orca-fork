@@ -255,7 +255,7 @@ export function MobileBotWebhookSecret(props: {
           generates && !choosesMode
             ? t(
                 'bots.webhooks.secret.generateNote',
-                'Orca makes this secret. You copy it into {{sender}} next.',
+                'Coto makes this secret. You copy it into {{sender}} next.',
                 { sender }
               )
             : undefined
@@ -271,7 +271,7 @@ export function MobileBotWebhookSecret(props: {
       {choosesMode ? (
         <MobileSegmentedControl
           segments={[
-            { value: 'generate', label: t('bots.webhooks.secret.modeGenerate', 'Orca makes one') },
+            { value: 'generate', label: t('bots.webhooks.secret.modeGenerate', 'Coto makes one') },
             { value: 'paste', label: t('bots.webhooks.secret.modePaste', 'Paste the sender’s') }
           ]}
           selected={mode}
@@ -286,7 +286,7 @@ export function MobileBotWebhookSecret(props: {
           <SettingsNote>
             {t(
               'bots.webhooks.secret.generateNote',
-              'Orca makes this secret. You copy it into {{sender}} next.',
+              'Coto makes this secret. You copy it into {{sender}} next.',
               { sender }
             )}
           </SettingsNote>

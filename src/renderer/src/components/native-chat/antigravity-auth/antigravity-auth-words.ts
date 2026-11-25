@@ -13,10 +13,10 @@ export function antigravityProgramLabel(
 ): string {
   if (orcas) {
     return version
-      ? t('components.native-chat.antigravityAuth.orcasAgyVersion', "Orca's agy · v{{version}}", {
+      ? t('components.native-chat.antigravityAuth.orcasAgyVersion', "Coto's agy · v{{version}}", {
           version
         })
-      : t('components.native-chat.antigravityAuth.orcasAgy', "Orca's agy")
+      : t('components.native-chat.antigravityAuth.orcasAgy', "Coto's agy")
   }
   return version
     ? t('components.native-chat.antigravityAuth.yourAgyVersion', 'Your agy · v{{version}}', {
@@ -48,7 +48,7 @@ export function antigravityAlternativeHint(
     case 'gemini-api-key':
       return option.source === 'environment'
         ? t('components.native-chat.antigravityAuth.apiKeyEnvironment', 'From your environment')
-        : t('components.native-chat.antigravityAuth.apiKeySaved', 'Saved in Orca')
+        : t('components.native-chat.antigravityAuth.apiKeySaved', 'Saved in Coto')
     case 'agent-platform':
       return t('components.native-chat.antigravityAuth.gcloudProject', 'Project {{project}}', {
         project: option.project
@@ -75,7 +75,7 @@ export function antigravityAlternativeQuestion(
           )
         : t(
             'components.native-chat.antigravityAuth.askApiKeySaved',
-            'Use the Gemini API key saved in Orca instead?'
+            'Use the Gemini API key saved in Coto instead?'
           )
     case 'agent-platform':
       return t(

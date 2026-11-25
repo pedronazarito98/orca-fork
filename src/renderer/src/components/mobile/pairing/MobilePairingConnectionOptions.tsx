@@ -91,11 +91,11 @@ export function MobilePairingConnectionOptions({
 
   const relayCell = relayStatus.cellUrl ? relayCellLabel(relayStatus.cellUrl) : null
   const relayDescription = relayBlocked
-    ? t('settings.mobile.teamDisabledRelay', 'Orca Relay is turned off by your team. Use LAN.')
+    ? t('settings.mobile.teamDisabledRelay', 'Coto Relay is turned off by your team. Use LAN.')
     : relayUnavailable
       ? t(
           'auto.components.settings.MobilePairingConnectionOptions.relayUnavailable',
-          'Orca Relay isn’t available in this build. Use LAN.'
+          'Coto Relay isn’t available in this build. Use LAN.'
         )
       : t(
           'auto.components.settings.MobilePairingConnectionOptions.anywhereDescription',
@@ -127,7 +127,7 @@ export function MobilePairingConnectionOptions({
           onSelect={() => onChange('automatic')}
           title={t(
             'auto.components.settings.MobilePairingConnectionOptions.anywhereTitle',
-            'Orca Relay'
+            'Coto Relay'
           )}
           description={relayDescription}
           trailing={

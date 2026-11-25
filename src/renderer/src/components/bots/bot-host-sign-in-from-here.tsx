@@ -69,7 +69,7 @@ export function BotHostSignInBlocked({
       <p>
         {t(
           'bots.host.signIn.unconfigured',
-          'Orca on {{host}} was built without Orca Cloud sign-in. Install Orca’s release build there to sign it in.',
+          'Coto on {{host}} was built without Coto Cloud sign-in. Install Coto’s release build there to sign it in.',
           { host }
         )}
       </p>
@@ -78,7 +78,7 @@ export function BotHostSignInBlocked({
   if (why === 'unread') {
     return (
       <div className="flex flex-col gap-1">
-        <p>{t('bots.host.signIn.unread', 'Couldn’t read {{host}}’s Orca sign-in.', { host })}</p>
+        <p>{t('bots.host.signIn.unread', 'Couldn’t read {{host}}’s Coto sign-in.', { host })}</p>
         <Button
           variant="outline"
           size="xs"
@@ -93,7 +93,7 @@ export function BotHostSignInBlocked({
   return (
     <>
       <p>
-        {t('bots.host.notice.cantSave', '{{host}} can’t save an Orca sign-in: {{reason}}', {
+        {t('bots.host.notice.cantSave', '{{host}} can’t save an Coto sign-in: {{reason}}', {
           host,
           reason: why.cantSave
         })}
@@ -101,7 +101,7 @@ export function BotHostSignInBlocked({
       <p>
         {t(
           'bots.host.notice.cantSaveNext',
-          'Unlock or set up a keychain on {{host}} and restart Orca there, then sign it in here.',
+          'Unlock or set up a keychain on {{host}} and restart Coto there, then sign it in here.',
           { host }
         )}
       </p>
@@ -113,7 +113,7 @@ export function BotHostSignInBlocked({
 export function signInUpdateFirst(host: string): string {
   return translate(
     'bots.host.signIn.updateFirst',
-    'Update Orca on {{host}}, then sign it in from here.',
+    'Update Coto on {{host}}, then sign it in from here.',
     { host }
   )
 }

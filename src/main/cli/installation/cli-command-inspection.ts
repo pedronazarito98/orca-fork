@@ -95,8 +95,8 @@ export class CliCommandInspection extends CliInstallLocation {
         detail: isInstalled
           ? `Registered at ${commandPath}.`
           : isManagedStaleTarget
-            ? `${commandPath} points to an older Orca launcher.`
-            : `${commandPath} points to a non-Orca launcher.`
+            ? `${commandPath} points to an older Coto launcher.`
+            : `${commandPath} points to a non-Coto launcher.`
       })
     } catch (error) {
       if (isMissingError(error)) {

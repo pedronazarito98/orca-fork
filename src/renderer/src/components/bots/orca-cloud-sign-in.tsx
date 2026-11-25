@@ -79,17 +79,17 @@ export function orcaCloudSignInReason(what: 'slack' | 'github' | 'linear'): stri
     case 'slack':
       return translate(
         'bots.cloudSignIn.slack',
-        'Slack connects through Orca Cloud. Sign in to Orca to continue.'
+        'Slack connects through Coto Cloud. Sign in to Coto to continue.'
       )
     case 'github':
       return translate(
         'bots.cloudSignIn.github',
-        'GitHub connects through Orca Cloud. Sign in to Orca to continue.'
+        'GitHub connects through Coto Cloud. Sign in to Coto to continue.'
       )
     case 'linear':
       return translate(
         'bots.cloudSignIn.linear',
-        'Linear connects through Orca Cloud. Sign in to Orca to continue.'
+        'Linear connects through Coto Cloud. Sign in to Coto to continue.'
       )
   }
 }

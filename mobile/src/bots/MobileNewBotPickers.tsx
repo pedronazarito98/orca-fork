@@ -143,7 +143,7 @@ export function newBotComputerNote(
   return facts.otherAccount
     ? t(
         'bots.new.otherAccount',
-        '{{host}} uses its own Orca account ({{email}}). Its bots post and connect as that account.',
+        '{{host}} uses its own Coto account ({{email}}). Its bots post and connect as that account.',
         { host: facts.host, email: facts.otherAccount }
       )
     : null

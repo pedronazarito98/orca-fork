@@ -104,9 +104,13 @@ export function createConnectorCloud({
   // Batches held when Orca last quit go out when due.
   prWaker.resume()
   const muteDeps = threadMuteDeps(runtime, store)
+  const origin = resolveConnectorOrigin(process.env, environment.isPackaged())
+  if (!origin) {
+    return null
+  }
   return new ConnectorCloud({
     userDataPath,
-    origin: resolveConnectorOrigin(process.env, environment.isPackaged()),
+    origin,
     isFenced,
     account: () => connectorAccount(userDataPath),
     mintFor: (account) => desktopConnectorTokenMint(auth.config, userDataPath, account),

@@ -95,7 +95,7 @@ function authorOf(t: BotChatTranslate, { by, chat }: BotMemoryHistoryView): stri
           })
         : named
     case 'kept':
-      return t('settings.bots.memoryHistory.kept', 'Orca · {{chat}} wrote over it', {
+      return t('settings.bots.memoryHistory.kept', 'Coto · {{chat}} wrote over it', {
         chat: named
       })
     case 'owner':

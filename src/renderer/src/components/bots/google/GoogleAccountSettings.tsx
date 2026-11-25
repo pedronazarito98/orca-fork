@@ -203,7 +203,7 @@ function AccountList({
       </div>
       {canAdd ? null : (
         <p className="text-xs text-muted-foreground">
-          {t('bots.google.updateToAdd', 'Update Orca on {{host}} to add another Google account.', {
+          {t('bots.google.updateToAdd', 'Update Coto on {{host}} to add another Google account.', {
             host
           })}
         </p>

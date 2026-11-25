@@ -22,7 +22,6 @@ export type OrcaCloudAuthConfig = {
 }
 
 const DEFAULT_SCOPE = 'openid profile email offline_access'
-const PRODUCTION_API_BASE_URL = 'https://login.onorca.dev'
 const PRODUCTION_CLIENT_ID = 'orca-desktop'
 const PRODUCTION_RELAY_DIRECTOR_URL = 'https://relay.onorca.dev'
 
@@ -45,12 +44,9 @@ export function getOrcaCloudAuthConfig(
   const cleanEndpointUrl = (value: string | undefined): string | null =>
     cleanUrl(value, allowLoopbackHttp)
   const configuredApiBaseUrl = env.ORCA_CLOUD_API_URL?.trim()
-  // Packaged builds need defaults; first-party endpoints and public client IDs are not secrets.
-  const apiBaseUrl = configuredApiBaseUrl
-    ? cleanEndpointUrl(configuredApiBaseUrl)
-    : packaged
-      ? PRODUCTION_API_BASE_URL
-      : null
+  // Cloud sign-in and relay defaults are disabled in Coto unless overridden in unpackaged dev.
+  const apiBaseUrl =
+    configuredApiBaseUrl && !packaged ? cleanEndpointUrl(configuredApiBaseUrl) : null
   const clientId = env.ORCA_CLOUD_CLIENT_ID?.trim() || (packaged ? PRODUCTION_CLIENT_ID : undefined)
   if (!apiBaseUrl || !clientId) {
     return {
@@ -102,7 +98,7 @@ export function getOrcaCloudAuthConfig(
 export function getOrcaPushGatewayUrl(
   env: NodeJS.ProcessEnv = process.env,
   packaged: boolean = isPackagedOrcaBuild()
-): string {
+): string | null {
   return resolvePushGatewayOrigin(env, packaged)
 }
 

@@ -29,7 +29,7 @@ function stageCopy(
         title: t('featureTips.sessionSearch.indexingTitle', 'Indexing your agent sessions'),
         description: t(
           'featureTips.sessionSearch.indexingDescription',
-          'Orca is reading your past agent transcripts so you can search them. This can take a few minutes.'
+          'Coto is reading your past agent transcripts so you can search them. This can take a few minutes.'
         ),
         cta: t('featureTips.sessionSearch.continueInBackground', 'Continue in background')
       }

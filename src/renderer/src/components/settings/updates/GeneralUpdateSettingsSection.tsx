@@ -105,14 +105,14 @@ export function GeneralUpdateSettingsSection({
         )}
         description={t(
           'auto.components.settings.GeneralUpdateSettingsSection.ceb579abaf',
-          'Check for app updates and install a newer Orca version.'
+          'Check for app updates and install a newer Coto version.'
         )}
         keywords={['about', 'update', 'version', 'release notes', 'download']}
         className="space-y-3 py-3"
       >
         <div className="flex flex-wrap items-center justify-between gap-3">
           <span className="text-sm">
-            {t('settings.general.about.version', 'Orca {{version}}', {
+            {t('settings.general.about.version', 'Coto {{version}}', {
               version: appVersion ?? '…'
             })}
           </span>
@@ -201,7 +201,7 @@ export function GeneralUpdateSettingsSection({
               <span className="block font-medium text-foreground">
                 {t('updates.installOnQuit.title', 'Update ready to install')}
               </span>
-              {t('updates.installOnQuit.summary', 'Quit Orca. Reopen after installation.')}
+              {t('updates.installOnQuit.summary', 'Quit Coto. Reopen after installation.')}
             </p>
             <Button
               variant="default"
@@ -210,7 +210,7 @@ export function GeneralUpdateSettingsSection({
               className="ms-auto"
             >
               <Power className="size-3.5" />
-              {t('updates.installOnQuit.quit', 'Quit Orca')}
+              {t('updates.installOnQuit.quit', 'Quit Coto')}
             </Button>
           </div>
         )}
@@ -230,7 +230,7 @@ export function GeneralUpdateSettingsSection({
               {updateStatus.externallyManaged
                 ? t(
                     'auto.components.settings.GeneralUpdateSettingsSection.externallyManagedVersionAvailable',
-                    'Version {{version}} is available. Update Orca through your system package manager — Orca cannot install this release itself.',
+                    'Version {{version}} is available. Update Coto through your system package manager — Coto cannot install this release itself.',
                     { version: updateStatus.version }
                   )
                 : t(
@@ -260,7 +260,7 @@ export function GeneralUpdateSettingsSection({
             (updateStatus.unsupportedSystemUpdate
               ? t(
                   'macosUpdateRequirement.settingsStatus',
-                  'Orca {{version}} requires macOS {{macos}} or later. This is the latest version for this Mac.',
+                  'Coto {{version}} requires macOS {{macos}} or later. This is the latest version for this Mac.',
                   {
                     version: updateStatus.unsupportedSystemUpdate.version,
                     macos: updateStatus.unsupportedSystemUpdate.minimumMacosVersion

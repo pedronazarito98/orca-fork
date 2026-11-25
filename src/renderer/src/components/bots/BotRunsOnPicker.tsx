@@ -35,10 +35,10 @@ function computerErrorLabel(blocked: BotCreateHostBlock, updatable: boolean, t: 
       return t('bots.new.validation.computerOffline', 'Offline')
     case 'no-bots':
       return updatable
-        ? t('bots.new.validation.updateOrca', 'Update Orca')
+        ? t('bots.new.validation.updateOrca', 'Update Coto')
         : t('bots.new.validation.botsUnavailable', 'Bots unavailable')
     case 'needs-server':
-      return t('bots.new.hostNeedsServer', 'Needs Orca server')
+      return t('bots.new.hostNeedsServer', 'Needs Coto server')
   }
 }
 
@@ -107,7 +107,7 @@ export function BotRunsOnPicker({
     computerError ??
     botCreateHostBlockedHint(host, canUpdate, t) ??
     (otherAccount
-      ? t('bots.new.computerAccountHint', 'Where the bot runs, signed in to Orca as {{account}}.', {
+      ? t('bots.new.computerAccountHint', 'Where the bot runs, signed in to Coto as {{account}}.', {
           account: otherAccount
         })
       : fields

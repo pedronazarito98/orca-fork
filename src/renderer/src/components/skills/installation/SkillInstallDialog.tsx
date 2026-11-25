@@ -87,7 +87,7 @@ export function SkillInstallDialog({
       setError(
         translate(
           'auto.components.skills.install.enterShareLink',
-          'Enter an Orca skill share link.'
+          'Enter an Coto skill share link.'
         )
       )
       return
@@ -200,7 +200,7 @@ export function SkillInstallDialog({
           operation.status === 'reconnect-required'
             ? t(
                 'auto.components.skills.install.reconnectBeforeInstalling',
-                'Reconnect your Orca account before installing.'
+                'Reconnect your Coto account before installing.'
               )
             : operation.message
         )
@@ -215,7 +215,7 @@ export function SkillInstallDialog({
       setError(
         t(
           'auto.components.skills.install.requestedVersionVerificationFailed',
-          'Installation failed before Orca could verify the requested version.'
+          'Installation failed before Coto could verify the requested version.'
         )
       )
     } finally {

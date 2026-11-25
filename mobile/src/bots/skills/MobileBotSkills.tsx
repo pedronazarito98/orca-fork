@@ -128,7 +128,7 @@ function ProjectRow(props: {
         project.status === 'remote'
           ? t('bots.skills.remoteShort', 'On another host')
           : project.status === 'missing'
-            ? t('bots.skills.missingShort', 'No longer in Orca')
+            ? t('bots.skills.missingShort', 'No longer in Coto')
             : count > 0
               ? skillCount(t, count)
               : t('bots.skills.none', 'No skills in this project yet')

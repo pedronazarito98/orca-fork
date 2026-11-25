@@ -171,9 +171,9 @@ export function MobileBotGitHubSetup(props: {
               footer={
                 failed
                   ? undefined
-                  : `${t('bots.connect.opensOnHost', 'Opens in Orca’s browser on {{host}}.', {
+                  : `${t('bots.connect.opensOnHost', 'Opens in Coto’s browser on {{host}}.', {
                       host: hostName
-                    })} ${t('bots.github.connect.readsOnly', 'Orca only reads your GitHub username and id.')}`
+                    })} ${t('bots.github.connect.readsOnly', 'Coto only reads your GitHub username and id.')}`
               }
             >
               <ListRow
@@ -225,16 +225,16 @@ export function MobileBotGitHubSetup(props: {
             <ListRow
               leading={<ArrowUpRight size={18} color={colors.accentBlue} />}
               accent
-              title={t('bots.github.setup.install', 'Install the Orca app')}
+              title={t('bots.github.setup.install', 'Install the Coto app')}
               subtitle={
                 trip.status === 'linked' && trip.link?.install === 'requested'
                   ? t(
                       'bots.github.connect.requested',
-                      'An owner of the organization has been asked to approve the Orca app.'
+                      'An owner of the organization has been asked to approve the Coto app.'
                     )
                   : t(
                       'bots.github.connect.notInstalled',
-                      'The Orca app is not on any of your repositories yet.'
+                      'The Coto app is not on any of your repositories yet.'
                     )
               }
               accessory={

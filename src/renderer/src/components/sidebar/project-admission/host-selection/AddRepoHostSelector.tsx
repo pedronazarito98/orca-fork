@@ -147,11 +147,11 @@ export function AddRepoHostSelector({
                           {onAddWslHost
                             ? t(
                                 'auto.components.sidebar.AddRepoHostSelector.addRemoteHostDetailWithWsl',
-                                'SSH host, Orca server, or WSL distro'
+                                'SSH host, Coto server, or WSL distro'
                               )
                             : t(
                                 'auto.components.sidebar.AddRepoHostSelector.addRemoteHostDetail',
-                                'SSH host or Orca server'
+                                'SSH host or Coto server'
                               )}
                         </span>
                       </span>
@@ -202,7 +202,7 @@ export function AddRepoHostSelector({
                         <span className="mt-0.5 text-[11px] text-muted-foreground">
                           {t(
                             'auto.components.sidebar.AddRepoHostSelector.addRemoteServerDetail',
-                            'Pair with Orca running on another computer.'
+                            'Pair with Coto running on another computer.'
                           )}
                         </span>
                       </button>
@@ -231,7 +231,7 @@ export function AddRepoHostSelector({
                         <span className="mt-0.5 text-[11px] text-muted-foreground">
                           {t(
                             'auto.components.sidebar.AddRepoHostSelector.addWslHostDetail',
-                            'Run an Orca server inside a WSL 2 distro. Experimental.'
+                            'Run an Coto server inside a WSL 2 distro. Experimental.'
                           )}
                         </span>
                       </button>

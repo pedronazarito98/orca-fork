@@ -19,7 +19,7 @@ export function resolvePackagedWindowsCompatibilityCommand(): 'orca' | 'orca-ide
   }
   throw new RuntimeClientError(
     'invalid_argument',
-    'The packaged Orca launcher did not provide a valid resume command. No question was created.'
+    'The packaged Coto launcher did not provide a valid resume command. No question was created.'
   )
 }
 
@@ -47,7 +47,7 @@ export function isDevCliInvocation(): boolean {
 // SSH/headless Node CLIs stay `orca`.
 export function resolveInvokedCliCommand(): string {
   if (process.platform !== 'linux') {
-    return 'orca'
+    return 'coto'
   }
   const configured = process.env.ORCA_CLI_COMMAND?.trim()
   if (configured) {

@@ -233,7 +233,7 @@ function ReadyCard({ scope }: { scope: MobileComposioScope }): React.JSX.Element
         <MobileGoogleSetupOnComputer
           text={t(
             'chat.botCards.composio.browseOnComputer',
-            'Browse more apps from the bot’s Tools in Orca on your computer.'
+            'Browse more apps from the bot’s Tools in Coto on your computer.'
           )}
           fontScale={fontScale}
         />

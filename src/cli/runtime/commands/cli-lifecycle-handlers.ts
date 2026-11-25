@@ -61,7 +61,7 @@ export const CORE_HANDLERS: Record<string, CommandHandler> = {
     if (!paneKey) {
       throw new RuntimeClientError(
         'invalid_environment',
-        'orca claude-teams must be run inside an Orca terminal.'
+        'coto claude-teams must be run inside a Coto terminal.'
       )
     }
     const inheritedEnv = envRecord()
@@ -94,7 +94,7 @@ export const CORE_HANDLERS: Record<string, CommandHandler> = {
       if (flags.has('data-root') && (typeof dataRoot !== 'string' || !dataRoot.trim())) {
         throw new RuntimeClientError(
           'invalid_argument',
-          '--data-root expects a directory. Usage: orca serve --reclaim-stale-lock [--data-root <dir>] [--yes] [--json]'
+          '--data-root expects a directory. Usage: coto serve --reclaim-stale-lock [--data-root <dir>] [--yes] [--json]'
         )
       }
       // Why lazy: only this mode needs orcad's lock code, and every other command skips loading it.

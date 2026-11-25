@@ -8,7 +8,7 @@ import {
 
 export const PLUGIN_INSTALL_LINK_MAX_LENGTH = 2048
 const CATALOG_URL_MAX_LENGTH = 512
-const PLUGIN_INSTALL_LINK_PREFIX = 'orca://plugins'
+const PLUGIN_INSTALL_LINK_PREFIX = 'coto://plugins'
 
 export const COMMUNITY_MARKETPLACE_GIT_SOURCE: PluginMarketplaceGitSource = {
   kind: 'git',

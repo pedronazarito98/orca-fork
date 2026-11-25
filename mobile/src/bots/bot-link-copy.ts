@@ -17,7 +17,7 @@ function joinHostNames(
 }
 
 export function botLinkUpdateNeededLine(t: Translate, hostNames: readonly string[]): string {
-  return t('bots.link.updateNeeded', 'Update Orca on {{names}} to open this link.', {
+  return t('bots.link.updateNeeded', 'Update Coto on {{names}} to open this link.', {
     names: joinHostNames(t, hostNames)
   })
 }
@@ -26,13 +26,13 @@ export function botLinkUnreachableLine(t: Translate, hostNames: readonly string[
   if (hostNames.length === 1) {
     return t(
       'bots.link.unreachableSingle',
-      'Couldn’t reach {{name}}. Make sure Orca is running there, then try again.',
+      'Couldn’t reach {{name}}. Make sure Coto is running there, then try again.',
       { name: hostNames[0] }
     )
   }
   return t(
     'bots.link.unreachable',
-    'Couldn’t reach {{names}}. Make sure Orca is running on one, then try again.',
+    'Couldn’t reach {{names}}. Make sure Coto is running on one, then try again.',
     {
       names: joinHostNames(t, hostNames, getUiIntlLocale() === 'en' ? 'disjunction' : 'conjunction')
     }
@@ -42,7 +42,7 @@ export function botLinkUnreachableLine(t: Translate, hostNames: readonly string[
 export function botLinkAmbiguousLine(t: Translate, hostNames: readonly string[]): string {
   return t(
     'bots.link.ambiguous',
-    'This bot is on {{names}}. Open the chat in Orca on the one you want.',
+    'This bot is on {{names}}. Open the chat in Coto on the one you want.',
     { names: joinHostNames(t, hostNames) }
   )
 }

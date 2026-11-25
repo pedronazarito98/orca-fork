@@ -145,7 +145,7 @@ export function MobileNativeChatConnectorOfferRow({
     >
       {paused ? (
         meta(
-          t('bots.connectorOffer.paused', 'Paused until {{host}} signs in to Orca.', {
+          t('bots.connectorOffer.paused', 'Paused until {{host}} signs in to Coto.', {
             host: host?.hostLabel
           })
         )
@@ -175,11 +175,11 @@ export function MobileNativeChatConnectorOfferRow({
                 offer.source === 'github'
                   ? t(
                       'bots.connectorOffer.addGitHubAccess',
-                      'Add repositories or organizations in Orca on your computer, from the card in this chat.'
+                      'Add repositories or organizations in Coto on your computer, from the card in this chat.'
                     )
                   : t(
                       'bots.connectorOffer.addWorkspace',
-                      'Add another workspace in Orca on your computer, from the card in this chat.'
+                      'Add another workspace in Coto on your computer, from the card in this chat.'
                     )
               )
             )
@@ -192,7 +192,7 @@ export function MobileNativeChatConnectorOfferRow({
             : meta(
                 t(
                   'bots.connectorOffer.onComputer',
-                  'Connect it in Orca on your computer, from the card in this chat.'
+                  'Connect it in Coto on your computer, from the card in this chat.'
                 )
               )}
           {answer.error ? (

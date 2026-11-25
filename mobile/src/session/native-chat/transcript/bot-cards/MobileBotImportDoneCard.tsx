@@ -99,7 +99,7 @@ export function MobileBotImportDoneCard({
         <MobileGoogleSetupOnComputer
           text={t(
             'chat.botCards.importDone.soulOnComputer',
-            'Open the soul and memory in Orca on your computer.'
+            'Open the soul and memory in Coto on your computer.'
           )}
           fontScale={fontScale}
         />

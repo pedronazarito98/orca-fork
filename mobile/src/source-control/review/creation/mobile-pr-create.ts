@@ -27,7 +27,7 @@ export function getMobilePrCreateSuccessWarning(
   if (outcome.linkError) {
     return translate(
       'sourceControl.prCreate.createdNotRefreshed',
-      '{{titleLabel}} created, but Orca could not refresh it yet.',
+      '{{titleLabel}} created, but Coto could not refresh it yet.',
       { titleLabel: copy.titleLabel }
     )
   }
@@ -54,7 +54,7 @@ export function getMobilePrCreateBlockMessage(prefill: MobilePrPrefill): string 
   ) {
     return translate(
       'sourceControl.prCreate.lookupUnconfirmed',
-      'Orca could not confirm whether this branch already has a {{reviewLabel}}. Try again in a moment.',
+      'Coto could not confirm whether this branch already has a {{reviewLabel}}. Try again in a moment.',
       { reviewLabel: copy.reviewLabel }
     )
   }

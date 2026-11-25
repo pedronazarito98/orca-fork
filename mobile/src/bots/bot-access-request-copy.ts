@@ -193,13 +193,13 @@ export function accessDecideFailureLine(
     case 'granted_not_added':
       return t(
         'bots.accessDecide.grantedNotAdded',
-        'Access was given, but {{person}} isn’t listed yet. Orca will add them.',
+        'Access was given, but {{person}} isn’t listed yet. Coto will add them.',
         { person: accessRequestPerson(request) }
       )
     case 'signed_out':
       return t(
         'bots.accessDecide.signedOut',
-        'Sign in to Orca on your computer to answer requests.'
+        'Sign in to Coto on your computer to answer requests.'
       )
     default:
       return mobileBotAccessCopy(t, 'decideFailed')

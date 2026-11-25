@@ -210,11 +210,11 @@ export function AddHostSubmenuRow({
               icon={<Cloud className="size-3.5 shrink-0 text-muted-foreground" />}
               label={t(
                 'auto.components.NewWorkspaceComposerCard.addRemoteOrcaServer',
-                'Add Remote Orca Server'
+                'Add Remote Coto Server'
               )}
               detail={t(
                 'auto.components.NewWorkspaceComposerCard.addRemoteOrcaServerHint',
-                'Pair another Orca runtime'
+                'Pair another Coto runtime'
               )}
               armed={hoveredKey === 'remote'}
               current={false}

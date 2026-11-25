@@ -34,13 +34,13 @@ export function accountStatusCopy(
   if (state === 'unconfigured') {
     return t(
       'auto.components.settings.orcaAccount.unavailable',
-      'Orca sign-in is unavailable in this build.'
+      'Coto sign-in is unavailable in this build.'
     )
   }
   if (state === 'local') {
     return t(
       'auto.components.settings.orcaAccount.signedOut',
-      'Sign in to extend Orca with cloud features, including Artifacts and Orca Relay.'
+      'Sign in to extend Coto with cloud features, including Artifacts and Coto Relay.'
     )
   }
   return t('auto.components.settings.orcaAccount.checking', 'Checking account status…')
@@ -89,7 +89,7 @@ export function OrcaAccountHeader({
       <div className="min-w-0 flex-1 space-y-1">
         <div className="flex flex-wrap items-center gap-2">
           <p className="text-sm font-medium">
-            {name?.trim() || t('auto.components.settings.orcaAccount.account', 'Orca account')}
+            {name?.trim() || t('auto.components.settings.orcaAccount.account', 'Coto account')}
           </p>
           {connected ? (
             <Badge variant="outline" className="text-[11px] text-muted-foreground">
@@ -163,7 +163,7 @@ export function OrcaAccountSettingsPane(): React.JSX.Element {
             <OrcaSignInButton size="sm" disabled={!canConnect}>
               {authStatus?.state === 'reconnect-required'
                 ? t('auto.components.settings.orcaAccount.signInAgain', 'Sign in again')
-                : t('auto.components.settings.orcaAccount.signIn', 'Sign in to Orca')}
+                : t('auto.components.settings.orcaAccount.signIn', 'Sign in to Coto')}
             </OrcaSignInButton>
           )}
           {connected ? null : <OrcaSignInWaitNotice className="basis-full" />}
@@ -174,7 +174,7 @@ export function OrcaAccountSettingsPane(): React.JSX.Element {
             <p>
               {t(
                 'auto.components.settings.orcaAccount.managed',
-                'Your team manages some Orca settings.'
+                'Your team manages some Coto settings.'
               )}
             </p>
             {showReporting && (
@@ -210,7 +210,7 @@ export function OrcaAccountSettingsPane(): React.JSX.Element {
                     <p>
                       {t(
                         'auto.components.settings.orcaAccount.reportingDisclosure',
-                        'The Devices view shows your Orca version, release channel, device name, platform, update status, required plugins Orca couldn’t install, and when the device last reported.'
+                        'The Devices view shows your Coto version, release channel, device name, platform, update status, required plugins Coto couldn’t install, and when the device last reported.'
                       )}
                     </p>
                   </div>
@@ -233,16 +233,16 @@ export function OrcaAccountSettingsPane(): React.JSX.Element {
                 title={t('auto.components.settings.orcaAccount.artifactsTitle', 'Artifact sharing')}
                 description={t(
                   'auto.components.settings.orcaAccount.artifactsDescription',
-                  'Publish HTML and Markdown files, then manage every shared link from Orca.'
+                  'Publish HTML and Markdown files, then manage every shared link from Coto.'
                 )}
               />
               <AccountBenefit
                 icon={Smartphone}
                 className="md:pl-6"
-                title={t('auto.components.settings.orcaAccount.relayTitle', 'Orca Relay')}
+                title={t('auto.components.settings.orcaAccount.relayTitle', 'Coto Relay')}
                 description={t(
                   'auto.components.settings.orcaAccount.relayDescription',
-                  'Connect Orca Mobile to this desktop across cellular or any Wi-Fi.'
+                  'Connect Coto Mobile to this desktop across cellular or any Wi-Fi.'
                 )}
               />
             </div>

@@ -147,7 +147,7 @@ export function GoogleDisconnectConfirm(props: {
         (revoke
           ? t(
               'bots.google.disconnect.revokeNote',
-              'Bots stop using this account here, and Google cancels Orca’s access everywhere it was allowed.'
+              'Bots stop using this account here, and Google cancels Coto’s access everywhere it was allowed.'
             )
           : accounts.length > 1
             ? t('bots.google.disconnect.removeOneNote', 'Bots stop using this account here.')

@@ -65,7 +65,7 @@ type PluginDetailPageProps = {
 function sourceLabel(entry: PluginListEntry, t: Translate = translate): string | null {
   const source = entry.installed?.source
   if (entry.installed?.bundled || source?.kind === 'bundled') {
-    return t('auto.components.settings.PluginDetailPage.bundled', 'Bundled with Orca')
+    return t('auto.components.settings.PluginDetailPage.bundled', 'Bundled with Coto')
   }
   if (source?.kind === 'local-path') {
     return t('auto.components.settings.PluginDetailPage.localFolder', 'Local folder')
@@ -188,7 +188,7 @@ export function PluginDetailPage({
         tone="destructive"
         title={t(
           'auto.components.settings.PluginDetailPage.invalidTitle',
-          'Orca can’t load this plugin'
+          'Coto can’t load this plugin'
         )}
         body={typeof controls.description === 'string' ? controls.description : ''}
       />
@@ -223,14 +223,14 @@ export function PluginDetailPage({
         tone="warning"
         title={t(
           'auto.components.settings.PluginDetailPage.needsOrcaTitle',
-          'Needs Orca {{value0}} or later',
+          'Needs Coto {{value0}} or later',
           {
             value0: entry.minimumOrca ?? ''
           }
         )}
         body={t(
           'auto.components.settings.PluginDetailPage.needsOrcaBody',
-          'You have Orca {{value0}}.',
+          'You have Coto {{value0}}.',
           {
             value0: orcaVersion ?? ''
           }

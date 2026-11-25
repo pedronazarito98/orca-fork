@@ -14,7 +14,7 @@ export function agentSendDisabledReasonLabel(reason: string, t: Translate = tran
     case 'Update Orca on this host to send to this agent':
       return t(
         'agentSendTargets.disabledReason.hostUpdateRequired',
-        'Update Orca on this host to send to this agent'
+        'Update Coto on this host to send to this agent'
       )
     case 'Terminal is no longer available':
       return t(

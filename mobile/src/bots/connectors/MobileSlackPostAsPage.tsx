@@ -31,7 +31,7 @@ export function slackPosterNames(
   t: Translate
 ): Record<SlackPostAs, string> {
   return {
-    person: installed.poster?.name || t('bots.slack.postAs.orcaUser', 'Orca user'),
+    person: installed.poster?.name || t('bots.slack.postAs.orcaUser', 'Coto user'),
     computer: installed.computerName || hostName
   }
 }
@@ -149,7 +149,7 @@ export function MobileSlackPostAsPage(props: {
         separatorInset={WHO_FACE_INSET}
         footer={t(
           'bots.slack.postAs.linePlain',
-          'When you reply to a Slack thread from Orca, it posts as {{name}}.',
+          'When you reply to a Slack thread from Coto, it posts as {{name}}.',
           { name: names[current] }
         )}
       >
@@ -157,7 +157,7 @@ export function MobileSlackPostAsPage(props: {
           <ListRow
             key={choice}
             leading={face(choice)}
-            title={t('bots.slack.postAs.viaOrca', '{{name}} (via Orca)', { name: names[choice] })}
+            title={t('bots.slack.postAs.viaOrca', '{{name}} (via Coto)', { name: names[choice] })}
             subtitle={t('bots.slack.postAs.sample', 'Ship it after that')}
             selected={choice === (waiting ?? current)}
             disabled={!props.online}

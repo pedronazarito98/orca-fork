@@ -122,7 +122,7 @@ export function buildHostBotSections(inputs: HostBotSectionInputs): HostBotSecti
     if (listing.kind === 'update-needed') {
       unlisted(
         listing.hostId,
-        translate('bots.list.updateToSee', 'Update Orca on {{host}} to see its bots.', { host }),
+        translate('bots.list.updateToSee', 'Update Coto on {{host}} to see its bots.', { host }),
         true
       )
       continue

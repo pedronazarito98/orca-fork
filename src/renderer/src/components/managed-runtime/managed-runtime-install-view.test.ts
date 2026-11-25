@@ -174,11 +174,11 @@ describe('managedRuntimeInstallView reasons', () => {
   })
 })
 
-describe("managedRuntimeInstallView with Orca's copy", () => {
+describe("managedRuntimeInstallView with Coto's copy", () => {
   it('leaves Update out while an automatic update is pending, and names the update in the menu', () => {
     const pending = managedView({ updatesAutomatically: true })
     expect(pending.action).toBeNull()
-    expect(pending.status).toBe('Installed by Orca · 1.5.0')
+    expect(pending.status).toBe('Installed by Coto · 1.5.0')
     expect(pending.menuAction).toMatchObject({ kind: 'install', label: 'Update to 1.5.2' })
   })
 

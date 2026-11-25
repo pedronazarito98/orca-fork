@@ -230,7 +230,7 @@ export function MobileBotLinearSetup(props: {
               footer={
                 step.error
                   ? undefined
-                  : t('bots.connect.opensOnHost', 'Opens in Orca’s browser on {{host}}.', {
+                  : t('bots.connect.opensOnHost', 'Opens in Coto’s browser on {{host}}.', {
                       host: hostName
                     })
               }
@@ -272,7 +272,7 @@ export function MobileBotLinearSetup(props: {
               now - step.since > STUCK_MS
                 ? t(
                     'bots.linear.connect.stuck',
-                    'Stuck on a Linear page that says “Could not find OAuth client”? Orca’s Linear app isn’t open to this workspace yet. An admin of the workspace that owns the app must make it public.'
+                    'Stuck on a Linear page that says “Could not find OAuth client”? Coto’s Linear app isn’t open to this workspace yet. An admin of the workspace that owns the app must make it public.'
                   )
                 : null
             }
@@ -308,7 +308,7 @@ export function MobileBotLinearSetup(props: {
             first
             footer={t(
               'bots.linear.setup.install',
-              'Orca is not installed in {{workspace}} yet. A Linear admin installs it once for everyone.',
+              'Coto is not installed in {{workspace}} yet. A Linear admin installs it once for everyone.',
               { workspace: linearWorkspaceLabel(step.workspace.name, step.workspace.urlKey) }
             )}
           >

@@ -31,7 +31,7 @@ export function MobileBotTemplateDetail(props: {
     <View style={styles.page}>
       <SheetHeader
         title={botTemplateWord(template, 'name', t)}
-        subtitle={t('bots.templates.byOrca', '{{category}} · by Orca', {
+        subtitle={t('bots.templates.byOrca', '{{category}} · by Coto', {
           category: label(template.category)
         })}
         onBack={{

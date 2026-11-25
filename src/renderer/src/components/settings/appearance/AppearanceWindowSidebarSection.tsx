@@ -315,7 +315,7 @@ export function AppearanceWindowSidebarSection({
               <SearchableSetting
                 title={t(
                   'auto.components.settings.AppearancePane.d2b4ddbea0',
-                  'Show Orca Mobile button'
+                  'Show Coto Mobile button'
                 )}
                 description={sidebarEntries[2]?.description}
                 keywords={sidebarEntries[2]?.keywords ?? ['mobile', 'phone', 'sidebar']}
@@ -323,12 +323,12 @@ export function AppearanceWindowSidebarSection({
                 <SettingsSwitchRow
                   label={t(
                     'auto.components.settings.AppearancePane.d2b4ddbea0',
-                    'Show Orca Mobile button'
+                    'Show Coto Mobile button'
                   )}
                   // Explain the remaining Toolbox route so hiding the shortcut cannot imply feature removal.
                   description={t(
                     'auto.components.settings.AppearancePane.61d842eca0',
-                    'Show the Orca Mobile shortcut in the sidebar. It remains available from Toolbox.'
+                    'Show the Coto Mobile shortcut in the sidebar. It remains available from Toolbox.'
                   )}
                   checked={settings.showMobileButton !== false}
                   onChange={() =>

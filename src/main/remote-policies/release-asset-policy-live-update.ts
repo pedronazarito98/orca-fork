@@ -7,7 +7,6 @@ import {
 import { getVersionChannel, MAIN_RELEASE_REPO } from '../../shared/updater/release-channel'
 import { writePluginFileAtomically } from '../plugins/installation/plugin-atomic-file-write'
 
-const REFRESH_INTERVAL_MS = 4 * 60 * 60 * 1000
 const FETCH_TIMEOUT_MS = 30_000
 
 export type ReleaseAssetPolicyChannel = 'next' | 'stable'
@@ -150,16 +149,6 @@ export class ReleaseAssetPolicyLiveUpdater<P extends { revision: number }> {
 
   async start(): Promise<void> {
     this.stop()
-    if (!this.deps.isPackaged) {
-      return
-    }
-    this.channel = releaseAssetPolicyChannelForAppVersion(this.deps.appVersion)
-    if (!this.channel) {
-      return
-    }
-    this.timer = setInterval(() => void this.refresh(), REFRESH_INTERVAL_MS)
-    this.timer.unref?.()
-    await this.refresh()
   }
 
   stop(): void {

@@ -146,7 +146,7 @@ export function MobileBotIdentityPage(props: {
           ? error.message
           : error instanceof ImageLibraryPermissionError
             ? t('bots.picture.permissionDenied', 'Photo permission denied')
-            : t('bots.picture.unreadable', "Orca can't read that image. Try PNG or JPEG.")
+            : t('bots.picture.unreadable', "Coto can't read that image. Try PNG or JPEG.")
       )
     } finally {
       setBusy(false)

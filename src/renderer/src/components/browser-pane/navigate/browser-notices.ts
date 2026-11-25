@@ -148,13 +148,13 @@ export function formatLoadFailureDescription(
     if (reason === 'authority-invalid') {
       return t(
         'browser.loadFailure.certificateAuthorityInvalid',
-        "Orca doesn't trust the authority that issued the certificate for {{value0}}.",
+        "Coto doesn't trust the authority that issued the certificate for {{value0}}.",
         { value0: host }
       )
     }
     return t(
       'browser.loadFailure.certificateVerificationFailed',
-      "Orca couldn't verify the certificate for {{value0}}.",
+      "Coto couldn't verify the certificate for {{value0}}.",
       { value0: host }
     )
   }

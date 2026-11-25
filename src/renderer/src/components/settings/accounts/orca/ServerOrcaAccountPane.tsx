@@ -37,12 +37,12 @@ export function ServerOrcaAccountPane({
     ? settled
       ? t(
           'components.settings.orcaAccount.server.unread',
-          'Can’t read {{host}}’s Orca account. Update or reconnect {{host}}.',
+          'Can’t read {{host}}’s Coto account. Update or reconnect {{host}}.',
           { host }
         )
       : accountStatusCopy(undefined, undefined, t)
     : cantSave !== null
-      ? t('bots.host.notice.cantSave', '{{host}} can’t save an Orca sign-in: {{reason}}', {
+      ? t('bots.host.notice.cantSave', '{{host}} can’t save an Coto sign-in: {{reason}}', {
           host,
           reason: cantSave
         })
@@ -72,7 +72,7 @@ export function ServerOrcaAccountPane({
         <p className="basis-full text-xs text-muted-foreground">
           {t(
             'components.settings.orcaAccount.server.signInThere',
-            'Run `orca auth login` on {{host}} to sign it in.',
+            'Run `coto auth login` on {{host}} to sign it in.',
             { host }
           )}
         </p>

@@ -50,18 +50,18 @@ export const structuredSessionOpenFeedbackText = {
   hostCannotOpen: () =>
     translate(
       'auto.lib.activateAiVaultStructuredSession.hostCannotOpen',
-      "This chat can't be reopened until Orca is updated."
+      "This chat can't be reopened until Coto is updated."
     ),
   notLocated: (agent?: string) =>
     agent
       ? translate(
           'auto.lib.activateAiVaultStructuredSession.notLocatedNamed',
-          "Orca can't find where {{agent}} is running, so it can't open it.",
+          "Coto can't find where {{agent}} is running, so it can't open it.",
           { agent }
         )
       : translate(
           'auto.lib.activateAiVaultStructuredSession.notLocated',
-          "Orca can't find where this agent is running, so it can't open it."
+          "Coto can't find where this agent is running, so it can't open it."
         )
 }
 
@@ -220,7 +220,7 @@ function presentDesktopStructuredSession(
           : result.failure.workspaceKind === 'project'
             ? translate(
                 'auto.lib.activateAiVaultStructuredSession.projectRemoved',
-                'The project was removed from Orca.'
+                'The project was removed from Coto.'
               )
             : translate(
                 'auto.lib.activateAiVaultStructuredSession.worktreeDeleted',

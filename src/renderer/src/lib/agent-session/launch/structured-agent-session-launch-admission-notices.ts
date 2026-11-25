@@ -57,7 +57,7 @@ export function notifyHostUnreachable(agent: TuiAgent, executionHostId: Executio
     {
       description: translate(
         'components.native-chat.structuredSessionHostUnreachableDescription',
-        'Orca did not open a {{value0}} chat. Check the connection to the server and try again.',
+        'Coto did not open a {{value0}} chat. Check the connection to the server and try again.',
         { value0: structuredAgentLabel(agent) }
       )
     }

@@ -17,7 +17,7 @@ export function HostOrcaVersionSection() {
     <SettingsSection footer={updateSteps ?? undefined}>
       <ListRow
         key="version"
-        title={t('host.edit.orcaVersion', 'Orca version')}
+        title={t('host.edit.orcaVersion', 'Coto version')}
         value={desktopAppVersion}
       />
     </SettingsSection>

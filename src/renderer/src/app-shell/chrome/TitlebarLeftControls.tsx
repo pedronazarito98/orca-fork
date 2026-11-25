@@ -171,10 +171,10 @@ export function TitlebarLeftControls({ layout }: { layout: AppChromeLayout }): R
               <ContextMenuTrigger asChild>
                 <div
                   className="titlebar-app-name"
-                  aria-label={t('auto.App.5096cbbc86', 'Orca')}
+                  aria-label={t('auto.App.5096cbbc86', 'Coto')}
                   data-titlebar-fold-step="1"
                 >
-                  <span className="titlebar-app-name-main">{t('auto.App.5096cbbc86', 'Orca')}</span>
+                  <span className="titlebar-app-name-main">{t('auto.App.5096cbbc86', 'Coto')}</span>
                 </div>
               </ContextMenuTrigger>
               <ContextMenuContent>

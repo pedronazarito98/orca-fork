@@ -75,9 +75,9 @@ function mobileUpdateChannelTarget(t: Translate): { label: string; url: string }
 function blockTitle(remedy: BlockRemedy, t: Translate): string {
   switch (remedy) {
     case 'update-mobile':
-      return t('components.protocolBlockScreen.updateMobileTitle', 'Update Orca Mobile')
+      return t('components.protocolBlockScreen.updateMobileTitle', 'Update Coto Mobile')
     case 'update-desktop':
-      return t('components.protocolBlockScreen.updateDesktopTitle', 'Update Orca on this host')
+      return t('components.protocolBlockScreen.updateDesktopTitle', 'Update Coto on this host')
     case 'refresh-bundle':
       return t(
         'components.protocolBlockScreen.refreshWorkspaceTitle',
@@ -98,17 +98,17 @@ function blockBody(verdict: BlockedVerdict, remedy: BlockRemedy, t: Translate): 
       case 'app-store':
         return t(
           'components.protocolBlockScreen.mobileTooOldAppStore',
-          'This host needs a newer Orca Mobile app. Update Orca Mobile from the App Store, then try this host again.'
+          'This host needs a newer Coto Mobile app. Update Coto Mobile from the App Store, then try this host again.'
         )
       case 'google-play':
         return t(
           'components.protocolBlockScreen.mobileTooOldGooglePlay',
-          'This host needs a newer Orca Mobile app. Update Orca Mobile from Google Play, then try this host again.'
+          'This host needs a newer Coto Mobile app. Update Coto Mobile from Google Play, then try this host again.'
         )
       case 'github-releases':
         return t(
           'components.protocolBlockScreen.mobileTooOldGitHubReleases',
-          'This host needs a newer Orca Mobile app. Update Orca Mobile from GitHub Releases, then try this host again.'
+          'This host needs a newer Coto Mobile app. Update Coto Mobile from GitHub Releases, then try this host again.'
         )
     }
   }
@@ -117,23 +117,23 @@ function blockBody(verdict: BlockedVerdict, remedy: BlockRemedy, t: Translate): 
       case 'app-store':
         return t(
           'components.protocolBlockScreen.workspaceNeedsUpdateAppStore',
-          "This host's mobile workspace needs a newer Orca Mobile app. Update Orca Mobile from the App Store, then try this host again."
+          "This host's mobile workspace needs a newer Coto Mobile app. Update Coto Mobile from the App Store, then try this host again."
         )
       case 'google-play':
         return t(
           'components.protocolBlockScreen.workspaceNeedsUpdateGooglePlay',
-          "This host's mobile workspace needs a newer Orca Mobile app. Update Orca Mobile from Google Play, then try this host again."
+          "This host's mobile workspace needs a newer Coto Mobile app. Update Coto Mobile from Google Play, then try this host again."
         )
       case 'github-releases':
         return t(
           'components.protocolBlockScreen.workspaceNeedsUpdateGitHubReleases',
-          "This host's mobile workspace needs a newer Orca Mobile app. Update Orca Mobile from GitHub Releases, then try this host again."
+          "This host's mobile workspace needs a newer Coto Mobile app. Update Coto Mobile from GitHub Releases, then try this host again."
         )
     }
   }
   return t(
     'components.protocolBlockScreen.desktopTooOldBody',
-    'Orca on this host is too old for your current Orca Mobile app. Update Orca there, then try this host again.'
+    'Coto on this host is too old for your current Coto Mobile app. Update Coto there, then try this host again.'
   )
 }
 
@@ -143,7 +143,7 @@ export function useMobileUpdateLink(): { label: string; url: string } {
   const mobileUpdate = useWallAppUpdate()
   return mobileUpdate
     ? {
-        label: t('components.protocolBlockScreen.getVersion', 'Get Orca {{version}}', {
+        label: t('components.protocolBlockScreen.getVersion', 'Get Coto {{version}}', {
           version: mobileUpdate.version
         }),
         url: mobileUpdate.url

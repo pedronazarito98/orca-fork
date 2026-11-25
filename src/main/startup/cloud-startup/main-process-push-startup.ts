@@ -13,10 +13,14 @@ export function startDesktopPushService(runtimeRpc: OrcaRuntimeRpcServer): void 
     return
   }
   try {
+    const gatewayUrl = getOrcaPushGatewayUrl()
+    if (!gatewayUrl) {
+      return
+    }
     const pushService = DesktopPushService.create({
       runtime,
       runtimeRpc,
-      gatewayUrl: getOrcaPushGatewayUrl(),
+      gatewayUrl,
       coverage: executionHostPushCoverage
     })
     pushService?.start()

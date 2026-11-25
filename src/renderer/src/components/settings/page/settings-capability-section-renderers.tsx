@@ -71,7 +71,7 @@ export function renderAccountsSettingsSection(
       title={t('auto.components.settings.Settings.4198aae333', 'AI provider accounts')}
       description={t(
         'auto.components.settings.Settings.21f09426ea',
-        'Optional. Orca works with your existing provider logins; add accounts only if you want Orca to help switch between them.'
+        'Optional. Coto works with your existing provider logins; add accounts only if you want Coto to help switch between them.'
       )}
       searchEntries={navigation.getSectionSearchEntries('accounts')}
     >
@@ -124,7 +124,7 @@ export function renderOrchestrationSettingsSection(
       title={t('auto.components.settings.Settings.00c3a7950d', 'Orchestration')}
       description={t(
         'auto.components.settings.Settings.475980f53d',
-        'Coordinate multiple coding agents through Orca.'
+        'Coordinate multiple coding agents through Coto.'
       )}
       searchEntries={navigation.getSectionSearchEntries('orchestration')}
     >
@@ -146,7 +146,7 @@ export function renderLinearSettingsSection(
       title={t('auto.components.settings.Settings.linearTitle', 'Linear')}
       description={t(
         'auto.components.settings.Settings.linearDescription',
-        'How Linear works in Orca, setup checklist, agent skill, and example prompts.'
+        'How Linear works in Coto, setup checklist, agent skill, and example prompts.'
       )}
       searchEntries={navigation.getSectionSearchEntries('linear')}
     >

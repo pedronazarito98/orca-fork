@@ -18,7 +18,7 @@ export const getChatBehaviorEntriesByKey = createLocalizedCatalog(() => ({
     ),
     description: translate(
       'auto.components.settings.ExperimentalPane.nativeChat.resumeCopy',
-      'When Orca quits or installs an update, chats that were working are automatically resumed when Orca is reopened.'
+      'When Coto quits or installs an update, chats that were working are automatically resumed when Coto is reopened.'
     ),
     keywords: [
       ...translateSearchKeyword('components.settings.nativeChat.resumeSearchUpdate', 'update'),
@@ -33,7 +33,7 @@ export const getChatBehaviorEntriesByKey = createLocalizedCatalog(() => ({
     ),
     description: translate(
       'components.settings.nativeChat.usageLimitContinueCopy',
-      'Orca sends "Continue where you left off." when the limit resets. Applies to all chats with a known reset time.'
+      'Coto sends "Continue where you left off." when the limit resets. Applies to all chats with a known reset time.'
     ),
     keywords: [
       ...translateSearchKeyword(
@@ -113,7 +113,7 @@ export const getChatBehaviorEntriesByKey = createLocalizedCatalog(() => ({
     title: translate('components.settings.nativeChat.linkPreviewsTitle', 'Link previews'),
     description: translate(
       'components.settings.nativeChat.linkPreviewsCopy',
-      'Hovering a web link shows a preview card. Orca fetches the page to build it, so the site can see the request.'
+      'Hovering a web link shows a preview card. Coto fetches the page to build it, so the site can see the request.'
     ),
     keywords: [
       ...translateSearchKeyword(

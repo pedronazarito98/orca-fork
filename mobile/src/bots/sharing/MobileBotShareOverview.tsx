@@ -289,7 +289,7 @@ export function ShareFoot(props: {
             <ListRow
               leading={<LoadingSpinner size={18} color={colors.textSecondary} />}
               title={t('bots.share.waitingSignIn', 'Waiting for sign-in in your browser')}
-              subtitle={t('bots.share.signInFor', 'Signs {{host}} in to Orca.', {
+              subtitle={t('bots.share.signInFor', 'Signs {{host}} in to Coto.', {
                 host: props.hostName
               })}
               accessory={
@@ -303,8 +303,8 @@ export function ShareFoot(props: {
         ) : (
           <Text style={[styles.hint, signIn.view.phase === 'failed' && styles.secret]}>
             {signIn.view.phase === 'failed'
-              ? signIn.view.error || t('bots.share.signIn', 'Sign in to Orca to share.')
-              : t('bots.share.signIn', 'Sign in to Orca to share.')}
+              ? signIn.view.error || t('bots.share.signIn', 'Sign in to Coto to share.')
+              : t('bots.share.signIn', 'Sign in to Coto to share.')}
           </Text>
         )}
         {waiting ? null : (

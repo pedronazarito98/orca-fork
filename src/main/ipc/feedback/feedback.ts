@@ -170,9 +170,16 @@ async function submitFeedbackWithDiagnosticBundle(
   }
 }
 
+function isFeedbackUploadEnabled(): boolean {
+  return false
+}
+
 export async function submitFeedback(
   args: InternalFeedbackSubmitArgs
 ): Promise<FeedbackSubmitResult> {
+  if (!isFeedbackUploadEnabled()) {
+    return { ok: false, status: null, error: 'Feedback upload is disabled in Coto.' }
+  }
   // Ignore discarded crash-lane images instead of rejecting over unused attachments.
   if (args.submissionType !== 'crash' && args.images !== undefined) {
     const imageError = validateFeedbackImages(args.images)

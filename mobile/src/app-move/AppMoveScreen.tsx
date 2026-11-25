@@ -29,7 +29,7 @@ function moveSteps(t: Translate, screen: Screen): NumberedStep[] {
     screen === 'play'
       ? {
           id: 'install',
-          title: t('appMove.play.installTitle', 'Install Orca from Google Play'),
+          title: t('appMove.play.installTitle', 'Install Coto from Google Play'),
           desc: t('appMove.play.installDescription', 'You can do this now, wherever you are.')
         }
       : {
@@ -47,7 +47,7 @@ function moveSteps(t: Translate, screen: Screen): NumberedStep[] {
       title: t('appMove.pairTitle', 'Pair it with your computer'),
       desc: t(
         'appMove.pairDescription',
-        'In Orca on your computer, go to Settings → Mobile and scan the code.'
+        'In Coto on your computer, go to Settings → Mobile and scan the code.'
       )
     },
     {
@@ -145,8 +145,8 @@ export function AppMoveScreen() {
           <OrcaLogo size={44} />
           <Text style={styles.title} accessibilityRole="header">
             {play
-              ? t('appMove.play.title', 'Orca is now on Google Play')
-              : t('appMove.download.title', 'Get the new Orca app')}
+              ? t('appMove.play.title', 'Coto is now on Google Play')
+              : t('appMove.download.title', 'Get the new Coto app')}
           </Text>
           <Text style={styles.body}>
             {play

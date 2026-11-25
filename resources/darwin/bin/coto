@@ -34,12 +34,12 @@ function app_realpath() {
 
 APP_PATH="$(app_realpath "${BASH_SOURCE[0]}")"
 if [ -z "$APP_PATH" ]; then
-	echo "Unable to determine Orca.app path from symlink: ${BASH_SOURCE[0]}"
+	echo "Unable to determine Coto.app path from symlink: ${BASH_SOURCE[0]}"
 	exit 1
 fi
 
 CONTENTS="$APP_PATH/Contents"
-ELECTRON="$CONTENTS/MacOS/Orca"
+ELECTRON="$CONTENTS/MacOS/Coto"
 CLI="$CONTENTS/Resources/app.asar.unpacked/out/cli/index.js"
 
 export ORCA_NODE_OPTIONS="${NODE_OPTIONS-}"
@@ -92,8 +92,8 @@ function supports_packaged_node() {
 	return 0
 }
 
-NODE_CONTENTS="$CONTENTS/Helpers/Orca Agents.app/Contents"
-NODE="$NODE_CONTENTS/MacOS/Orca Agents"
+NODE_CONTENTS="$CONTENTS/Helpers/Coto Agents.app/Contents"
+NODE="$NODE_CONTENTS/MacOS/Coto Agents"
 if [ -x "$NODE" ] && supports_packaged_node; then
 	export ORCA_CLI_ELECTRON_EXECUTABLE="$ELECTRON"
 	unset ELECTRON_RUN_AS_NODE

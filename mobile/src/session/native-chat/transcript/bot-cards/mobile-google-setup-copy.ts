@@ -29,7 +29,7 @@ export function googleSetupPathNote(t: Translate, mode: GoogleSetupMode, bot: st
     case 'do-it-for-me':
       return t('chat.botCards.google.path.doItNote', '{{bot}} clicks through it', { bot })
     case 'guide-here':
-      return t('chat.botCards.google.path.guideHereNote', 'You click, in Orca')
+      return t('chat.botCards.google.path.guideHereNote', 'You click, in Coto')
     case 'guide-browser':
       return t('chat.botCards.google.path.guideBrowserNote', 'You click, in your browser')
   }
@@ -128,7 +128,7 @@ export function googleSetupStepNotes(
         t('chat.botCards.google.notes.branding.start', 'Click <b>Get started</b>.'),
         t(
           'chat.botCards.google.notes.branding.name',
-          'App name <b>Orca</b>, and your email as the support email.'
+          'App name <b>Coto</b>, and your email as the support email.'
         ),
         kind === 'personal'
           ? t('chat.botCards.google.notes.branding.external', 'Audience: <b>External</b>.')
@@ -179,7 +179,7 @@ export function googleSetupStepNotes(
         ),
         t(
           'chat.botCards.google.notes.client.download',
-          'Click <b>Download JSON</b>. Orca saves the key.'
+          'Click <b>Download JSON</b>. Coto saves the key.'
         )
       ]
   }
@@ -246,7 +246,7 @@ export function googleSetupBlockerText(t: Translate, blocker: GoogleSetupBlocker
         })
       )
     case 'no-key':
-      return t('chat.botCards.google.blocker.noKey', 'Orca needs the app’s key first.')
+      return t('chat.botCards.google.blocker.noKey', 'Coto needs the app’s key first.')
     case 'key-gone':
       return t(
         'chat.botCards.google.blocker.keyGone',
@@ -289,7 +289,7 @@ export function googleSetupBlockerText(t: Translate, blocker: GoogleSetupBlocker
         { services: googleServicesList(t, blocker.services) }
       )
     case 'check-failed':
-      return t('chat.botCards.google.blocker.checkFailed', 'Orca couldn’t check {{services}}.', {
+      return t('chat.botCards.google.blocker.checkFailed', 'Coto couldn’t check {{services}}.', {
         services: googleServicesList(t, blocker.services)
       })
   }

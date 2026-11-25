@@ -76,7 +76,7 @@ function searchError(code: string, service: string, hostName: string, t: Transla
     case 'signed_out':
       return t(
         'bots.host.errors.signedOut',
-        'Sign {{host}} in to Orca Cloud to connect {{service}}.',
+        'Sign {{host}} in to Coto Cloud to connect {{service}}.',
         { host: hostName, service }
       )
     case 'rate_limited':

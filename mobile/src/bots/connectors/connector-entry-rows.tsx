@@ -138,7 +138,7 @@ function linearStatus(
       ? t('settings.bots.linearStatus.unlinked', 'Not linked')
       : linked.installed
         ? undefined
-        : t('settings.bots.linearStatus.notInstalled', 'Orca not installed')
+        : t('settings.bots.linearStatus.notInstalled', 'Coto not installed')
 }
 
 function githubStatus(
@@ -149,7 +149,7 @@ function githubStatus(
   return !state || orgs.length > 0
     ? undefined
     : state.account
-      ? t('settings.bots.githubStatus.notInstalled', 'Orca not installed')
+      ? t('settings.bots.githubStatus.notInstalled', 'Coto not installed')
       : t('settings.bots.githubStatus.unlinked', 'Not linked')
 }
 

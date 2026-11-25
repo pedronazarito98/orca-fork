@@ -151,7 +151,7 @@ export function BotTidyUpSection({
                   </>
                 ) : null}
                 <br />
-                {t('settings.bots.tidyUp.whileRunning', 'Orca must be running on this computer.')}
+                {t('settings.bots.tidyUp.whileRunning', 'Coto must be running on this computer.')}
               </>
             }
             control={

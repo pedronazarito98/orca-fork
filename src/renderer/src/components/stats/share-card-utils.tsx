@@ -232,7 +232,7 @@ export function CardFooter(props: {
             marginLeft: 5
           }}
         >
-          {t('auto.components.stats.share.card.utils.19f4b4dc75', 'github.com/stablyai/orca')}
+          {t('auto.components.stats.share.card.utils.19f4b4dc75', 'Coto')}
         </span>
       </div>
     </div>

@@ -83,7 +83,7 @@ export function NotificationDisplayTest({ onTroubleshoot }: { onTroubleshoot: ()
         liveFallback
           ? t(
               'settings.notificationDisplayTest.liveFallbackScheduled',
-              '{{reason}} Local test scheduled. Check for the notification. Live alerts are available while Orca is running and connected.',
+              '{{reason}} Local test scheduled. Check for the notification. Live alerts are available while Coto is running and connected.',
               { reason }
             )
           : t(
@@ -98,7 +98,7 @@ export function NotificationDisplayTest({ onTroubleshoot }: { onTroubleshoot: ()
         throw new Error(
           t(
             'settings.notificationDisplayTest.disabled',
-            'Notifications are turned off in Orca. Enable notifications and try again.'
+            'Notifications are turned off in Coto. Enable notifications and try again.'
           )
         )
       }
@@ -173,7 +173,7 @@ export function NotificationDisplayTest({ onTroubleshoot }: { onTroubleshoot: ()
           setMessage(
             t(
               'settings.notificationDisplayTest.accepted',
-              'Accepted by Orca’s push service. Check for the notification.'
+              'Accepted by Coto’s push service. Check for the notification.'
             )
           )
           return
@@ -204,7 +204,7 @@ export function NotificationDisplayTest({ onTroubleshoot }: { onTroubleshoot: ()
               )
             : t(
                 'settings.notificationDisplayTest.pushServiceFailed',
-                'Could not send through Orca’s push service. Try again.'
+                'Could not send through Coto’s push service. Try again.'
               )
         )
       }
@@ -272,12 +272,12 @@ function clockSkewCopy(host: string, seconds: number, t: Translate): string {
   return seconds < 120
     ? t(
         'settings.notificationDisplayTest.hostClockSkew',
-        'The clock on {{host}} is off by {{seconds}} seconds, so Orca’s push service refused it. Set its clock to the correct time and try again.',
+        'The clock on {{host}} is off by {{seconds}} seconds, so Coto’s push service refused it. Set its clock to the correct time and try again.',
         { host, seconds }
       )
     : t(
         'settings.notificationDisplayTest.hostClockSkewDuration',
-        'The clock on {{host}} is off by {{duration}}, so Orca’s push service refused it. Set its clock to the correct time and try again.',
+        'The clock on {{host}} is off by {{duration}}, so Coto’s push service refused it. Set its clock to the correct time and try again.',
         { host, duration: formatMobileNativeChatDuration(seconds, t) }
       )
 }

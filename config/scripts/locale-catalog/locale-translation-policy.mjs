@@ -60,6 +60,7 @@ export const NEVER_TRANSLATE_VALUES = new Set([
   'OpenClaw',
   'OpenCode',
   'OpenCode Go',
+  'Coto',
   'Orca',
   'Pi',
   'PostHog',
@@ -268,7 +269,11 @@ export function shouldPreserveEnglishValue(enValue, key = '') {
   if (!enValue?.trim()) {
     return true
   }
-  if (/^https?:\/\//.test(enValue) || enValue.startsWith('orca://')) {
+  if (
+    /^https?:\/\//.test(enValue) ||
+    enValue.startsWith('coto://') ||
+    enValue.startsWith('orca://')
+  ) {
     return true
   }
   if (isEnglishOnlyKey(key)) {
@@ -439,8 +444,8 @@ export function repairTranslatedValue({ key, enValue, localeValue, locale }) {
     result = applyCjkLatinTermSpacing(result, locale)
   }
 
-  if (enValue.includes('orca://')) {
-    result = result.replace(/虎鲸:\/\//g, 'orca://')
+  if (enValue.includes('coto://') || enValue.includes('orca://')) {
+    result = result.replace(/虎鲸:\/\//g, 'coto://')
   }
 
   if (enValue === 'Orca' || enValue.startsWith('Orca ')) {
@@ -450,8 +455,8 @@ export function repairTranslatedValue({ key, enValue, localeValue, locale }) {
       .replaceAll('シャチ', 'Orca')
   }
 
-  if (enValue.includes('orca://')) {
-    result = result.replace(/シャチ:\/\//g, 'orca://')
+  if (enValue.includes('coto://') || enValue.includes('orca://')) {
+    result = result.replace(/シャチ:\/\//g, 'coto://')
   }
 
   return result

@@ -50,7 +50,7 @@ export function AutomationPageBotEditor(props: {
           {read === 'no-capability'
             ? t(
                 'automations.mobile.hostUnavailable',
-                'Automations are unavailable on this host. Update Orca on that host and reconnect.'
+                'Automations are unavailable on this host. Update Coto on that host and reconnect.'
               )
             : t(
                 'automations.mobile.hostUnreachable',

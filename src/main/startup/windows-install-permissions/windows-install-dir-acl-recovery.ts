@@ -255,24 +255,24 @@ export function describeInstallDirAclPoison(): InstallDirAclPoisonDiagnosis | nu
   const commands = buildInstallDirAclRepairCommands(poison.installDir)
   const cause = translateMain(
     'installDirAcl.cause',
-    "Windows permissions on Orca's install folder are blocking its own sandboxed processes from reading the files it shipped with."
+    "Windows permissions on Coto's install folder are blocking its own sandboxed processes from reading the files it shipped with."
   )
   if (poison.stage === 'repaired') {
     return {
-      detail: `${cause}\n\n${translateMain('installDirAcl.repaired', 'Orca repaired the permissions. Reload to use them.')}`,
+      detail: `${cause}\n\n${translateMain('installDirAcl.repaired', 'Coto repaired the permissions. Reload to use them.')}`,
       commands
     }
   }
   const status =
     poison.stage === 'pending'
-      ? translateMain('installDirAcl.repairing', 'Orca is repairing the permissions now.')
+      ? translateMain('installDirAcl.repairing', 'Coto is repairing the permissions now.')
       : translateMain(
           'installDirAcl.repairFailed',
-          'Orca could not repair them, which usually means the folder needs an administrator.'
+          'Coto could not repair them, which usually means the folder needs an administrator.'
         )
   const runCommands = translateMain(
     'installDirAcl.runCommands',
-    'Run these in an Administrator Command Prompt, then relaunch Orca:'
+    'Run these in an Administrator Command Prompt, then relaunch Coto:'
   )
   return {
     detail: `${cause} ${status}\n\n${runCommands}\n\n${commands.join('\n')}`,

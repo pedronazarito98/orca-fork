@@ -339,7 +339,7 @@ export function MobileBotImportSheet(props: {
         {again ? null : props.pickerNote}
         {read.status === 'failed' ? (
           <SettingsNote error>
-            {t('bots.list.updateOrcaOn', 'Update Orca on {{host}}', { host: props.hostLabel })}
+            {t('bots.list.updateOrcaOn', 'Update Coto on {{host}}', { host: props.hostLabel })}
           </SettingsNote>
         ) : null}
         {props.error ? <SettingsNote error>{props.error}</SettingsNote> : null}

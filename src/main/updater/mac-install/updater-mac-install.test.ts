@@ -2,8 +2,6 @@ import { EventEmitter } from 'node:events'
 import { afterEach, expect, it, vi } from 'vitest'
 import { app, autoUpdater, powerMonitor } from 'electron'
 import { UpdaterSetup } from '../lifecycle/updater-setup'
-import { MAC_DEFERRED_STAGING_TIMEOUT_MS } from '../lifecycle/updater-state'
-import { beginMacUpdateDownload, isMacInstallerReady } from './updater-mac-install'
 
 vi.mock('electron', async () => {
   const { EventEmitter } = await import('node:events')
@@ -38,47 +36,17 @@ afterEach(() => {
   app.removeAllListeners()
   powerMonitor.removeAllListeners()
   jsUpdater.removeAllListeners()
-  beginMacUpdateDownload()
 })
 
 it.runIf(process.platform === 'darwin')(
-  'keeps a timed-out attempt as the only owner of native staging',
+  'keeps remote release update checks disabled from the menu',
   async () => {
-    // Keep the unrelated nudge fetch inside its startup cooldown.
     vi.useFakeTimers({ now: 0 })
     const updater = new UpdaterSetup()
     updater.setupAutoUpdater(null, { getLastUpdateCheckAt: () => Date.now() })
 
     updater.checkForUpdatesFromMenu()
     await vi.advanceTimersByTimeAsync(0)
-    updater.downloadUpdate()
-    jsUpdater.emit('update-downloaded', { version })
-    vi.advanceTimersByTime(MAC_DEFERRED_STAGING_TIMEOUT_MS)
-    expect(updater.getUpdateStatus()).toMatchObject({ state: 'error', version, retryable: false })
-
-    updater.downloadUpdate()
-    expect(updater.getUpdateStatus().state).toBe('error')
-    expect(isMacInstallerReady(version)).toBe(false)
-
-    autoUpdater.emit('update-downloaded')
-    expect(updater.getUpdateStatus()).toMatchObject({
-      state: 'downloaded',
-      version,
-      installOnQuit: true
-    })
-
-    updater.checkForUpdatesFromMenu()
-    await vi.advanceTimersByTimeAsync(0)
-    updater.downloadUpdate()
-    autoUpdater.emit('update-downloaded')
-    expect(updater.getUpdateStatus()).toEqual({ state: 'downloading', version, percent: 0 })
-
-    jsUpdater.emit('update-downloaded', { version })
-    autoUpdater.emit('update-downloaded')
-    expect(updater.getUpdateStatus()).toMatchObject({
-      state: 'downloaded',
-      version,
-      installOnQuit: true
-    })
+    expect(updater.getUpdateStatus()).toEqual({ state: 'not-available', userInitiated: true })
   }
 )

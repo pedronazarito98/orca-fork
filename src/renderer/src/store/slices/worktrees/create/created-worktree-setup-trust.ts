@@ -77,7 +77,7 @@ function reviewCreatedWorktreeSetup(
       toast.warning(
         translate(
           'worktree.setupTrust.hostUnsupported',
-          'Approved. Update Orca on the workspace host to run setup for an existing workspace.'
+          'Approved. Update Coto on the workspace host to run setup for an existing workspace.'
         )
       )
     }

@@ -70,7 +70,7 @@
           "grokBillingConfigMissing": "Grok billing response did not include config",
           "grokBillingUsageMissing": "Grok billing response did not include credit usage",
           "grokNotSignedIn": "Not signed in to Grok — run grok login",
-          "grokSignInExpired": "Grok sign-in expired — run grok on the computer running Orca; sign in if prompted. No chat message is needed.",
+          "grokSignInExpired": "Grok sign-in expired — run grok on the computer running Coto; sign in if prompted. No chat message is needed.",
           "grokUsageFailedHttp": "Grok usage request failed (HTTP {{status}})",
           "grokUsageRequestFailed": "Grok usage request failed",
           "grokUsageUnauthorizedHttp": "Grok usage request unauthorized (HTTP {{status}})",
@@ -133,31 +133,31 @@
       "automationChanged": "The automation changed before this run could launch.",
       "botFolderMissing": "The bot's folder is no longer available.",
       "botMissing": "The bot this automation runs as no longer exists.",
-      "botPaused": "{{bot}} is paused, so Orca skipped this run.",
-      "botsOff": "Bots are turned off in Settings, so Orca skipped this run.",
-      "botsOffByTeam": "Bots are turned off by your team, so Orca skipped this run.",
+      "botPaused": "{{bot}} is paused, so Coto skipped this run.",
+      "botsOff": "Bots are turned off in Settings, so Coto skipped this run.",
+      "botsOffByTeam": "Bots are turned off by your team, so Coto skipped this run.",
       "destinationChanged": "The automation destination changed before this run could launch.",
       "hooksReviewBlocked": "The agent is waiting for someone to review new or changed hooks (\"Hooks need review\"). Open this run and trust them, or remove them. Scheduled runs keep going and succeed once nothing needs review.",
-      "legacyTwinHosts": "This automation was saved before Orca tracked which host it runs on, and its project is on more than one host. Open the automation and pick the host it should run on.",
+      "legacyTwinHosts": "This automation was saved before Coto tracked which host it runs on, and its project is on more than one host. Open the automation and pick the host it should run on.",
       "managedHostServer": "Needs migration to {{host}}",
-      "missedGraceWindow": "This run was past its missed-run grace window when Orca next checked.",
-      "noDispatchHost": "No Orca window was available to launch the automation.",
+      "missedGraceWindow": "This run was past its missed-run grace window when Coto next checked.",
+      "noDispatchHost": "No Coto window was available to launch the automation.",
       "noRunnableHost": "This automation has no host to run on.",
       "projectPathChanged": "Project path for the selected automation host has changed.",
       "projectSetupMissing": "Project is not set up on the selected automation host anymore.",
-      "remoteSchedulingUnavailable": "Remote-server automation scheduling is not available from this Orca client yet. Run this automation on the remote server or update Orca when durable remote scheduling is available.",
+      "remoteSchedulingUnavailable": "Remote-server automation scheduling is not available from this Coto client yet. Run this automation on the remote server or update Coto when durable remote scheduling is available.",
       "repoDetached": "Repository is no longer attached to the selected automation host.",
       "repoUnavailable": "Repository for the selected automation host is no longer available.",
       "targetMissing": "The automation host is no longer registered, so this automation has nowhere to run.",
       "targetReplaced": "The automation host was removed and re-registered, so this automation must be re-adopted before it can run.",
       "targetSetupMismatch": "Automation run target no longer matches the selected project host setup.",
       "targetUnavailable": "Automation run target is no longer available.",
-      "unevaluableSchedule": "Orca could not evaluate this automation and skipped the occurrence.",
-      "watchTimedOut": "Orca stopped watching this run after 6h without a completion signal.",
-      "workspaceHostAmbiguous": "The automation workspace spans more than one host, so Orca cannot tell which one to run it on.",
+      "unevaluableSchedule": "Coto could not evaluate this automation and skipped the occurrence.",
+      "watchTimedOut": "Coto stopped watching this run after 6h without a completion signal.",
+      "workspaceHostAmbiguous": "The automation workspace spans more than one host, so Coto cannot tell which one to run it on.",
       "wslDistroStopped": "The WSL distro {{distro}} is stopped, so this scheduled run did not start it. Start the distro or use Run now; later runs go ahead while it runs.",
-      "wslMoveInProgress": "This automation's project is moving to its WSL host, so Orca skipped this run. Runs resume when the move finishes.",
-      "wslMoveOwnedByHost": "This automation's project now runs on its WSL host, which runs this automation there. Orca no longer runs this local copy."
+      "wslMoveInProgress": "This automation's project is moving to its WSL host, so Coto skipped this run. Runs resume when the move finishes.",
+      "wslMoveOwnedByHost": "This automation's project now runs on its WSL host, which runs this automation there. Coto no longer runs this local copy."
     }
   },
   "bots": {
@@ -327,7 +327,7 @@
       "groupMessageIdReused": "Message identity was already used.",
       "groupNameTaken": "{{name}} is already in this group. Members need different names so mentions stay unambiguous.",
       "groupNeedsLocalBot": "This group needs at least one bot on this computer.",
-      "groupPeerTooOld": "Update Orca on {{host}} to add its bots to a group.",
+      "groupPeerTooOld": "Update Coto on {{host}} to add its bots to a group.",
       "groupPostFromHost": "To post in a group with bots on other computers, use {{host}}.",
       "groupRemoteUnreachable": "Couldn't reach {{host}}. {{detail}}",
       "groupRemoteUnreachableRetry": "Couldn't reach {{host}}. {{detail}} Post again to retry.",
@@ -337,17 +337,17 @@
       "groupTurnInactive": "This group request or member is no longer active.",
       "lookAsleep": "The last look was missed because this computer was asleep.",
       "lookCouldNotStart": "The last look couldn't start.",
-      "lookInterrupted": "Orca stopped during the last look.",
+      "lookInterrupted": "Coto stopped during the last look.",
       "lookTimedOut": "The last look was stopped after {{minutes}} min.",
       "lookUnfinished": "The last look didn't finish.",
-      "tidyUpAllSkipped": "Orca skipped every change the last tidy-up asked for, so nothing changed. ({{detail}})",
+      "tidyUpAllSkipped": "Coto skipped every change the last tidy-up asked for, so nothing changed. ({{detail}})",
       "tidyUpAsleep": "The last tidy-up was missed because this computer was asleep.",
-      "tidyUpBadTopic": "The last tidy-up named a topic file Orca can't write, so nothing changed.",
+      "tidyUpBadTopic": "The last tidy-up named a topic file Coto can't write, so nothing changed.",
       "tidyUpChanged": "MEMORY.md changed during the last tidy-up, so nothing changed.",
       "tidyUpCouldNotStart": "The last tidy-up couldn't start.",
-      "tidyUpMovedOnly": "The last tidy-up moved status lines to memory/journal/, but Orca could not use the rest of its reply. ({{detail}})",
+      "tidyUpMovedOnly": "The last tidy-up moved status lines to memory/journal/, but Coto could not use the rest of its reply. ({{detail}})",
       "tidyUpNoDraft": "The last tidy-up didn't reply with a new MEMORY.md.",
-      "tidyUpNoOps": "The last tidy-up's reply wasn't a list of changes Orca could read.",
+      "tidyUpNoOps": "The last tidy-up's reply wasn't a list of changes Coto could read.",
       "tidyUpNotApplied": "The last tidy-up's changes couldn't be saved, so nothing changed.",
       "tidyUpNotCopied": "The last tidy-up filed a line MEMORY.md doesn't have; new facts go in MEMORY.md, so nothing changed.",
       "tidyUpNotListLines": "The last tidy-up didn't run: MEMORY.md has more than a few lines that aren't list lines, and ops Tidy-up reads only list lines.",
@@ -364,7 +364,7 @@
       "toolCodexCheckFailed": "Codex could not check or connect the tools. Check its setup and try again.",
       "toolCodexNoSignInPage": "Codex gave no sign-in page for {{name}}.",
       "toolCodexNoThread": "Codex started no thread to check the tools in.",
-      "toolCredentialsRaced": "The bot’s tool credentials changed in another Orca. Try again.",
+      "toolCredentialsRaced": "The bot’s tool credentials changed in another Coto. Try again.",
       "toolCredentialsUnreadable": "The bot’s saved tool credentials are unreadable. Re-enter the tool’s values.",
       "toolDestinationChanged": "The credential destination changed. Re-enter saved values or remove their rows.",
       "toolDetailsInvalid": "Tool details are invalid. Check the name, URL or executable and values.",
@@ -378,11 +378,11 @@
       "toolSavedValueGone": "That saved value is no longer available. Re-enter it or remove its row.",
       "toolSignInAddressIncomplete": "Paste the whole address the sign-in page ended on.",
       "toolSignInAddressWrong": "That isn't the address this sign-in ends on. Start it again with Connect, sign in, then paste the address your browser shows.",
-      "toolSignInAgentUnsupported": "Orca signs {{name}} in only for Claude Code and Codex. Add it with its sign-in values instead.",
+      "toolSignInAgentUnsupported": "Coto signs {{name}} in only for Claude Code and Codex. Add it with its sign-in values instead.",
       "toolSignInEnded": "The sign-in had already ended or timed out. Start it again with Connect.",
       "toolSignInFolderFailed": "Couldn't prepare the sign-in folder: {{detail}}",
-      "toolSignInManaged": "Orca signs in to this tool. Sign it in or out instead.",
-      "toolSourceManaged": "Orca manages this tool. Change it where you set it up.",
+      "toolSignInManaged": "Coto signs in to this tool. Sign it in or out instead.",
+      "toolSourceManaged": "Coto manages this tool. Change it where you set it up.",
       "toolValueMissing": "Enter a value for each row, or remove the row.",
       "toolValuesUnmoved": "A tool still holds its saved values. Reopen the bot’s tools to move them."
     },
@@ -825,7 +825,7 @@
         "does": "Lists workspaces whose agent finished with changes nobody reviewed or opened a pull request for.",
         "example1": "mobile-pairing finished yesterday with a 340-line diff, no pull request.",
         "example2": "2 more finished this week.",
-        "firstChat": "Lists workspaces whose agent finished with changes you haven’t reviewed or turned into a pull request. Orca already tells you when an agent is waiting on you; this covers what’s done.",
+        "firstChat": "Lists workspaces whose agent finished with changes you haven’t reviewed or turned into a pull request. Coto already tells you when an agent is waiting on you; this covers what’s done.",
         "line": "A daily list of finished agent work nobody has looked at yet.",
         "name": "Unreviewed agent work",
         "reports": "Here, weekdays at 9 AM",
@@ -835,7 +835,7 @@
             "when": "Weekdays at 9 AM"
           }
         },
-        "watches": "Your Orca workspaces"
+        "watches": "Your Coto workspaces"
       },
       "workspace-cleanup": {
         "does": "Lists workspaces that are done or abandoned, with uncommitted changes; removes only the ones you pick.",
@@ -851,7 +851,7 @@
             "when": "Fridays at 4 PM"
           }
         },
-        "watches": "Your Orca workspaces and their pull requests"
+        "watches": "Your Coto workspaces and their pull requests"
       }
     },
     "upNext": {
@@ -956,10 +956,10 @@
       "answeredCount_other": "You answered <answer>{{count}} questions</answer>"
     },
     "restartNote": {
-      "continued": "Orca asked this agent to continue after a restart. Your own prompt was not re-sent.",
-      "notConnected": "Orca couldn't reconnect this chat after the restart, so it didn't ask the agent to continue.",
-      "refused": "Orca couldn't continue this chat after the restart. Send a message to continue it.",
-      "unconfirmed": "Orca asked this agent to continue after the restart but couldn't confirm it did. Check its latest reply before sending another message."
+      "continued": "Coto asked this agent to continue after a restart. Your own prompt was not re-sent.",
+      "notConnected": "Coto couldn't reconnect this chat after the restart, so it didn't ask the agent to continue.",
+      "refused": "Coto couldn't continue this chat after the restart. Send a message to continue it.",
+      "unconfirmed": "Coto asked this agent to continue after the restart but couldn't confirm it did. Check its latest reply before sending another message."
     },
     "subagentGroup": {
       "ran_one": "Ran {{count}} subagent",
@@ -1088,7 +1088,7 @@
       "durationSeconds_other": "{{count}} seconds"
     },
     "setup": {
-      "alreadyActive": "Dictation is already in use on the computer or another phone. Update Orca on the computer to dictate from several devices at once.",
+      "alreadyActive": "Dictation is already in use on the computer or another phone. Update Coto on the computer to dictate from several devices at once.",
       "modelBusy": "Another device is dictating with a different speech model. Try again when it finishes.",
       "repairRequired": "Re-pair this phone with the computer to use dictation.",
       "sessionLimit": "Too many devices are dictating on this computer. Try again when one finishes.",
@@ -1225,7 +1225,7 @@
       "uncommittedFiles_other": "{{count}} uncommitted"
     },
     "failure": {
-      "botToolsGatewayOutdated": "{{agent}}'s gateway is still running an older copy of Orca's plugin, so this bot's tools can't act as the bot. Run `hermes gateway stop`, then start a new chat.",
+      "botToolsGatewayOutdated": "{{agent}}'s gateway is still running an older copy of Coto's plugin, so this bot's tools can't act as the bot. Run `hermes gateway stop`, then start a new chat.",
       "botToolsNeedStatusHooks": "{{agent}} bots need Agent status hooks: they are how a bot's tools act as the bot. Turn them on for {{agent}} in Settings → Agents, then start a new chat.",
       "forkOriginalLatestOnly": "{{agent}} can only fork the latest response in the original chat. Open that chat and fork its latest response once it has finished.",
       "forkOriginalLatestOnlyNamed": "{{agent}} can only fork the latest response in \"{{detail}}\". Open that chat and fork its latest response once it has finished.",

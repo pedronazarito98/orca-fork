@@ -61,7 +61,7 @@ export async function botAvatarPngFromPhoto(photo: PickedMobileImage): Promise<s
     throw new BotAvatarPhotoError(
       error instanceof Error && error.message === BOT_AVATAR_TOO_SMALL
         ? translate('bots.picture.tooSmall', 'Too small. Use an image at least 128 px.')
-        : translate('bots.picture.unreadable', "Orca can't read that image. Try PNG or JPEG.")
+        : translate('bots.picture.unreadable', "Coto can't read that image. Try PNG or JPEG.")
     )
   }
 }

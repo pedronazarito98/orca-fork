@@ -257,7 +257,7 @@ function BotGitHubSetupFlow({
               </p>
               <p className="flex items-center gap-1.5 text-xs text-muted-foreground">
                 <Lock className="size-3.5 shrink-0" />
-                {t('bots.github.connect.readsOnly', 'Orca only reads your GitHub username and id.')}
+                {t('bots.github.connect.readsOnly', 'Coto only reads your GitHub username and id.')}
               </p>
             </div>
             {step.error ? (
@@ -288,11 +288,11 @@ function BotGitHubSetupFlow({
               {step.requested
                 ? t(
                     'bots.github.connect.requested',
-                    'An owner of the organization has been asked to approve the Orca app.'
+                    'An owner of the organization has been asked to approve the Coto app.'
                   )
                 : t(
                     'bots.github.connect.notInstalled',
-                    'The Orca app is not on any of your repositories yet.'
+                    'The Coto app is not on any of your repositories yet.'
                   )}
             </p>
             {trip.inSystemBrowser ? (
