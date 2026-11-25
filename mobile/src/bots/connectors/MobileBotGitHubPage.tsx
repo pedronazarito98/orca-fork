@@ -159,7 +159,7 @@ export function MobileBotGitHubPage(props: {
         })}
         message={t(
           'bots.github.connection.removeNote',
-          'People can no longer ask it on GitHub, and its GitHub people are cleared. The Orca app stays installed.'
+          'People can no longer ask it on GitHub, and its GitHub people are cleared. The Coto app stays installed.'
         )}
         confirmLabel={t('bots.github.connection.removeConfirm', 'Remove')}
         destructive
@@ -311,7 +311,7 @@ export function MobileBotGitHubPage(props: {
             title={t('bots.github.connection.finishSetup', 'Finish setup')}
             value={
               account
-                ? t('settings.bots.githubStatus.notInstalled', 'Orca not installed')
+                ? t('settings.bots.githubStatus.notInstalled', 'Coto not installed')
                 : t('settings.bots.githubStatus.unlinked', 'Not linked')
             }
             navigates

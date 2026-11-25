@@ -18,7 +18,7 @@ import type {
   ComputerUsePermissionStatusResult
 } from '../../../shared/computer/computer-use-permissions-types'
 
-const DEFAULT_COMPUTER_USE_BUNDLE_ID = 'com.stablyai.orca.computer-use'
+const DEFAULT_COMPUTER_USE_BUNDLE_ID = 'com.coto.app.computer-use'
 
 // One setup-helper spawn per 5s across every permission, on the monotonic clock; claimed synchronously.
 const SETUP_HELPER_LAUNCH_WINDOW_MS = 5_000
@@ -180,7 +180,7 @@ async function openComputerUsePermissionsAsync(
 
   const helperAppPath = resolveMacOSComputerUseAppPath()
   if (!helperAppPath) {
-    throw new RuntimeClientError('accessibility_error', 'Orca Computer Use.app was not found')
+    throw new RuntimeClientError('accessibility_error', 'Coto Computer Use.app was not found')
   }
   // Wait out a reset before reading status, so this Open never sees pre-reset grants.
   while (resetInProgress) {
@@ -279,7 +279,7 @@ async function resetComputerUsePermissionsAsync(): Promise<ComputerUsePermission
 
   const helperAppPath = resolveMacOSComputerUseAppPath()
   if (!helperAppPath) {
-    throw new RuntimeClientError('accessibility_error', 'Orca Computer Use.app was not found')
+    throw new RuntimeClientError('accessibility_error', 'Coto Computer Use.app was not found')
   }
 
   const unavailableReason = resolveComputerUseHelperUnavailableReason()
@@ -339,5 +339,5 @@ function nextPermissionStep(
   if (!missing) {
     return null
   }
-  return `Grant ${missing.id === 'accessibility' ? 'Accessibility' : 'Screen Recording'} to Orca Computer Use, then retry get-app-state.`
+  return `Grant ${missing.id === 'accessibility' ? 'Accessibility' : 'Screen Recording'} to Coto Computer Use, then retry get-app-state.`
 }

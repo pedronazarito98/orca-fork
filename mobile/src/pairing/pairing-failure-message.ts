@@ -36,7 +36,7 @@ export function getPairingFailureMessage(args: {
   if (error instanceof RuntimeAccessLinkError) {
     return t(
       'app.pairScan.runtimeAccessLink',
-      'This link is for another Orca app. Scan the code in Settings → Mobile on your computer, or run orca pair --mobile on your server.'
+      'This link is for another Coto app. Scan the code in Settings → Mobile on your computer, or run orca pair --mobile on your server.'
     )
   }
   return screen === 'scan'

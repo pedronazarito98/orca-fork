@@ -97,7 +97,7 @@ function WebRootBoundary(): React.JSX.Element {
     <RecoverableRenderErrorBoundary
       boundaryId="web.root"
       surface="web-root"
-      title={t('app.recoverableError.webTitle', 'Orca web hit a renderer error.')}
+      title={t('app.recoverableError.webTitle', 'Coto web hit a renderer error.')}
       description={t(
         'app.recoverableError.webDescription',
         'Retry the web client or reconnect to the paired runtime.'

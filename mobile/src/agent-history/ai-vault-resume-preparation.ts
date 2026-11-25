@@ -72,13 +72,13 @@ export function aiVaultResumeRefusalText(
     case 'agent_session_ownership_unknown':
       return translate(
         'session.aiVaultResumePreparation.ownershipUnknown',
-        'Orca could not confirm who owns this {{agent}} conversation. Refresh Session History and try again.',
+        'Coto could not confirm who owns this {{agent}} conversation. Refresh Session History and try again.',
         options
       )
     case 'execution_owner_reconciling':
       return translate(
         'session.aiVaultResumePreparation.preparationRefused',
-        'Orca could not prepare this {{agent}} conversation. Start a new chat to continue.',
+        'Coto could not prepare this {{agent}} conversation. Start a new chat to continue.',
         options
       )
     default:

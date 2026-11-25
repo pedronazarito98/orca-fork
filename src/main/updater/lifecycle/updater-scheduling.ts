@@ -1,44 +1,15 @@
-import { app } from 'electron'
-import { isMacInstallRequested } from '../mac-install/updater-mac-install'
-import { withUpdaterSpan } from '../../observability/instrumentation'
-import {
-  AUTO_UPDATE_CHECK_INTERVAL_MS,
-  AUTO_UPDATE_RETRY_INTERVAL_MS,
-  isPendingTeamRestart,
-  MAX_AUTO_UPDATE_RETRY_INTERVAL_MS,
-  TEAM_POLICY_CHECK_RETRY_MS
-} from './updater-state'
 import { UpdaterCheckFailure } from './updater-check-failure'
-import { getDelayedUpdateWakeDelayMs } from '../releases/updater-release-delay'
 
 export abstract class UpdaterScheduling extends UpdaterCheckFailure {
   protected getAutomaticRetryInterval(): number {
-    return AUTO_UPDATE_RETRY_INTERVAL_MS
+    return 0
   }
 
-  protected scheduleAutomaticUpdateCheck(delayMs: number): void {
-    let effectiveDelayMs = delayMs
-    // The retry constant identifies all retry-cadence callers, keeping backoff centralized.
-    if (delayMs === AUTO_UPDATE_RETRY_INTERVAL_MS) {
-      effectiveDelayMs = Math.min(
-        AUTO_UPDATE_RETRY_INTERVAL_MS * 2 ** this.consecutiveAutomaticRetrySchedules,
-        MAX_AUTO_UPDATE_RETRY_INTERVAL_MS
-      )
-      this.consecutiveAutomaticRetrySchedules += 1
-    }
-    if (this.teamPolicyCheckPending) {
-      effectiveDelayMs = Math.min(effectiveDelayMs, TEAM_POLICY_CHECK_RETRY_MS)
-    }
+  protected scheduleAutomaticUpdateCheck(_delayMs: number): void {
     if (this.autoUpdateCheckTimer) {
       clearTimeout(this.autoUpdateCheckTimer)
+      this.autoUpdateCheckTimer = null
     }
-    this.autoUpdateCheckTimer = setTimeout(() => {
-      // Long-running apps need main-process timers independent of renderer/relaunch lifetime.
-      if (!this.runBackgroundUpdateCheck()) {
-        // Deferred checks have no outcome handler; re-arm here or automatic checks stop forever.
-        this.scheduleAutomaticUpdateCheck(AUTO_UPDATE_CHECK_INTERVAL_MS)
-      }
-    }, effectiveDelayMs)
   }
 
   protected recordCompletedUpdateCheck(): void {
@@ -46,87 +17,13 @@ export abstract class UpdaterScheduling extends UpdaterCheckFailure {
     this.persistLastUpdateCheckAt?.(Date.now())
   }
 
-  /** Returns false when the check was deferred instead of launched, so timer-driven callers can re-arm. */
+  /** Disabled in Coto so background checks never contact upstream release servers. */
   protected runBackgroundUpdateCheck(
-    nudgeId: string | null = this.getPersistedPendingUpdateNudgeId()
+    _nudgeId: string | null = this.getPersistedPendingUpdateNudgeId()
   ): boolean {
-    if (
-      this.pendingQuitAndInstallTimer ||
-      this.quitAndInstallInProgress ||
-      isMacInstallRequested()
-    ) {
-      return false
-    }
-    if (
-      this.localBuildSelectionInProgress ||
-      this.pinnedBuildSelectionInProgress ||
-      this.backgroundCheckLaunchPending ||
-      this.currentStatus.state === 'checking' ||
-      this.macInstallerStagingVersion !== null ||
-      this.currentStatus.state === 'downloading' ||
-      (isPendingTeamRestart(this.currentStatus) && !this.teamPolicyCheckPending)
-    ) {
-      return false
-    }
-    // An idle pin owns the feed until it becomes disallowed by an active team policy.
-    if (
-      (this.activeUpdateSource !== 'release' || this.isPinnedBuildActive) &&
-      !this.holdUpdateForTeamPolicy(this.getPendingInstallVersion(), false)
-    ) {
-      return false
-    }
-    if (!app.isPackaged) {
-      this.sendStatus({ state: 'not-available' })
-      return false
-    }
-    this.teamPolicyCheckPending = false
-    // Set the campaign before events; persist its ID so the card remains dismissible after relaunch.
-    this.activeUpdateNudgeId = nudgeId
-    // Track launch before delayed checking events so rapid focus/resume cannot start duplicates.
-    this.backgroundCheckLaunchPending = true
-    this.backgroundCheckPromotedToUserInitiated = false
-    const attemptId = this.beginUpdateCheckAttempt()
-    const autoUpdater = this.getAutoUpdater()
-    const launch = (): Promise<unknown> | undefined => {
-      if (
-        this.pendingQuitAndInstallTimer ||
-        this.quitAndInstallInProgress ||
-        isMacInstallRequested()
-      ) {
-        return undefined
-      }
-      if (!this.isActiveUpdateCheckAttempt(attemptId)) {
-        return undefined
-      }
-      this.markUpdateCheckLaunched(attemptId)
-      return autoUpdater.checkForUpdates()
-    }
-    const run = this.pinDefaultReleaseFeed().then((preflightResult) =>
-      preflightResult === 'not-available' ? this.settleHeldUpdateCheck(attemptId) : launch()
-    )
-    void Promise.resolve(run)
-      .then(() => this.handleSettledUpdateCheckPromise(attemptId))
-      .catch((err) => {
-        if (!this.isActiveUpdateCheckAttempt(attemptId)) {
-          return
-        }
-        const wasUserInitiated = this.getSettledCheckUserInitiated()
-        this.backgroundCheckLaunchPending = false
-        this.backgroundCheckPromotedToUserInitiated = false
-        if (wasUserInitiated) {
-          this.userInitiatedCheck = false
-        }
-        void this.sendCheckFailureStatus(
-          String(err?.message ?? err),
-          wasUserInitiated,
-          'promise',
-          err
-        )
-      })
-    return true
+    return false
   }
 
-  /** Settles a check the release feed resolved without launching electron-updater (update delay). */
   protected settleHeldUpdateCheck(attemptId: number): void {
     if (!this.isActiveUpdateCheckAttempt(attemptId)) {
       return
@@ -141,30 +38,14 @@ export abstract class UpdaterScheduling extends UpdaterCheckFailure {
       this.currentStatus.state === 'downloading' ||
       this.currentStatus.state === 'downloaded'
     this.completeSilentUpdateCheck(userInitiated, { preserveAvailableUpdate })
-    this.scheduleCheckWhenDelayedUpdateClears()
     if (preserveAvailableUpdate) {
       return
     }
     this.sendSettledCheckStatus({ state: 'not-available', userInitiated })
   }
 
-  /** Offer a held release when it clears instead of up to a day later. */
-  private scheduleCheckWhenDelayedUpdateClears(): void {
-    if (!this.delayedUpdate) {
-      return
-    }
-    const wakeMs = getDelayedUpdateWakeDelayMs(this.delayedUpdate, Date.now())
-    if (wakeMs !== null) {
-      this.scheduleAutomaticUpdateCheck(wakeMs)
-    }
-  }
-
   protected checkForUpdatesInBackground(): void {
-    // This span measures launch, not check outcome; dashboards must filter updater.outcome=launched.
-    void withUpdaterSpan({ stage: 'check' }, async (span) => {
-      span.setAttribute('updater.outcome', 'launched')
-      this.runBackgroundUpdateCheck()
-    })
+    // Disabled in Coto.
   }
 
   protected enablePrereleaseManifestChecks(): void {

@@ -190,7 +190,7 @@ export function AppRail({
       case 'skills':
         return t('auto.components.sidebar.SidebarNav.skills', 'Skills')
       case 'mobile':
-        return t('auto.components.sidebar.SidebarNav.1b5c41caee', 'Orca Mobile')
+        return t('auto.components.sidebar.SidebarNav.1b5c41caee', 'Coto Mobile')
     }
   }
   const destinationIcon = (

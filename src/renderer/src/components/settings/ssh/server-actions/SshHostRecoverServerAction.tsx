@@ -169,7 +169,7 @@ function OpenRecoverServerDialog({
           <DialogDescription>
             {t(
               'components.settings.recoverServer.summary',
-              'An earlier run left a lock, so Orca’s server can’t start.'
+              'An earlier run left a lock, so Coto’s server can’t start.'
             )}
           </DialogDescription>
         </DialogHeader>
@@ -191,7 +191,7 @@ function OpenRecoverServerDialog({
             <Label htmlFor="ssh-host-recover-server-confirm" variant="dialog">
               {t(
                 'components.settings.recoverServer.confirmCheckHomeFolder',
-                'No other machine sharing this home folder is running Orca'
+                'No other machine sharing this home folder is running Coto'
               )}
             </Label>
           </div>
@@ -275,7 +275,7 @@ function CheckOutcome({
         <p className="text-[13px]">
           {t(
             'auto.components.settings.recoverServer.reclaimedNotStarted',
-            'The lock was cleared, but Orca’s server did not start.'
+            'The lock was cleared, but Coto’s server did not start.'
           )}
         </p>
         {check.notRestarted ? <DialogError>{check.notRestarted}</DialogError> : null}
@@ -287,7 +287,7 @@ function CheckOutcome({
       <p className="text-[13px] text-muted-foreground">
         {t(
           'auto.components.settings.recoverServer.none',
-          'There is no lock to clear any more. Reconnect to start this host’s Orca server.'
+          'There is no lock to clear any more. Reconnect to start this host’s Coto server.'
         )}
       </p>
     )
@@ -356,7 +356,7 @@ function ManualLockDelete({ lockPath }: { lockPath: string | undefined }): React
       <DialogWarning>
         {t(
           'auto.components.settings.recoverServer.manualDeleteWarning',
-          'Only do this if no other machine sharing this home runs Orca for this profile.'
+          'Only do this if no other machine sharing this home runs Coto for this profile.'
         )}
       </DialogWarning>
     </div>

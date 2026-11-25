@@ -44,12 +44,12 @@ const copy = {
   'outcome-unknown': () =>
     translate(
       'components.native-chat.rewind.outcomeUnknown',
-      "Orca couldn't confirm whether the conversation went back to an earlier message. It checks before your next message is sent."
+      "Coto couldn't confirm whether the conversation went back to an earlier message. It checks before your next message is sent."
     ),
   refused: () =>
     translate(
       'components.native-chat.rewind.refused',
-      "Orca couldn't go back to this message. Check the conversation before continuing."
+      "Coto couldn't go back to this message. Check the conversation before continuing."
     ),
   unavailable: () =>
     translate(
@@ -59,7 +59,7 @@ const copy = {
   'returned-unknown': () =>
     translate(
       'components.native-chat.rewind.outcomeUnknownReturned',
-      "Orca couldn't confirm whether the conversation went back to this message. Your message is back in the composer, and Orca checks the conversation before your next message is sent."
+      "Coto couldn't confirm whether the conversation went back to this message. Your message is back in the composer, and Coto checks the conversation before your next message is sent."
     ),
   timeout: () =>
     translate(

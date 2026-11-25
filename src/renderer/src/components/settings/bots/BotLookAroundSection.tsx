@@ -200,7 +200,7 @@ export function BotLookAroundSection({
                 <br />
                 {t(
                   'settings.bots.lookAround.whileRunning',
-                  'Orca must be running on this computer.',
+                  'Coto must be running on this computer.',
                   { name: bot.name }
                 )}
               </>

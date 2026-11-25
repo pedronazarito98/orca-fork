@@ -36,14 +36,14 @@ export function BotServerOutageCard({
           stopped
             ? t(
                 'bots.page.serverDownBody',
-                'Check that Orca is running on {{host}}, then reconnect.',
+                'Check that Coto is running on {{host}}, then reconnect.',
                 {
                   host
                 }
               )
             : t(
                 'bots.page.serverReconnectingBody',
-                'The connection to the server dropped. Orca is retrying automatically.'
+                'The connection to the server dropped. Coto is retrying automatically.'
               )
         }
         downSince={downSince}

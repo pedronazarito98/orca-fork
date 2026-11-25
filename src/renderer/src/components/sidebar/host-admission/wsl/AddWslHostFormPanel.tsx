@@ -36,7 +36,7 @@ export function wslDistroStateLabel(distro: WslHostDistro, t: Translate = transl
 export function wsl1DistroReason(name: string, t: Translate = translate): string {
   return t(
     'auto.components.sidebar.AddWslHostFormPanel.wsl1Reason',
-    'WSL 1 can’t run an Orca host; convert with {{command}}',
+    'WSL 1 can’t run an Coto host; convert with {{command}}',
     { command: wslSetVersion2Command(name) }
   )
 }
@@ -105,11 +105,11 @@ export function AddWslHostFormPanel({
           {wslMoveAutoMovesBridgeProjects()
             ? t(
                 'auto.components.sidebar.AddWslHostFormPanel.descriptionAutoMove',
-                'Orca runs its server inside the distro, so git, files and terminals run natively in Linux. Projects in this distro that you opened through \\\\wsl.localhost move to this host automatically once their terminals are idle. Projects on a Windows drive (/mnt/…) stay on this computer. You can bring a moved project back from the sidebar.'
+                'Coto runs its server inside the distro, so git, files and terminals run natively in Linux. Projects in this distro that you opened through \\\\wsl.localhost move to this host automatically once their terminals are idle. Projects on a Windows drive (/mnt/…) stay on this computer. You can bring a moved project back from the sidebar.'
               )
             : t(
                 'auto.components.sidebar.AddWslHostFormPanel.descriptionMoveFromSidebar',
-                'Orca runs its server inside the distro, so git, files and terminals run natively in Linux. Projects in this distro that you opened through \\\\wsl.localhost stay on this computer until you move them from their sidebar menu. Projects on a Windows drive (/mnt/…) also stay here. You can bring a moved project back from the sidebar.'
+                'Coto runs its server inside the distro, so git, files and terminals run natively in Linux. Projects in this distro that you opened through \\\\wsl.localhost stay on this computer until you move them from their sidebar menu. Projects on a Windows drive (/mnt/…) also stay here. You can bring a moved project back from the sidebar.'
               )}
         </DialogDescription>
       </DialogHeader>
@@ -216,7 +216,7 @@ export function AddWslHostFormPanel({
             {addingDetail ??
               t(
                 'auto.components.sidebar.AddWslHostFormPanel.addingHint',
-                'Installing and starting the Orca server in the distro. The first time can take a minute.'
+                'Installing and starting the Coto server in the distro. The first time can take a minute.'
               )}
           </p>
         ) : null}

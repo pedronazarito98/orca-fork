@@ -24,7 +24,7 @@ export function BrowserUserAgentSetting(): React.JSX.Element {
     hostsPages && hasServers
       ? `${getBrowserUserAgentDescription(t)} ${t(
           'settings.browser.userAgent.serverPagesNote',
-          "Server (streamed) pages use that server's identity; set it there with orca browser identity set."
+          "Server (streamed) pages use that server's identity; set it there with coto browser identity set."
         )}`
       : getBrowserUserAgentDescription(t)
 
@@ -76,7 +76,7 @@ export function BrowserUserAgentSetting(): React.JSX.Element {
       <span className="text-xs text-muted-foreground">
         {t(
           'settings.browser.userAgent.remoteUnsupported',
-          'Manage browser identity on the remote host with the Orca CLI.'
+          'Manage browser identity on the remote host with the Coto CLI.'
         )}
       </span>
     )
@@ -99,7 +99,7 @@ export function BrowserUserAgentSetting(): React.JSX.Element {
         <div className="text-[11px] text-muted-foreground">
           {t(
             'settings.browser.userAgent.resetRequiredCommand',
-            'Reset it from the command line: orca browser identity set --mode <mode> --reset'
+            'Reset it from the command line: coto browser identity set --mode <mode> --reset'
           )}
         </div>
       </div>
@@ -119,7 +119,7 @@ export function BrowserUserAgentSetting(): React.JSX.Element {
               label: t('settings.browser.userAgent.optionClean', 'Cleaned'),
               tooltip: t(
                 'settings.browser.userAgent.optionCleanTooltip',
-                'Removes Orca and Electron tokens to match imported Chrome sessions.'
+                'Removes Coto and Electron tokens to match imported Chrome sessions.'
               )
             },
             {

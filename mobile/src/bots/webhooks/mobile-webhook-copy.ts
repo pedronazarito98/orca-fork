@@ -110,7 +110,7 @@ export function webhookHostLine(
   if (host === 'host_needs_update') {
     return t(
       'bots.webhooks.hostNeedsUpdate',
-      'Your Orca needs an update before {{bot}} can do this.',
+      'Your Coto needs an update before {{bot}} can do this.',
       { bot: botName }
     )
   }

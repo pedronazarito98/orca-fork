@@ -1745,12 +1745,6 @@
   "auto.components.settings.GeneralPane.projectRuntimeDescription": {
     "ko": "별도로 재정의하지 않은 로컬 Windows 프로젝트의 기본 런타임입니다."
   },
-  "auto.components.settings.GeneralSupportSection.6922c1fa2b": {
-    "ko": "GitHub에서 Orca 스타 누르기"
-  },
-  "auto.components.settings.GeneralSupportSection.964acc6bb4": {
-    "ko": "스타"
-  },
   "auto.components.settings.GeneralWorkspaceSettingsSection.5567191a6e": {
     "ko": "찾아보기"
   },

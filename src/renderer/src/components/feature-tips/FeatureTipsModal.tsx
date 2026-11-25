@@ -231,7 +231,7 @@ export default function FeatureTipsModal(): JSX.Element | null {
             toast.success(
               t(
                 'auto.components.feature.tips.FeatureTipsModal.ce13a742d0',
-                'Registered `orca` in PATH.'
+                'Registered `coto` in PATH.'
               )
             )
             setSkillTerminalOpen(true)
@@ -245,7 +245,7 @@ export default function FeatureTipsModal(): JSX.Element | null {
           toast.warning(
             t(
               'auto.components.feature.tips.FeatureTipsModal.1da82af45b',
-              'Orca CLI needs attention'
+              'Coto CLI needs attention'
             ),
             {
               description:
@@ -264,7 +264,7 @@ export default function FeatureTipsModal(): JSX.Element | null {
               ? error.message
               : t(
                   'auto.components.feature.tips.FeatureTipsModal.cliInstallFailed',
-                  'Failed to install Orca CLI.'
+                  'Failed to install Coto CLI.'
                 )
           if (
             import.meta.env.DEV &&

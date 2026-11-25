@@ -17,13 +17,13 @@ function namesText(names: readonly string[], t: BotChatTranslate): string {
 
 function projectsText(row: FirstLookRow, t: BotChatTranslate): string {
   if (row.state !== 'done') {
-    return t('bots.firstScreen.projectsReading', 'Projects: looking at what you have in Orca…')
+    return t('bots.firstScreen.projectsReading', 'Projects: looking at what you have in Coto…')
   }
   if (row.count === undefined) {
     return t('bots.firstScreen.projectsDone', 'Looked at your projects')
   }
   if (row.count === 0) {
-    return t('bots.firstScreen.projectsNone', 'No projects in Orca yet')
+    return t('bots.firstScreen.projectsNone', 'No projects in Coto yet')
   }
   const names = namesText(row.names ?? [], t)
   return row.count === 1

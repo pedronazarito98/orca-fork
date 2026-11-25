@@ -126,12 +126,12 @@ export function useHelpMenuController(milestones: SetupMilestones | null): HelpM
       return
     }
     setIsRestartingOrca(true)
-    toast.info(t('auto.components.sidebar.SidebarSettingsHelpMenu.5161eef55d', 'Restarting Orca…'))
+    toast.info(t('auto.components.sidebar.SidebarSettingsHelpMenu.5161eef55d', 'Restarting Coto…'))
     void window.api.app.restart().catch((error) => {
       if (mountedRef.current) {
         setIsRestartingOrca(false)
         toast.error(
-          t('auto.components.sidebar.SidebarSettingsHelpMenu.4e8f5710d3', "Couldn't restart Orca."),
+          t('auto.components.sidebar.SidebarSettingsHelpMenu.4e8f5710d3', "Couldn't restart Coto."),
           {
             description: error instanceof Error ? error.message : undefined
           }
@@ -244,7 +244,7 @@ export function useHelpMenuController(milestones: SetupMilestones | null): HelpM
         <DropdownMenuSeparator />
         <DropdownMenuItem onSelect={handleRestartOrca} disabled={isRestartingOrca}>
           <RotateCw className="size-3.5" />
-          {t('auto.components.sidebar.SidebarSettingsHelpMenu.ad3d3ed7f1', 'Restart Orca')}
+          {t('auto.components.sidebar.SidebarSettingsHelpMenu.ad3d3ed7f1', 'Restart Coto')}
         </DropdownMenuItem>
       </>
     ),

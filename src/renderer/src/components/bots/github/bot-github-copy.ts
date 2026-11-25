@@ -25,12 +25,12 @@ export function botGitHubErrorMessage(code: string, hostName: string | null): st
     case 'already_linked':
       return translate(
         'bots.github.errors.alreadyLinked',
-        'This Orca account is linked to another GitHub user. Unlink it in Settings › Bots › GitHub first.'
+        'This Coto account is linked to another GitHub user. Unlink it in Settings › Bots › GitHub first.'
       )
     case 'wrong_account':
       return translate(
         'bots.github.errors.wrongAccount',
-        'This sign-in was started from another Orca account. Sign in with GitHub again from this one.'
+        'This sign-in was started from another Coto account. Sign in with GitHub again from this one.'
       )
     case 'rate_limited':
       return translate(
@@ -40,11 +40,11 @@ export function botGitHubErrorMessage(code: string, hostName: string | null): st
     case 'github_unavailable':
       return translate('bots.github.errors.unavailable', 'GitHub did not answer. Try again.')
     case 'signed_out':
-      return translate('bots.github.errors.signedOut', 'Sign in to Orca Cloud to connect GitHub.')
+      return translate('bots.github.errors.signedOut', 'Sign in to Coto Cloud to connect GitHub.')
     case 'cloud_unreachable':
       return translate(
         'bots.github.errors.unreachable',
-        'Orca Cloud could not be reached. Check your connection and try again.'
+        'Coto Cloud could not be reached. Check your connection and try again.'
       )
     default:
       return translate('bots.errors.generic', 'Something went wrong. Try again.')

@@ -45,7 +45,7 @@ function notStopped(reason: string | null): void {
   toast.error(
     translate(
       'components.native-chat.workers.stopUnconfirmed',
-      'Orca couldn’t confirm the worker stopped.'
+      'Coto couldn’t confirm the worker stopped.'
     ),
     reason ? { description: reason } : undefined
   )

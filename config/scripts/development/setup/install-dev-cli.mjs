@@ -8,10 +8,10 @@ const scriptDir = import.meta.dirname
 const source = path.join(scriptDir, '../launch/orca-dev.mjs')
 
 const commandPath =
-  process.platform === 'darwin' || process.platform === 'linux' ? '/usr/local/bin/orca-dev' : null
+  process.platform === 'darwin' || process.platform === 'linux' ? '/usr/local/bin/coto-dev' : null
 
 if (!commandPath) {
-  console.log('[orca-dev] Skipping global symlink (unsupported platform).')
+  console.log('[coto-dev] Skipping global symlink (unsupported platform).')
   process.exit(0)
 }
 

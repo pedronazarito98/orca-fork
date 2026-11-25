@@ -15,7 +15,7 @@ function onboardingSteps(t: Translate) {
   return [
     {
       id: 'open-desktop',
-      title: t('home.emptyState.openDesktopTitle', 'Open Orca desktop'),
+      title: t('home.emptyState.openDesktopTitle', 'Open Coto desktop'),
       desc: t(
         'home.emptyState.openDesktopDescription',
         'Go to Settings → Mobile and generate a pairing QR code.'
@@ -71,7 +71,7 @@ export function MobileHomeEmptyState(props: {
           <Text style={styles.body}>
             {t(
               'home.emptyState.description',
-              'Pair with Orca on your computer to check on your agents, jump into any terminal, and drive work from your phone.'
+              'Pair with Coto on your computer to check on your agents, jump into any terminal, and drive work from your phone.'
             )}
           </Text>
         </View>

@@ -32,7 +32,7 @@ export function RemoteServerUpdateStatusSegment(): React.JSX.Element | null {
         ),
         tooltip: t(
           'auto.components.status.bar.RemoteServerUpdateStatusSegment.updatingTooltip',
-          'Remote Orca Server updates are in progress'
+          'Remote Coto Server updates are in progress'
         )
       }
     : failed > 0
@@ -45,7 +45,7 @@ export function RemoteServerUpdateStatusSegment(): React.JSX.Element | null {
           ),
           tooltip: t(
             'auto.components.status.bar.RemoteServerUpdateStatusSegment.failedTooltip',
-            'Open Remote Orca Server updates to review and retry'
+            'Open Remote Coto Server updates to review and retry'
           )
         }
       : {
@@ -57,7 +57,7 @@ export function RemoteServerUpdateStatusSegment(): React.JSX.Element | null {
           ),
           tooltip: t(
             'auto.components.status.bar.RemoteServerUpdateStatusSegment.updatedTooltip',
-            'Remote Orca Server updates completed'
+            'Remote Coto Server updates completed'
           )
         }
 

@@ -102,7 +102,7 @@ export const createOrcaProfilesAuthActions: StateCreator<
           toast.error(
             translate(
               'auto.store.slices.orca.profiles.8b8fa73174',
-              'Orca Cloud sign-in is not configured'
+              'Coto Cloud sign-in is not configured'
             ),
             {
               description: result.auth.setupMessage
@@ -190,7 +190,7 @@ export const createOrcaProfilesAuthActions: StateCreator<
         })
         if (result.auth.state !== 'connected') {
           toast.success(
-            translate('auto.store.slices.orca.profiles.a37b5e6d37', 'Signed out of Orca')
+            translate('auto.store.slices.orca.profiles.a37b5e6d37', 'Signed out of Coto')
           )
         }
         return result

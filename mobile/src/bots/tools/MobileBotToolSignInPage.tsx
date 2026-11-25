@@ -56,7 +56,7 @@ export function MobileBotToolSignInPage(props: {
     },
     {
       title: t('bots.tools.signIn.step3', 'Paste it here'),
-      detail: t('bots.tools.signIn.step3Detail', 'Orca finishes the sign-in on {{host}}.', {
+      detail: t('bots.tools.signIn.step3Detail', 'Coto finishes the sign-in on {{host}}.', {
         host: props.hostName
       })
     }
@@ -87,7 +87,7 @@ export function MobileBotToolSignInPage(props: {
       </SettingsSection>
       {signIn.failure === 'needs-update' ? (
         <SettingsNote>
-          {t('bots.tools.updateHost', 'Update Orca on {{host}} to sign in to apps', {
+          {t('bots.tools.updateHost', 'Update Coto on {{host}} to sign in to apps', {
             host: props.hostName
           })}
         </SettingsNote>

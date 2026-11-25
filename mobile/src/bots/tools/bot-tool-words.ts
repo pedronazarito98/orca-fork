@@ -29,7 +29,7 @@ export function botToolSignInLine(
     case 'finishing':
       return t('bots.tools.face.finishing', 'Finishing sign-in…')
     case 'update-needed':
-      return t('bots.tools.face.updateHost', 'Update Orca on {{host}}', { host: hostName })
+      return t('bots.tools.face.updateHost', 'Update Coto on {{host}}', { host: hostName })
     case 'unreachable':
       return t('bots.tools.face.cantReach', 'Can’t reach')
     case 'unsupported':

@@ -14,7 +14,7 @@ function parseShareId(value: string, kind: 'skills' | 'bots'): string | null {
     return null
   }
   const path = new RegExp(`^/?${kind}/share/([A-Za-z0-9_-]{1,128})/?$`)
-  if (url.protocol === 'orca:') {
+  if (url.protocol === 'coto:') {
     return `${url.host}${url.pathname}`.match(path)?.[1] ?? null
   }
   const developmentHost = url.hostname === 'localhost' || url.hostname === '127.0.0.1'
@@ -35,7 +35,7 @@ export const parseBotShareId = (value: string): string | null => parseShareId(va
 function shareIdFromArguments(argv: readonly string[], kind: 'skills' | 'bots'): string | null {
   for (const value of argv) {
     const id = parseShareId(value, kind)
-    if (id && (value.includes(`/${kind}/share/`) || value.startsWith('orca:'))) {
+    if (id && (value.includes(`/${kind}/share/`) || value.startsWith('coto:'))) {
       return id
     }
   }

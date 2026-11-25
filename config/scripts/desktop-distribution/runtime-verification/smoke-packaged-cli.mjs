@@ -13,7 +13,7 @@ function readAppDirArg(argv) {
     return explicit.slice('--app-dir='.length)
   }
   if (process.platform === 'darwin') {
-    return 'dist/mac-arm64/Orca.app'
+    return 'dist/mac-arm64/Coto.app'
   }
   if (process.platform === 'win32') {
     return 'dist/win-unpacked'
@@ -23,7 +23,7 @@ function readAppDirArg(argv) {
 
 function getPackagedCliPath(appDir) {
   if (process.platform === 'darwin' || appDir.endsWith('.app')) {
-    return join(appDir, 'Contents', 'Resources', 'bin', 'orca')
+    return join(appDir, 'Contents', 'Resources', 'bin', 'coto')
   }
   if (process.platform === 'win32') {
     return join(appDir, 'resources', 'bin', 'orca.exe')

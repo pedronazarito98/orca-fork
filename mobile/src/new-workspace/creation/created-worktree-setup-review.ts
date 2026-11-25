@@ -60,7 +60,7 @@ export async function runReviewedCreatedSetup(
 ): Promise<string | undefined> {
   const unsupported = translate(
     'newWorkspace.createdSetupReview.hostUnsupported',
-    'Approved. Update Orca on the workspace host to run setup for an existing workspace.'
+    'Approved. Update Coto on the workspace host to run setup for an existing workspace.'
   )
   try {
     const status = worktreeCreateCapabilityRead.interpret(

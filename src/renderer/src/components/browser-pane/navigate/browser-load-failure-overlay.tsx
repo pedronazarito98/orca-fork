@@ -76,7 +76,7 @@ function formatCertificateProceedFailure(
   if (kind === 'request-failed') {
     return t(
       'browser.loadFailure.certificateProceedFailed',
-      'Orca could not approve this certificate request. Retry the page and try again.'
+      'Coto could not approve this certificate request. Retry the page and try again.'
     )
   }
   return t(

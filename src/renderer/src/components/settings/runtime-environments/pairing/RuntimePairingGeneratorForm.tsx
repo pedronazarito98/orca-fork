@@ -75,7 +75,7 @@ export function RuntimePairingGeneratorForm({
       label: t('auto.components.settings.RuntimePairingUrlGenerator.thisComputer', 'This computer'),
       description: t(
         'auto.components.settings.RuntimePairingUrlGenerator.localOnlyHelp',
-        'A browser or Orca client on this computer'
+        'A browser or Coto client on this computer'
       )
     },
     {
@@ -145,7 +145,7 @@ export function RuntimePairingGeneratorForm({
             <p className="mt-1 text-muted-foreground">
               {t(
                 'auto.components.settings.RuntimePairingUrlGenerator.localLinkHelp',
-                'This link only works in a browser or Orca client running on this computer.'
+                'This link only works in a browser or Coto client running on this computer.'
               )}
             </p>
             <div className="mt-2 font-mono">{loopbackAddress}</div>
@@ -333,7 +333,7 @@ export function RuntimePairingGeneratorForm({
           )}
           description={t(
             'auto.components.settings.RuntimePairingUrlGenerator.f7cafdc9f3',
-            'Browser link unavailable in this build. The pairing URL still works for Orca clients.'
+            'Browser link unavailable in this build. The pairing URL still works for Coto clients.'
           )}
         />
       ) : null}
@@ -346,7 +346,7 @@ export function RuntimePairingGeneratorForm({
           )}
           description={t(
             'auto.components.settings.RuntimePairingUrlGenerator.accessLinkHelp',
-            'Paste this into Add server on the other Orca.'
+            'Paste this into Add server on the other Coto.'
           )}
           value={runtimePairingUrl}
           copied={copiedTarget === 'pairing'}

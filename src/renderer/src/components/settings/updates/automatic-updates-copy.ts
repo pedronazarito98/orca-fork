@@ -6,7 +6,7 @@ export function getAutomaticUpdatesSettingCopy(t: Translate = translate) {
     title: t('settings.automaticUpdates.title', 'Automatic updates'),
     description: t(
       'settings.automaticUpdates.description',
-      'On supported desktop installs, Orca downloads eligible updates on its regular check schedule and restarts to install them automatically.'
+      'On supported desktop installs, Coto downloads eligible updates on its regular check schedule and restarts to install them automatically.'
     )
   }
 }

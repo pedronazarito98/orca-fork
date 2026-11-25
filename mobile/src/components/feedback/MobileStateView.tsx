@@ -177,7 +177,7 @@ export function MobileOfflineState({
           : t('common.offline.waiting', 'Waiting for host')
       }
       message={
-        message ?? t('common.offline.message', 'Check that the host is awake and Orca is running.')
+        message ?? t('common.offline.message', 'Check that the host is awake and Coto is running.')
       }
       action={
         onReconnect

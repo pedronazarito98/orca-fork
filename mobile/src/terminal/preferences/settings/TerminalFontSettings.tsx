@@ -29,7 +29,7 @@ import type { TerminalFontSettings } from '../use-terminal-font-settings'
 
 function fontOptions(t: Translate): PickerOption<TerminalFontId>[] {
   const onDevice = t('app.terminalSettings.fontsOnDevice', 'On this device')
-  const included = t('app.terminalSettings.fontsIncluded', 'Included with Orca')
+  const included = t('app.terminalSettings.fontsIncluded', 'Included with Coto')
   // The phone's OS, not the page's 'web': the session's Text size sheet lists these fonts too.
   const ios = hostOs() === 'ios'
   return [

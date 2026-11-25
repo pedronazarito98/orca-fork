@@ -114,7 +114,7 @@ export function MobileGoogleSetupBlockerPanel({
         <MobileGoogleSetupOnComputer
           text={t(
             'chat.botCards.google.action.onComputer',
-            'For “{{action}}”, use Orca on your computer.',
+            'For “{{action}}”, use Coto on your computer.',
             {
               action: googleSetupActionText(t, elsewhere)
             }

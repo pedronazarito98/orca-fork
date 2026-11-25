@@ -130,7 +130,7 @@ export function MobileBotLinearPage(props: {
         })}
         message={t(
           'bots.linear.connection.removeNote',
-          'People in {{workspace}} can no longer hand it issues, and its Linear people are cleared. Orca stays installed there.',
+          'People in {{workspace}} can no longer hand it issues, and its Linear people are cleared. Coto stays installed there.',
           { workspace: linearWorkspaceLabel(workspace.workspaceName, workspace.urlKey) }
         )}
         confirmLabel={t('bots.linear.connection.removeConfirm', 'Remove')}
@@ -190,7 +190,7 @@ export function MobileBotLinearPage(props: {
       : !linked
         ? t('settings.bots.linearStatus.unlinked', 'Not linked')
         : !linked.installed
-          ? t('settings.bots.linearStatus.notInstalled', 'Orca not installed')
+          ? t('settings.bots.linearStatus.notInstalled', 'Coto not installed')
           : null
   const defaultBot = linked?.defaultBotId
     ? (props.hostBots.find((other) => other.id === linked.defaultBotId)?.name ??
@@ -217,7 +217,7 @@ export function MobileBotLinearPage(props: {
       <SettingsNote>
         {t(
           'bots.linear.howToAskPlain',
-          'Mention @Orca {{handle}} on an issue, or add the label bot:{{handle}}.',
+          'Mention @Coto {{handle}} on an issue, or add the label bot:{{handle}}.',
           { handle: bot.folder }
         )}
       </SettingsNote>

@@ -20,7 +20,7 @@ export type NewBotComputer = {
 }
 
 function updateOrcaOn(host: string): string {
-  return translate('bots.list.updateOrcaOn', 'Update Orca on {{host}}', { host })
+  return translate('bots.list.updateOrcaOn', 'Update Coto on {{host}}', { host })
 }
 
 function refusalWords(refusal: NewBotRefusal, label: string, desktopLabel: string): string {
@@ -30,7 +30,7 @@ function refusalWords(refusal: NewBotRefusal, label: string, desktopLabel: strin
     case 'update':
       return updateOrcaOn(label)
     case 'update-desktop':
-      return translate('bots.new.updateDesktopFirst', 'Update Orca on {{host}} first', {
+      return translate('bots.new.updateDesktopFirst', 'Update Coto on {{host}} first', {
         host: desktopLabel
       })
   }

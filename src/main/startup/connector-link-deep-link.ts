@@ -17,7 +17,7 @@ export function parseConnectorLinkDeepLink(value: string): ConnectorLinkDeepLink
   }
   const source = url.host
   if (
-    url.protocol !== 'orca:' ||
+    url.protocol !== 'coto:' ||
     !isConnectorLinkSource(source) ||
     !/^\/link\/?$/.test(url.pathname)
   ) {
@@ -28,5 +28,5 @@ export function parseConnectorLinkDeepLink(value: string): ConnectorLinkDeepLink
 }
 
 export function formatConnectorLinkDeepLink({ source, token }: ConnectorLinkDeepLink): string {
-  return `orca://${source}/link?t=${encodeURIComponent(token)}`
+  return `coto://${source}/link?t=${encodeURIComponent(token)}`
 }

@@ -115,7 +115,7 @@ const COPY: Record<UpdaterFailureCode, (param: Param, count: CountParam) => stri
       UPDATER_FAILURE_COPY.linuxPackageMetadataUnusable
     ),
   teamUpdatePolicy: () =>
-    translate('updates.failure.teamUpdatePolicy', 'Your team manages Orca updates.'),
+    translate('updates.failure.teamUpdatePolicy', 'Your team manages Coto updates.'),
   unknownReleaseChannel: (param) => {
     const channel = param('channel')
     return channel === null
@@ -199,7 +199,7 @@ const COPY: Record<UpdaterFailureCode, (param: Param, count: CountParam) => stri
           {
             count: minutes,
             defaultValue_one:
-              "GitHub rate limit reached. Try again in about {{count}} minute, or run `gh auth login` so Orca can use your account's higher limit."
+              "GitHub rate limit reached. Try again in about {{count}} minute, or run `gh auth login` so Coto can use your account's higher limit."
           }
         )
   }

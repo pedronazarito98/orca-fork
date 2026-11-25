@@ -89,7 +89,7 @@ export function MobileBotGoogleSignIn(props: {
             props.newApp
               ? t(
                   'bots.google.signInWarning',
-                  'Google will show a warning because this app is yours and brand new. Choose Advanced, then Go to Orca, and tick every box on the next screen.'
+                  'Google will show a warning because this app is yours and brand new. Choose Advanced, then Go to Coto, and tick every box on the next screen.'
                 )
               : null
           }
@@ -102,7 +102,7 @@ export function MobileBotGoogleSignIn(props: {
             footer={
               error
                 ? undefined
-                : t('bots.connect.opensOnHost', 'Opens in Orca’s browser on {{host}}.', {
+                : t('bots.connect.opensOnHost', 'Opens in Coto’s browser on {{host}}.', {
                     host: hostName
                   })
             }

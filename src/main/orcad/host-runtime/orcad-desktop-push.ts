@@ -10,10 +10,14 @@ export function startOrcadDesktopPushService(
   runtime: OrcaRuntimeService,
   runtimeRpc: OrcaRuntimeRpcServer
 ): void {
+  const gatewayUrl = resolvePushGatewayOrigin(process.env, getAppEnvironment().isPackaged())
+  if (!gatewayUrl) {
+    return
+  }
   const pushService = DesktopPushService.create({
     runtime,
     runtimeRpc,
-    gatewayUrl: resolvePushGatewayOrigin(process.env, getAppEnvironment().isPackaged())
+    gatewayUrl
   })
   pushService?.start()
   getAppEnvironment().onWillQuit(() => pushService?.stop())

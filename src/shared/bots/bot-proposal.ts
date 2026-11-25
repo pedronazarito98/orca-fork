@@ -123,8 +123,8 @@ export function proposalCreateParams(
 
 const oneLine = (text: string): string => text.replace(/\s+/g, ' ').trim()
 
-// Names that keep their capital mid-sentence ("Watches Linear projects", "Watches your Orca workspaces").
-const PROPER_NAMES = new Set([...Object.values(BOT_CONNECTOR_NAMES), 'Orca'])
+// Names that keep their capital mid-sentence ("Watches Linear projects", "Watches your Coto workspaces").
+const PROPER_NAMES = new Set([...Object.values(BOT_CONNECTOR_NAMES), 'Coto', 'Orca'])
 const midSentence = (text: string): string =>
   PROPER_NAMES.has(text.split(' ', 1)[0] ?? '')
     ? text

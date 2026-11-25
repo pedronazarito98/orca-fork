@@ -21,21 +21,21 @@ export function connectorAccountErrorMessage(
     case 'signed_out':
       return t(
         'bots.host.errors.signedOut',
-        'Sign {{host}} in to Orca Cloud to connect {{service}}.',
+        'Sign {{host}} in to Coto Cloud to connect {{service}}.',
         { host: hostName, service }
       )
     case 'account_changed':
-      return t('bots.host.errors.accountChanged', '{{host}}’s Orca sign-in changed. Start again.', {
+      return t('bots.host.errors.accountChanged', '{{host}}’s Coto sign-in changed. Start again.', {
         host: hostName
       })
     case CONNECT_NOT_ROUTED:
       return t(
         'bots.host.errors.notRouted',
-        '{{service}}’s page has to open in Orca’s browser for {{host}}. Reconnect {{host}}, then start again.',
+        '{{service}}’s page has to open in Coto’s browser for {{host}}. Reconnect {{host}}, then start again.',
         { service, host: hostName }
       )
     case CONNECT_ON_HOST:
-      return t('bots.connect.finishOnHost', 'Finish connecting {{service}} in Orca on {{host}}.', {
+      return t('bots.connect.finishOnHost', 'Finish connecting {{service}} in Coto on {{host}}.', {
         service,
         host: hostName
       })
@@ -57,21 +57,21 @@ export function connectorAccountErrorMessage(
       return source === 'linear'
         ? t(
             'bots.linear.errors.wrongAccount',
-            'This sign-in was started from another Orca account. Connect Linear again from this one.'
+            'This sign-in was started from another Coto account. Connect Linear again from this one.'
           )
         : t(
             'bots.github.errors.wrongAccount',
-            'This sign-in was started from another Orca account. Sign in with GitHub again from this one.'
+            'This sign-in was started from another Coto account. Sign in with GitHub again from this one.'
           )
     case 'already_linked':
       return source === 'linear'
         ? t(
             'bots.linear.errors.alreadyLinked',
-            'This Orca account is linked to another Linear user in that workspace. Unlink it from ⋯ on the Linear page first.'
+            'This Coto account is linked to another Linear user in that workspace. Unlink it from ⋯ on the Linear page first.'
           )
         : t(
             'bots.github.errors.alreadyLinked',
-            'This Orca account is linked to another GitHub user. Unlink it from ⋯ on the GitHub page first.'
+            'This Coto account is linked to another GitHub user. Unlink it from ⋯ on the GitHub page first.'
           )
     case 'not_a_member':
       return t(
@@ -87,7 +87,7 @@ export function connectorAccountErrorMessage(
     case 'cloud_unreachable':
       return t(
         'bots.slack.errors.unreachable',
-        'Orca Cloud could not be reached. Check your connection and try again.'
+        'Coto Cloud could not be reached. Check your connection and try again.'
       )
     default:
       return t('bots.errors.generic', 'Something went wrong. Try again.')

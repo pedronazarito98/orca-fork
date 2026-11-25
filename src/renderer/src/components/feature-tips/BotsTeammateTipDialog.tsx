@@ -135,7 +135,7 @@ export function BotsTeammateTipDialog({
     >
       <div className="bt-eyebrow">
         <span className="bt-new">{t('featureTips.eyebrowNew', 'New')}</span>
-        {t('featureTips.botsTeammate.product', 'Orca Bots')}
+        {t('featureTips.botsTeammate.product', 'Coto Bots')}
       </div>
       <div className="bt-copy-stack">
         {pages.map((copy, index) => (

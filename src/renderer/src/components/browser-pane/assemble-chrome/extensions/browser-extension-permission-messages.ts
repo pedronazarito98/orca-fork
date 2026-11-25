@@ -130,7 +130,7 @@ export function describeUnsupportedBrowserExtensionFeatures(
   if (features.length === 0) {
     return null
   }
-  return t('browserExtensions.unsupported.line', 'Not available in Orca yet: {{features}}.', {
+  return t('browserExtensions.unsupported.line', 'Not available in Coto yet: {{features}}.', {
     features: features.map(featureLabel).join(', ')
   })
 }

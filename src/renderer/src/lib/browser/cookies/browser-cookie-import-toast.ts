@@ -24,7 +24,7 @@ function formatCookieImportWarning(warning: CookieImportWarning): string {
   if (!isHandledWireDiscriminant(code, HANDLED_WARNING_CODES)) {
     return translate(
       'auto.lib.browser.cookie.import.toast.unrecognizedWarning',
-      'The cookie import finished with a warning this version of Orca does not recognize. Update Orca to see the details, then check this profile before relying on its cookies.'
+      'The cookie import finished with a warning this version of Coto does not recognize. Update Coto to see the details, then check this profile before relying on its cookies.'
     )
   }
   switch (warning.code) {
@@ -33,7 +33,7 @@ function formatCookieImportWarning(warning: CookieImportWarning): string {
       if (!isHandledWireDiscriminant(reason, HANDLED_UNDECRYPTABLE_REASONS)) {
         return translate(
           'auto.lib.browser.cookie.import.toast.undecryptableUnrecognizedReason',
-          '{{value0}} cookies could not be decrypted and were skipped for a reason this version of Orca does not recognize. Update Orca to see the details, then try the import again.',
+          '{{value0}} cookies could not be decrypted and were skipped for a reason this version of Coto does not recognize. Update Coto to see the details, then try the import again.',
           { value0: warning.failedCookies }
         )
       }
@@ -42,12 +42,12 @@ function formatCookieImportWarning(warning: CookieImportWarning): string {
           return warning.otherFailedCookies
             ? translate(
                 'auto.lib.browser.cookie.import.toast.undecryptableAppBoundMixed',
-                "Orca cannot decrypt {{value0}} of this browser's cookies because they use app-bound encryption; {{value1}} more could not be decrypted for another reason. You can import cookies from a file using “From File…”.",
+                "Coto cannot decrypt {{value0}} of this browser's cookies because they use app-bound encryption; {{value1}} more could not be decrypted for another reason. You can import cookies from a file using “From File…”.",
                 { value0: warning.failedCookies, value1: warning.otherFailedCookies }
               )
             : translate(
                 'auto.lib.browser.cookie.import.toast.undecryptableAppBound',
-                "Orca cannot decrypt {{value0}} of this browser's cookies because they use app-bound encryption. You can import cookies from a file using “From File…”.",
+                "Coto cannot decrypt {{value0}} of this browser's cookies because they use app-bound encryption. You can import cookies from a file using “From File…”.",
                 { value0: warning.failedCookies }
               )
         case 'linux-keyring-unavailable':
@@ -61,21 +61,21 @@ function formatCookieImportWarning(warning: CookieImportWarning): string {
               case 'secret-tool-missing':
                 message = translate(
                   'auto.lib.browser.cookie.import.toast.secretToolMissing',
-                  "Orca couldn't read {{count}} of {{browser}}'s encrypted cookies because secret-tool isn't installed. Install libsecret-tools (or your distribution's equivalent) and import again.",
+                  "Coto couldn't read {{count}} of {{browser}}'s encrypted cookies because secret-tool isn't installed. Install libsecret-tools (or your distribution's equivalent) and import again.",
                   values
                 )
                 break
               case 'keyring-locked':
                 message = translate(
                   'auto.lib.browser.cookie.import.toast.cookieKeyLocked',
-                  "Orca couldn't read {{count}} of {{browser}}'s encrypted cookies because access to the system keyring was locked or denied. Unlock your login keyring, allow access if prompted, and import again.",
+                  "Coto couldn't read {{count}} of {{browser}}'s encrypted cookies because access to the system keyring was locked or denied. Unlock your login keyring, allow access if prompted, and import again.",
                   values
                 )
                 break
               case 'key-unavailable':
                 message = translate(
                   'auto.lib.browser.cookie.import.toast.cookieKeyUnavailable',
-                  "Orca couldn't read {{count}} of {{browser}}'s encrypted cookies because the cookie encryption key couldn't be read. Try importing again, import cookies using “From File…”, or sign in directly in Orca.",
+                  "Coto couldn't read {{count}} of {{browser}}'s encrypted cookies because the cookie encryption key couldn't be read. Try importing again, import cookies using “From File…”, or sign in directly in Coto.",
                   values
                 )
                 break
@@ -170,7 +170,7 @@ function googleCookiesSkippedMessage(execution: BrowserCookieImportExecution): s
   if (!execution.executionRemoteEnvironment) {
     return translate(
       'auto.lib.browser.cookie.import.toast.googleCookiesSkippedLocal',
-      'Google cookies were not imported. Open a browser in Orca with this profile, then sign into Google.'
+      'Google cookies were not imported. Open a browser in Coto with this profile, then sign into Google.'
     )
   }
   if (execution.executionMachine === 'client') {
@@ -217,7 +217,7 @@ function emitPartitionSkippedImportWarning(summary: BrowserCookieImportSummary):
   toast.warning(
     translate(
       'auto.lib.browser.cookie.import.toast.partitionSkipped',
-      '{{value0}} cookies were not imported because their site-partition could not be read. Sign in to those sites again in Orca.',
+      '{{value0}} cookies were not imported because their site-partition could not be read. Sign in to those sites again in Coto.',
       { value0: summary.partitionSkippedCookies }
     ),
     { duration: 12000 }

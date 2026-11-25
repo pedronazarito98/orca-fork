@@ -131,7 +131,7 @@ export function PluginInstallConsent({
               <span>
                 {t(
                   'auto.components.settings.PluginInstallConsent.editsFileTypes',
-                  'Opens and edits {{value0}} files in Orca. It can read the files it opens.',
+                  'Opens and edits {{value0}} files in Coto. It can read the files it opens.',
                   { value0: formatFileTypeList(editorFileTypes) }
                 )}
               </span>
@@ -159,7 +159,7 @@ export function PluginInstallConsent({
               <span>
                 {t(
                   'auto.components.settings.PluginInstallConsent.replacesAction',
-                  '{{value0}} runs instead of Orca’s {{value1}}. You can switch it back in its plugin page.',
+                  '{{value0}} runs instead of Coto’s {{value1}}. You can switch it back in its plugin page.',
                   { value0: replacement.command, value1: builtInActionTitle(replacement.action) }
                 )}
               </span>

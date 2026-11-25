@@ -111,11 +111,11 @@ export function LinkRoutingPreferenceDialogProvider({
               {openLinksInAppDefault
                 ? t(
                     'components.link.routing.preference.dialog.keepInOrcaTitle',
-                    'Keep terminal links in Orca?'
+                    'Keep terminal links in Coto?'
                   )
                 : t(
                     'components.link.routing.preference.dialog.openInOrcaTitle',
-                    'Open terminal links in Orca?'
+                    'Open terminal links in Coto?'
                   )}
             </DialogTitle>
             <DialogDescription>
@@ -135,8 +135,8 @@ export function LinkRoutingPreferenceDialogProvider({
             </Button>
             <Button size="sm" autoFocus onClick={() => settleActiveRequest(true)}>
               {openLinksInAppDefault
-                ? t('auto.components.link.routing.preference.dialog.keep.orca.button', 'Keep Orca')
-                : t('auto.components.link.routing.preference.dialog.orca.button', 'Open in Orca')}
+                ? t('auto.components.link.routing.preference.dialog.keep.orca.button', 'Keep Coto')
+                : t('auto.components.link.routing.preference.dialog.orca.button', 'Open in Coto')}
             </Button>
           </DialogFooter>
         </DialogContent>

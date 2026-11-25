@@ -60,7 +60,7 @@ export function createOrFocusWorkspaceSpaceWindow(
     height: 820,
     minWidth: 700,
     minHeight: 520,
-    title: translateMain('native.dialog.spaceTitle', 'Orca Space Beta'),
+    title: translateMain('native.dialog.spaceTitle', 'Coto Space Beta'),
     show: false,
     autoHideMenuBar: true,
     backgroundColor: nativeTheme.shouldUseDarkColors ? '#0a0a0a' : '#ffffff',
@@ -97,7 +97,7 @@ export function createOrFocusWorkspaceSpaceWindow(
   })
   const updateTitle = (): void => {
     if (!window.isDestroyed()) {
-      window.setTitle(translateMain('native.dialog.spaceTitle', 'Orca Space Beta'))
+      window.setTitle(translateMain('native.dialog.spaceTitle', 'Coto Space Beta'))
     }
   }
   mainI18n.on('languageChanged', updateTitle)

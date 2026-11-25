@@ -1,59 +1,15 @@
-import { app } from 'electron'
-import { fetchNudge, shouldApplyNudge } from './nudge-campaign'
-import { NUDGE_ACTIVATION_COOLDOWN_MS, NUDGE_POLL_INTERVAL_MS } from '../lifecycle/updater-state'
 import { UpdaterBuildSelection } from '../releases/updater-build-selection'
 
 export abstract class UpdaterNudge extends UpdaterBuildSelection {
   protected async checkForUpdateNudge(): Promise<void> {
-    if (!app.isPackaged) {
-      return
-    }
-    if (this.nudgeCheckInFlight) {
-      return
-    }
-    const now = Date.now()
-    if (now - this.lastNudgeCheckAt < NUDGE_ACTIVATION_COOLDOWN_MS) {
-      return
-    }
-    this.lastNudgeCheckAt = now
-    this.nudgeCheckInFlight = true
-    try {
-      const nudge = await fetchNudge()
-      if (!nudge) {
-        return
-      }
-      if (this.currentStatus.state === 'checking' || this.currentStatus.state === 'downloading') {
-        return
-      }
-      const appVersion = app.getVersion()
-      const pendingUpdateNudgeId = this._getPendingUpdateNudgeId?.() ?? null
-      const dismissedUpdateNudgeId = this._getDismissedUpdateNudgeId?.() ?? null
-      if (
-        shouldApplyNudge({
-          nudge,
-          appVersion,
-          pendingUpdateNudgeId,
-          dismissedUpdateNudgeId
-        })
-      ) {
-        this.awaitingNudgeCheckOutcome = true
-        this._setPendingUpdateNudgeId?.(nudge.id)
-        this.sendToMainWindow('updater:clearDismissal')
-        this.runBackgroundUpdateCheck(nudge.id)
-      }
-    } finally {
-      this.nudgeCheckInFlight = false
-    }
+    // Disabled in Coto to prevent outbound update nudge checks to orca.dev.
   }
 
   protected scheduleUpdateNudgeCheck(): void {
     if (this.nudgeCheckTimer) {
       clearTimeout(this.nudgeCheckTimer)
+      this.nudgeCheckTimer = null
     }
-    this.nudgeCheckTimer = setTimeout(() => {
-      void this.checkForUpdateNudge()
-      this.scheduleUpdateNudgeCheck()
-    }, NUDGE_POLL_INTERVAL_MS)
   }
 
   protected dismissNudge(): void {

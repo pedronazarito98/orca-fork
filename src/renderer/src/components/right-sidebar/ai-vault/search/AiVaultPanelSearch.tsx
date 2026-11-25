@@ -125,12 +125,12 @@ export function AiVaultPanelSearch({
   } else if (unavailable === 'no-service') {
     message = t(
       'sessionSearch.panel.noService',
-      'Search is unavailable on this computer. It may need an Orca update or a runtime with search support.'
+      'Search is unavailable on this computer. It may need an Coto update or a runtime with search support.'
     )
   } else if (unavailable === 'unsupported-agent') {
     message = t(
       'sessionSearch.panel.unsupportedAgent',
-      'This computer does not support history search for the selected agent. Update Orca on that computer or select another agent.'
+      'This computer does not support history search for the selected agent. Update Coto on that computer or select another agent.'
     )
   } else if (unavailable === 'scope-unknown') {
     message = t(

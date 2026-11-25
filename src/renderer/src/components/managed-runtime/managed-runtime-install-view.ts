@@ -148,7 +148,7 @@ function settledView(
           })
         : t('components.managed-runtime.reinstall', 'Reinstall {{agent}}', { agent })
     return view(
-      t('components.managed-runtime.installedByOrca', 'Installed by Orca · {{version}}', {
+      t('components.managed-runtime.installedByOrca', 'Installed by Coto · {{version}}', {
         version: state.installedVersion
       }),
       null,
@@ -168,7 +168,7 @@ function settledView(
         : null
     const status = t(
       'components.managed-runtime.installedByOrca',
-      'Installed by Orca · {{version}}',
+      'Installed by Coto · {{version}}',
       {
         version: state.installedVersion
       }

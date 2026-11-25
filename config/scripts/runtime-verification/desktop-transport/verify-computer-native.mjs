@@ -111,7 +111,7 @@ function verifyMacOSHelperApp() {
     'computer-use-macos',
     '.build',
     'release',
-    'Orca Computer Use.app'
+    'Coto Computer Use.app'
   )
   if (!existsSync(appPath)) {
     console.error(

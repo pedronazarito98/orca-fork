@@ -134,7 +134,7 @@ function endLine(entry: HomeBotsUnavailable): string {
   const host = entry.label
   switch (entry.reason) {
     case 'update':
-      return translate('bots.list.updateToSee', 'Update Orca on {{host}} to see its bots.', {
+      return translate('bots.list.updateToSee', 'Update Coto on {{host}} to see its bots.', {
         host
       })
     case 'off':
@@ -160,20 +160,20 @@ function emptyNotice(
     return one
       ? {
           kind: 'empty',
-          title: translate('bots.list.updateOrcaOn', 'Update Orca on {{host}}', {
+          title: translate('bots.list.updateOrcaOn', 'Update Coto on {{host}}', {
             host: one.label
           }),
           message: translate(
             'home.bots.updateOneBody',
-            'Its version of Orca can’t show bots on your phone yet.'
+            'Its version of Coto can’t show bots on your phone yet.'
           )
         }
       : {
           kind: 'empty',
-          title: translate('home.bots.updateManyTitle', 'Update Orca on your computers'),
+          title: translate('home.bots.updateManyTitle', 'Update Coto on your computers'),
           message: translate(
             'home.bots.updateManyBody',
-            'Their version of Orca can’t show bots on your phone yet.'
+            'Their version of Coto can’t show bots on your phone yet.'
           )
         }
   }
@@ -183,7 +183,7 @@ function emptyNotice(
       title: translate('home.bots.offManyTitle', 'Bots are off on your computers'),
       message: translate(
         'home.bots.offManyBody',
-        'To turn them on, open Orca on each computer and go to Settings › Bots › Enable bots.'
+        'To turn them on, open Coto on each computer and go to Settings › Bots › Enable bots.'
       )
     }
   }
@@ -194,12 +194,12 @@ function emptyNotice(
     message: one.desktopLabel
       ? translate(
           'home.bots.offServerBody',
-          'To turn them on, open Orca on {{desktop}} and go to Settings › Bots › Enable bots on {{host}}.',
+          'To turn them on, open Coto on {{desktop}} and go to Settings › Bots › Enable bots on {{host}}.',
           { desktop: one.desktopLabel, host: one.label }
         )
       : translate(
           'home.bots.offOneBody',
-          'To turn them on, open Orca on {{host}} and go to Settings › Bots › Enable bots.',
+          'To turn them on, open Coto on {{host}} and go to Settings › Bots › Enable bots.',
           { host: one.label }
         )
   }

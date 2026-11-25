@@ -94,7 +94,7 @@ function ToastPlugin({
         <p className="text-xs text-muted-foreground">
           {t(
             'auto.components.settings.PluginUpdateReviewToast.uncompared',
-            'Orca couldn’t compare it with the version you approved.'
+            'Coto couldn’t compare it with the version you approved.'
           )}
         </p>
       )}

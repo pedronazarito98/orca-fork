@@ -238,7 +238,7 @@ export function useMobileSourceControlLoaders(params: Params): MobileSourceContr
         kind: 'unavailable',
         message: t(
           'sourceControl.loaders.updateDesktop',
-          'Update Orca on this host to use Source Control on mobile.'
+          'Update Coto on this host to use Source Control on mobile.'
         )
       }
     }

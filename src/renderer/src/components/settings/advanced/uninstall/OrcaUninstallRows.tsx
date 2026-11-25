@@ -122,8 +122,8 @@ function HookPath({ entry }: { entry: OrcaUninstallPath }): React.JSX.Element {
   }
   const place =
     entry.orcaData.kind === 'codex-account'
-      ? t('settings.uninstall.path.codexAccount', 'Orca-managed Codex account')
-      : t('settings.uninstall.path.appData', 'Orca app data')
+      ? t('settings.uninstall.path.codexAccount', 'Coto-managed Codex account')
+      : t('settings.uninstall.path.appData', 'Coto app data')
   return (
     <span className="block" title={entry.path}>
       <span className="font-sans">{place}</span> · {entry.orcaData.relative}
@@ -296,7 +296,7 @@ export function OrcaUninstallRows({ model }: { model: RowsModel }): React.JSX.El
         label={
           <Trans
             i18n={i18n}
-            defaults={t('settings.uninstall.rows.service', '<cmd>orca serve</cmd> server')}
+            defaults={t('settings.uninstall.rows.service', '<cmd>coto serve</cmd> server')}
             components={{ cmd: <code className="font-mono text-xs" /> }}
           />
         }

@@ -13,8 +13,8 @@ import { ROOT_HELP_TEXT_PRIMARY } from './root-help-text-primary'
 import { ROOT_HELP_TEXT_SECONDARY } from './root-help-text-secondary'
 
 const ROOT_HELP_TEXT = [ROOT_HELP_TEXT_PRIMARY, ROOT_HELP_TEXT_SECONDARY].join('\n')
-// Command lines only: leaves `name:orca`, paths, `orca://`, `orca-ide` and quoted `orca` names intact.
-const CLI_COMMAND_WORD = /(^|[\s`(])orca(?=\s|$)/gm
+// Command lines only: leaves `name:orca`, paths, `coto://`, `orca-ide` and quoted names intact.
+const CLI_COMMAND_WORD = /(^|[\s`(])(?:coto|orca)(?=\s|$)/gm
 
 export function printHelp(specs: CommandSpec[], commandPath: string[] = []): void {
   console.log(formatHelp(specs, commandPath))
@@ -41,13 +41,13 @@ function formatHelp(specs: CommandSpec[], commandPath: string[]): string {
 
 function withInvokedCliCommand(text: string): string {
   const command = resolveInvokedCliCommand()
-  return command === 'orca'
+  return command === 'coto'
     ? text
     : text.replace(CLI_COMMAND_WORD, (_match, prefix: string) => `${prefix}${command}`)
 }
 
 export function formatCommandHelp(spec: CommandSpec): string {
-  const lines = [`orca ${spec.path.join(' ')}`, '', `Usage: ${spec.usage}`, '', spec.summary]
+  const lines = [`coto ${spec.path.join(' ')}`, '', `Usage: ${spec.usage}`, '', spec.summary]
   const displayedFlags =
     spec.argumentMode === 'passthrough'
       ? []
@@ -81,7 +81,7 @@ export function formatCommandHelp(spec: CommandSpec): string {
 
 export function formatGroupHelp(specs: CommandSpec[], groupPath: string[]): string {
   const group = groupPath.join(' ')
-  const lines = [`orca ${group}`, '', `Usage: orca ${group} <command> [options]`, '', 'Commands:']
+  const lines = [`coto ${group}`, '', `Usage: coto ${group} <command> [options]`, '', 'Commands:']
   const members = specs.filter(
     (spec) =>
       spec.path.length > groupPath.length &&
@@ -92,7 +92,7 @@ export function formatGroupHelp(specs: CommandSpec[], groupPath: string[]): stri
   for (const spec of visible.length > 0 ? visible : members) {
     lines.push(`  ${spec.path.slice(groupPath.length).join(' ').padEnd(18)} ${spec.summary}`)
   }
-  lines.push('', `Run \`orca ${group} <command> --help\` for command-specific usage.`)
+  lines.push('', `Run \`coto ${group} <command> --help\` for command-specific usage.`)
   return lines.join('\n')
 }
 
@@ -145,7 +145,7 @@ function formatCommandFlagHelp(flag: string, commandPath: string[]): string {
     return '--terminal-state <state> Terminal accounting filter: active, reclaimable, retained, release_pending, release_unknown, or released'
   }
   if (command.startsWith('orchestration ') && flag === 'full') {
-    return '--full                 Print the full record Orca returned instead of the concise view'
+    return '--full                 Print the full record Coto returned instead of the concise view'
   }
   if (command === 'skills get' && flag === 'full') {
     return '--full                 Print the full guide with bundled references'

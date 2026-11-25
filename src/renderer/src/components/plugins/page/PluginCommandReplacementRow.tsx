@@ -33,7 +33,7 @@ export function PluginCommandReplacementRow({
       icon={<Replace />}
       title={t(
         'auto.components.plugins.PluginCommandReplacementRow.title',
-        '{{value0}} runs instead of Orca’s {{value1}}',
+        '{{value0}} runs instead of Coto’s {{value1}}',
         { value0: command.title, value1: action }
       )}
       wrap
@@ -47,7 +47,7 @@ export function PluginCommandReplacementRow({
             )
           : t(
               'auto.components.plugins.PluginCommandReplacementRow.detail',
-              'From its shortcut, the palette and menus. If the plugin fails, Orca’s own runs.'
+              'From its shortcut, the palette and menus. If the plugin fails, Coto’s own runs.'
             )
       }
       trailing={
@@ -57,7 +57,7 @@ export function PluginCommandReplacementRow({
             onCheckedChange={setOn}
             aria-label={t(
               'auto.components.plugins.PluginCommandReplacementRow.switch',
-              'Use {{value0}} instead of Orca’s {{value1}}',
+              'Use {{value0}} instead of Coto’s {{value1}}',
               { value0: command.title, value1: action }
             )}
           />

@@ -121,7 +121,7 @@ export function SshTargetServerMenuItems({
       ) : null}
       {canRestart ? (
         <DropdownMenuItem onSelect={() => onOpenDialog('restart')}>
-          {t('auto.components.settings.restartServer.action', 'Restart Orca’s server…')}
+          {t('auto.components.settings.restartServer.action', 'Restart Coto’s server…')}
         </DropdownMenuItem>
       ) : null}
       {canRecover ? (

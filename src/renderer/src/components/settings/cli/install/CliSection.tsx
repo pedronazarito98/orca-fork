@@ -179,7 +179,7 @@ export function CliSection({
                       getInstallDescription(currentPlatform)
                     : t(
                         'settings.general.cli.description',
-                        'Orca’s own terminals already have it.'
+                        'Coto’s own terminals already have it.'
                       )}
               </p>
             </div>
@@ -298,10 +298,10 @@ export function CliSection({
           <div id={GENERAL_SETTING_ANCHORS.cliSkill}>
             <AgentSkillSetupPanel
               variant="row"
-              title={t('settings.general.cli.skillTitle', 'Orca skill for agents')}
+              title={t('settings.general.cli.skillTitle', 'Coto skill for agents')}
               description={t(
                 'auto.components.settings.CliSection.e8012c03a1',
-                'Enables agents to use Orca workspace, terminal, and progress commands.'
+                'Enables agents to use Coto workspace, terminal, and progress commands.'
               )}
               skillNames={[ORCA_CLI_SKILL_NAME]}
               target={skillRuntime.bundledSkillTarget}

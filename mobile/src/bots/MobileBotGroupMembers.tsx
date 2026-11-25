@@ -219,7 +219,7 @@ export function MobileBotGroupMembers({
           <Text style={[styles.label, styles.footer]}>
             {t(
               'bots.groups.remoteOnComputer',
-              'Add or remove bots from other computers in Orca on {{host}}.',
+              'Add or remove bots from other computers in Coto on {{host}}.',
               { host: hostName }
             )}
           </Text>

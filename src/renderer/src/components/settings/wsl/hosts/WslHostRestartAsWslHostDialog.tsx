@@ -31,7 +31,7 @@ export function WslHostRestartAsWslHostDialog({
           <DialogDescription>
             {t(
               'auto.components.settings.wslHosts.restartAsWslHost.description',
-              'This ends every terminal and agent running on {{host}}, including ones an SSH host opened there. Orca then starts its server again as a WSL host, so projects can move to it.',
+              'This ends every terminal and agent running on {{host}}, including ones an SSH host opened there. Coto then starts its server again as a WSL host, so projects can move to it.',
               { host: hostName ?? '' }
             )}
           </DialogDescription>

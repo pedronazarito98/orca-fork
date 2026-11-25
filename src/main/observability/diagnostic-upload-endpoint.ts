@@ -17,16 +17,7 @@ export function resolveDiagnosticBuildIdentity(): 'stable' | 'rc' | null {
 }
 
 export function resolveDiagnosticTokenEndpoint(): string | null {
-  const buildEndpoint = resolveDiagnosticBuildTokenEndpoint()
-  // Pin official builds to the support endpoint named by the UI, regardless of user environment.
-  if (resolveDiagnosticBuildIdentity()) {
-    return buildEndpoint
-  }
-  const fromEnv = process.env.ORCA_DIAGNOSTICS_TOKEN_URL
-  if (fromEnv && fromEnv.length > 0) {
-    return fromEnv
-  }
-  return buildEndpoint
+  return null
 }
 
 export function resolveDiagnosticOrcaChannel(): 'stable' | 'rc' | 'dev' {

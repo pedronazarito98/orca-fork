@@ -55,8 +55,8 @@ export function MobileBotComputerPage(props: {
         : account.state === 'signed-in'
           ? account.email
           : account.state === 'signed-out'
-            ? t('bots.settings.signedOut', 'Signed out of Orca')
-            : t('bots.settings.signInChanged', 'Orca sign-in changed')
+            ? t('bots.settings.signedOut', 'Signed out of Coto')
+            : t('bots.settings.signInChanged', 'Coto sign-in changed')
   const icon = (Icon: typeof Laptop) => <Icon size={18} color={colors.textSecondary} />
   return (
     <>
@@ -82,7 +82,7 @@ export function MobileBotComputerPage(props: {
         />
         <ListRow
           leading={icon(CircleUserRound)}
-          title={t('bots.settings.orcaAccount', 'Orca account')}
+          title={t('bots.settings.orcaAccount', 'Coto account')}
           value={accountLine}
         />
         {folderPath ? (

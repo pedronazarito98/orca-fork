@@ -92,7 +92,7 @@ export function useAgentHistoryHandoff(args: {
           fail(
             t(
               'session.prAiTriageLaunch.updateRequired',
-              'Update Orca on this host to start an agent from your phone.'
+              'Update Coto on this host to start an agent from your phone.'
             )
           )
           return

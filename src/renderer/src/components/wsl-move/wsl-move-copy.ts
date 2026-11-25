@@ -40,18 +40,18 @@ export function wslMoveRefusalMessage(
   switch (refusal.code) {
     case 'wsl_move_unavailable':
       if (refusal.detail === 'preview-failed') {
-        return t('wslMove.refusal.previewFailed', 'Orca could not check these projects. Try again.')
+        return t('wslMove.refusal.previewFailed', 'Coto could not check these projects. Try again.')
       }
       if (refusal.detail === WSL_MOVE_MAPPED_DRIVE_UNVERIFIABLE_DETAIL) {
         return t(
           'wslMove.refusal.mappedDriveUnverifiable',
-          'Orca could not check a drive letter some projects are saved on. Make sure the drive is connected, then try again.'
+          'Coto could not check a drive letter some projects are saved on. Make sure the drive is connected, then try again.'
         )
       }
       if (refusal.detail === 'start-failed') {
         return t(
           'wslMove.refusal.startFailed',
-          'Orca lost contact with the move. Open this dialog again to see where it stands.'
+          'Coto lost contact with the move. Open this dialog again to see where it stands.'
         )
       }
       return t(
@@ -74,7 +74,7 @@ export function wslMoveRefusalMessage(
       return context === 'preview'
         ? t(
             'wslMove.refusal.alreadyInFlightPreview',
-            'A move of {{distro}} is still finishing. Starting this move first finishes or undoes it where Orca can.',
+            'A move of {{distro}} is still finishing. Starting this move first finishes or undoes it where Coto can.',
             { distro }
           )
         : t(
@@ -134,7 +134,7 @@ export function wslMoveRefusalMessage(
     case 'wsl_move_pause_failed':
       return t(
         'wslMove.refusal.pauseFailed',
-        'Orca could not pause the terminals in these projects, so nothing was moved. Paused terminals start again when you open them. Try again.'
+        'Coto could not pause the terminals in these projects, so nothing was moved. Paused terminals start again when you open them. Try again.'
       )
     case 'wsl_move_scope_changed':
       return t(
@@ -146,7 +146,7 @@ export function wslMoveRefusalMessage(
     case 'wsl_move_finished_earlier_move':
       return t(
         'wslMove.refusal.finishedEarlierMove',
-        'Orca first finished an earlier move into {{distro}}. Reload the window, then start this move again.',
+        'Coto first finished an earlier move into {{distro}}. Reload the window, then start this move again.',
         { distro }
       )
   }
@@ -200,8 +200,8 @@ export function wslMoveBlockerTitle(
           )
     case 'unverifiable':
       return one
-        ? t('wslMove.blocker.unverifiableOne', 'Orca cannot check a terminal right now')
-        : t('wslMove.blocker.unverifiableMany', 'Orca cannot check {{n}} terminals right now', {
+        ? t('wslMove.blocker.unverifiableOne', 'Coto cannot check a terminal right now')
+        : t('wslMove.blocker.unverifiableMany', 'Coto cannot check {{n}} terminals right now', {
             n
           })
     case 'automation-running':
@@ -271,7 +271,7 @@ export function wslMoveBrowserLoginsNotCopied(reason: string, t: Translate = tra
     case 'destination-environment-missing':
       return t(
         'wslMove.result.browserLoginsHostUnknown',
-        'Browser logins were not copied, because Orca could not identify the host’s browser profile. Sign in again in the host’s browser tabs.'
+        'Browser logins were not copied, because Coto could not identify the host’s browser profile. Sign in again in the host’s browser tabs.'
       )
     case 'destination-partition-conflict':
       return t(

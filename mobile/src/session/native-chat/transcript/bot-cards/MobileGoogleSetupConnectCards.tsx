@@ -100,7 +100,7 @@ export function MobileGoogleSetupConnectCard({
         <MobileGoogleSetupOnComputer
           text={t(
             'chat.botCards.google.connect.onComputer',
-            'Sign in to Google in Orca on your computer.'
+            'Sign in to Google in Coto on your computer.'
           )}
           fontScale={fontScale}
         />

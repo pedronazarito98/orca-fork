@@ -113,7 +113,8 @@ export class AgentStateRulesLiveUpdater {
   async start(): Promise<void> {
     this.stop()
     const settings = this.deps.readSettings()
-    const live = this.deps.isPackaged && settings.agentStateRulesLiveUpdates !== false
+    // Disabled in Coto so upstream live-rule downloads never run.
+    const live = false
     const run = { channel: live ? agentStateRulesChannelForAppVersion(this.deps.appVersion) : null }
     this.run = run
     const overridePath = settings.agentStateRulesPath

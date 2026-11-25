@@ -18,7 +18,7 @@ export function mobileStructuredSessionOpenMessage(
     if (workspaceKind === 'project') {
       return translate(
         'session.structuredOpen.projectRemoved',
-        'The project was removed from Orca.'
+        'The project was removed from Coto.'
       )
     }
     return workspaceKind === 'folder'
@@ -43,7 +43,7 @@ export function mobileStructuredSessionOpenMessage(
       case 'unsupported':
         return translate(
           'session.structuredOpen.unsupportedGeneric',
-          "Agent's chat can't be reopened until Orca is updated."
+          "Agent's chat can't be reopened until Coto is updated."
         )
       case 'unreachable':
         return translate(
@@ -69,7 +69,7 @@ export function mobileStructuredSessionOpenMessage(
     case 'unsupported':
       return translate(
         'session.structuredOpen.unsupported',
-        "{{agent}}'s chat can't be reopened until Orca is updated.",
+        "{{agent}}'s chat can't be reopened until Coto is updated.",
         { agent }
       )
     case 'unreachable':

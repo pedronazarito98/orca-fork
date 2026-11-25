@@ -113,7 +113,7 @@ export function DeleteAgentHistoryWithWorkspaceSetting({
             setting.state === 'unsupported'
               ? t(
                   'components.settings.agents.deleteHistoryWithWorkspace.unsupported',
-                  'Update Orca on {{host}} to use this setting there.',
+                  'Update Coto on {{host}} to use this setting there.',
                   { host: hostLabel }
                 )
               : search.description
@@ -137,7 +137,7 @@ export function DeleteAgentHistoryWithWorkspaceSetting({
             <DialogDescription>
               {t(
                 'components.settings.agents.deleteHistoryWithWorkspace.confirmDescription',
-                "Orca will delete Orca, Claude Code and Codex chats from workspaces that no longer exist, including ones deleted before today. Chats from workspaces you still have are kept. Deleted chats can't be recovered."
+                "Coto will delete Coto, Claude Code and Codex chats from workspaces that no longer exist, including ones deleted before today. Chats from workspaces you still have are kept. Deleted chats can't be recovered."
               )}
             </DialogDescription>
           </DialogHeader>

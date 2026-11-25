@@ -24,9 +24,9 @@
     "aboutScreen": {
       "title": "About",
       "tagline": "Open-source agent IDE for 100x builders",
-      "website": "Orca website",
-      "sourceCode": "Orca source code",
-      "socialProfile": "Orca on X",
+      "website": "Coto website",
+      "sourceCode": "Coto source code",
+      "socialProfile": "Coto on X",
       "openLinkFailed": "Could not open the link. Try again."
     },
     "appUpdateSettingsRows": {
@@ -41,7 +41,7 @@
       "lastCheckedHours_other": "Last checked {{count}}h ago",
       "lastCheckedDays_one": "Last checked {{count}}d ago",
       "lastCheckedDays_other": "Last checked {{count}}d ago",
-      "updateToVersion": "Update to Orca {{version}}",
+      "updateToVersion": "Update to Coto {{version}}",
       "update": "Update",
       "installedVersion": "Version {{version}}",
       "checkUpdatesStatus": "Check for updates, {{status}}",
@@ -49,8 +49,8 @@
     },
     "browserSettingsScreen": {
       "askEachTime": "Ask each time",
-      "askEachTimeDescription": "Choose Orca browser, phone browser, or copy the link each time.",
-      "desktopBrowser": "Orca browser on desktop",
+      "askEachTimeDescription": "Choose Coto browser, phone browser, or copy the link each time.",
+      "desktopBrowser": "Coto browser on desktop",
       "desktopBrowserDescription": "Open in the streamed browser from your paired desktop.",
       "phoneBrowser": "Phone browser",
       "phoneBrowserDescription": "Open in Safari, Chrome, or another browser on this phone.",
@@ -111,11 +111,11 @@
       "pairDesktop": "Pair a desktop and try again.",
       "connectDesktop": "Connect a desktop and try again.",
       "desktopUnreachable": "Could not reach the desktop. Try again.",
-      "accepted": "Accepted by Orca’s push service. Check for the notification.",
+      "accepted": "Accepted by Coto’s push service. Check for the notification.",
       "rateLimited": "Too many notifications. Try again later.",
-      "pushServiceFailed": "Could not send through Orca’s push service. Try again.",
-      "hostClockSkew": "The clock on {{host}} is off by {{seconds}} seconds, so Orca’s push service refused it. Set its clock to the correct time and try again.",
-      "hostClockSkewDuration": "The clock on {{host}} is off by {{duration}}, so Orca’s push service refused it. Set its clock to the correct time and try again.",
+      "pushServiceFailed": "Could not send through Coto’s push service. Try again.",
+      "hostClockSkew": "The clock on {{host}} is off by {{seconds}} seconds, so Coto’s push service refused it. Set its clock to the correct time and try again.",
+      "hostClockSkewDuration": "The clock on {{host}} is off by {{duration}}, so Coto’s push service refused it. Set its clock to the correct time and try again.",
       "sendFailed": "Could not send push test.",
       "troubleReceivingAlerts": "Having trouble receiving alerts?",
       "description": "Test push delivery, or a local notification when push is unavailable.",
@@ -125,12 +125,12 @@
       "localTitle": "Test notification",
       "localBody": "Local notification test from this phone.",
       "localScheduled": "{{reason}} Local test scheduled. Check for the notification. This checks display only; it does not verify agent alert delivery.",
-      "disabled": "Notifications are turned off in Orca. Enable notifications and try again.",
+      "disabled": "Notifications are turned off in Coto. Enable notifications and try again.",
       "osDisabled": "Notifications are turned off in system settings. Allow notifications and try again.",
       "noToken": "No push token is available on this phone.",
       "unsupportedHost": "This desktop does not support push notifications. Update it to receive push.",
       "registrationPending": "Push registration is not ready on this desktop. Try again shortly.",
-      "liveFallbackScheduled": "{{reason}} Local test scheduled. Check for the notification. Live alerts are available while Orca is running and connected."
+      "liveFallbackScheduled": "{{reason}} Local test scheduled. Check for the notification. Live alerts are available while Coto is running and connected."
     },
     "notificationSettingsScreen": {
       "loadFailed": "Could not load notification settings. Try again.",
@@ -215,12 +215,12 @@
         "empty": "No changes yet."
       },
       "githubStatus": {
-        "notInstalled": "Orca not installed",
+        "notInstalled": "Coto not installed",
         "unlinked": "Not linked"
       },
       "linearStatus": {
         "unlinked": "Not linked",
-        "notInstalled": "Orca not installed"
+        "notInstalled": "Coto not installed"
       }
     },
     "sharedLinks": {
@@ -258,7 +258,7 @@
     "offline": {
       "waitingFor": "Waiting for {{host}}",
       "waiting": "Waiting for host",
-      "message": "Check that the host is awake and Orca is running.",
+      "message": "Check that the host is awake and Coto is running.",
       "reconnect": "Reconnect"
     },
     "noMatch": {
@@ -284,8 +284,8 @@
       "connectionPreview": "Connects to {{endpoint}}",
       "updateStepsServiceManager": "Update it with its package manager or service manager.",
       "updateStepsSourceCheckout": "Update it from its source checkout.",
-      "updateStepsServer": "Update Orca on the server, then restart it.",
-      "orcaVersion": "Orca version"
+      "updateStepsServer": "Update Coto on the server, then restart it.",
+      "orcaVersion": "Coto version"
     }
   },
   "app": {
@@ -296,7 +296,7 @@
       "stepProgress": "Step {{step}} of {{total}}"
     },
     "notifications": {
-      "description": "Get agent alerts even when the app is closed. Delivered through Orca’s push service and Apple or Google."
+      "description": "Get agent alerts even when the app is closed. Delivered through Coto’s push service and Apple or Google."
     },
     "pairConfirm": {
       "connectTimedOut": "Couldn't connect within {{seconds}}s — see log below for where it stalled",
@@ -309,21 +309,21 @@
       "backToHome": "Back to home"
     },
     "pairScan": {
-      "invalidQrCode": "Not a valid Orca QR code",
+      "invalidQrCode": "Not a valid Coto QR code",
       "downloadQrCode": "That's the download code. Scan the pairing code in step 2 on your desktop.",
       "invalidPairingCode": "Not a valid pairing code — copy it from your computer and paste again",
       "connectTimedOut": "Couldn't connect within {{seconds}}s — see log below for where it stalled",
       "pairingFailed": "Pairing failed: {{error}}",
       "title": "Pair with desktop",
       "cameraDisabledTitle": "Camera Access Disabled",
-      "cameraPermissionDescription": "Scan the QR code from Orca on your desktop, or paste the pairing code instead.",
+      "cameraPermissionDescription": "Scan the QR code from Coto on your desktop, or paste the pairing code instead.",
       "cameraDisabledDescription": "Enable camera access in Settings, or paste the pairing code instead.",
       "openSettings": "Open Settings",
       "pasteInstead": "Paste code instead",
       "pasteCodeTitle": "Paste pairing code",
       "pasteCodeMessage": "Copy the code shown under the QR on your computer.",
-      "pasteCodePlaceholder": "orca://pair?code=... or paste the code",
-      "openDesktopStep": "Open Orca on your computer",
+      "pasteCodePlaceholder": "coto://pair?code=... or paste the code",
+      "openDesktopStep": "Open Coto on your computer",
       "openMobileSettingsStep": "Go to Settings → Mobile",
       "scanCodeStep": "Scan the QR code",
       "pastePairingCode": "Paste pairing code",
@@ -331,7 +331,7 @@
       "pairingLog": "Pairing log",
       "tryAgain": "Try Again",
       "codeNoLongerValid": "This pairing code expired, was already used, or was replaced. Show a new code on your desktop and scan again.",
-      "runtimeAccessLink": "This link is for another Orca app. Scan the code in Settings → Mobile on your computer, or run orca pair --mobile on your server."
+      "runtimeAccessLink": "This link is for another Coto app. Scan the code in Settings → Mobile on your computer, or run orca pair --mobile on your server."
     },
     "pair": {
       "missingCode": "Missing pairing code",
@@ -345,7 +345,7 @@
       "restoreAfterSeconds_other": "After {{count}}s",
       "title": "Terminal",
       "leaveAppHeading": "WHEN YOU LEAVE THE APP",
-      "leaveAppDescription": "While you're using a terminal on your phone, Orca shrinks it to fit your screen. When you close the app or switch away, this controls whether it stays at phone size (so interactive CLI tools don't reflow) or resizes back to your desktop. You can always use Restore on the desktop banner to resize manually.",
+      "leaveAppDescription": "While you're using a terminal on your phone, Coto shrinks it to fit your screen. When you close the app or switch away, this controls whether it stays at phone size (so interactive CLI tools don't reflow) or resizes back to your desktop. You can always use Restore on the desktop banner to resize manually.",
       "noPairedDesktops": "No paired desktops yet. Pair one to control terminal behavior.",
       "restoreHost": "Restore {{name}}",
       "previewColumns_one": "{{count}} column",
@@ -369,7 +369,7 @@
       "weightMedium": "Medium",
       "fontPickerTitle": "Terminal font",
       "fontsOnDevice": "On this device",
-      "fontsIncluded": "Included with Orca",
+      "fontsIncluded": "Included with Coto",
       "systemMono": "System mono",
       "defaultFont": "Default",
       "resetFont": "Reset font settings"
@@ -377,15 +377,15 @@
   },
   "appMove": {
     "play": {
-      "title": "Orca is now on Google Play",
+      "title": "Coto is now on Google Play",
       "description": "This app still works, but updates now come from Google Play. Switching takes a few minutes.",
-      "installTitle": "Install Orca from Google Play",
+      "installTitle": "Install Coto from Google Play",
       "installDescription": "You can do this now, wherever you are.",
       "openGooglePlay": "Open Google Play",
       "cantUseGooglePlay": "I can't use Google Play"
     },
     "download": {
-      "title": "Get the new Orca app",
+      "title": "Get the new Coto app",
       "description": "This app still works, but updates and security fixes now come through the new app. Switching takes a few minutes.",
       "installTitle": "Download the new app",
       "installDescription": "If your phone asks, allow your browser to install apps.",
@@ -394,7 +394,7 @@
       "keepThisVersionNote": "You'll miss security fixes. We'll remind you in a week."
     },
     "pairTitle": "Pair it with your computer",
-    "pairDescription": "In Orca on your computer, go to Settings → Mobile and scan the code.",
+    "pairDescription": "In Coto on your computer, go to Settings → Mobile and scan the code.",
     "deleteTitle": "Delete this app",
     "deleteDescription": "Once the new app shows your agents. Until then, keep using this one.",
     "dataKept": "Your agents, chats and workspaces are saved on your computer, so you'll see them all in the new app.",
@@ -457,7 +457,7 @@
       "title": "Agent Session History",
       "refreshSessions": "Refresh agent sessions",
       "unavailable": "Agent Session History Unavailable",
-      "updateHost": "Update Orca on this host to browse agent session history.",
+      "updateHost": "Update Coto on this host to browse agent session history.",
       "placeholder": "Search sessions, repo:, path:",
       "skipped_one": "{{count}} transcript skipped",
       "skipped_other": "{{count}} transcripts skipped",
@@ -561,7 +561,7 @@
     },
     "troubleshootCommonIssues": {
       "notificationsTitle": "Push Notifications",
-      "allowNotifications": "Check that system settings allow Orca notifications and that Focus or Do Not Disturb is off.",
+      "allowNotifications": "Check that system settings allow Coto notifications and that Focus or Do Not Disturb is off.",
       "notificationNetwork": "Try cellular or another Wi-Fi network. If alerts arrive after switching, your network may be delaying delivery.",
       "wifiTitle": "Different WiFi Networks",
       "sameNetwork": "Both devices must be on the same LAN (unless connected through Tailscale).",
@@ -569,12 +569,12 @@
       "reconnectWifi": "Try reconnecting WiFi on both devices.",
       "firewallTitle": "Firewall Blocking Port {{port}}",
       "linuxFirewall": "Linux: sudo ufw allow {{port}}",
-      "macosFirewall": "macOS: System Settings → Network → Firewall — allow Orca.",
-      "windowsFirewall": "Windows: Defender Firewall → Allow app — enable Orca for Private networks.",
+      "macosFirewall": "macOS: System Settings → Network → Firewall — allow Coto.",
+      "windowsFirewall": "Windows: Defender Firewall → Allow app — enable Coto for Private networks.",
       "restrictedNetwork": "Corporate/school networks may block P2P — try a personal hotspot.",
       "desktopTitle": "Desktop App Not Running",
-      "openDesktop": "Orca must be open on your desktop to accept connections.",
-      "restartDesktop": "Try restarting Orca — the companion server starts on launch.",
+      "openDesktop": "Coto must be open on your desktop to accept connections.",
+      "restartDesktop": "Try restarting Coto — the companion server starts on launch.",
       "pairAfterUpdate": "After an update, you may need to re-pair via QR code.",
       "timeoutTitle": "Connection Timeout",
       "wifiSignal": "Check WiFi signal strength on your phone.",
@@ -661,13 +661,13 @@
   },
   "dictation": {
     "setup": {
-      "serverUpdateRequired": "Update Orca on this server to use voice dictation.",
-      "alreadyActive": "Dictation is already in use on the computer or another phone. Update Orca on the computer to dictate from several devices at once.",
+      "serverUpdateRequired": "Update Coto on this server to use voice dictation.",
+      "alreadyActive": "Dictation is already in use on the computer or another phone. Update Coto on the computer to dictate from several devices at once.",
       "sessionLimit": "Too many devices are dictating on this computer. Try again when one finishes.",
       "modelBusy": "Another device is dictating with a different speech model. Try again when it finishes.",
       "repairRequired": "Re-pair this phone with the computer to use dictation.",
       "sessionLost": "Dictation lost its connection to the computer. Try again.",
-      "desktopUpdateRequired": "Update the paired desktop Orca app to use mobile voice settings.",
+      "desktopUpdateRequired": "Update the paired desktop Coto app to use mobile voice settings.",
       "loadFailed": "Failed to load dictation models",
       "downloadFailed": "Failed to start download",
       "deleteFailed": "Failed to delete model",
@@ -733,19 +733,19 @@
   },
   "home": {
     "appUpdateCard": {
-      "title": "Orca {{version}} is available",
-      "updateAccessibilityLabel": "Orca {{version}} is available, tap to update",
-      "dismissAccessibilityLabel": "Dismiss Orca {{version}} update",
+      "title": "Coto {{version}} is available",
+      "updateAccessibilityLabel": "Coto {{version}} is available, tap to update",
+      "dismissAccessibilityLabel": "Dismiss Coto {{version}} update",
       "update": "Update"
     },
     "emptyState": {
-      "openDesktopTitle": "Open Orca desktop",
+      "openDesktopTitle": "Open Coto desktop",
       "openDesktopDescription": "Go to Settings → Mobile and generate a pairing QR code.",
       "scanCodeTitle": "Scan the code",
       "connectedTitle": "You're connected",
       "connectedDescription": "Your desktop will appear here. Everything is encrypted end-to-end.",
       "title": "Connect your desktop",
-      "description": "Pair with Orca on your computer to check on your agents, jump into any terminal, and drive work from your phone.",
+      "description": "Pair with Coto on your computer to check on your agents, jump into any terminal, and drive work from your phone.",
       "pairDesktopButton": "Pair desktop",
       "scanCodeBelowDescription": "Tap Pair desktop below, then point your camera at the QR code on your screen."
     },
@@ -789,7 +789,7 @@
       "showFor": "Show automations for",
       "emptyTitle": "Schedule agent work",
       "pairDesktop": "Pair a desktop to view and run automations.",
-      "updateDesktop": "Update Orca on {{desktop}} to use automations.",
+      "updateDesktop": "Update Coto on {{desktop}} to use automations.",
       "connectDesktop": "Connect {{desktop}} to view and run automations.",
       "noAutomations": "No automations yet",
       "createHint": "Tap + to schedule an agent.",
@@ -824,13 +824,13 @@
       "noBotsTitle": "No bots yet",
       "pairDesktop": "Pair a desktop to see its bots here.",
       "seeAll": "See all bots",
-      "updateOneBody": "Its version of Orca can’t show bots on your phone yet.",
-      "updateManyTitle": "Update Orca on your computers",
-      "updateManyBody": "Their version of Orca can’t show bots on your phone yet.",
-      "offOneBody": "To turn them on, open Orca on {{host}} and go to Settings › Bots › Enable bots.",
-      "offServerBody": "To turn them on, open Orca on {{desktop}} and go to Settings › Bots › Enable bots on {{host}}.",
+      "updateOneBody": "Its version of Coto can’t show bots on your phone yet.",
+      "updateManyTitle": "Update Coto on your computers",
+      "updateManyBody": "Their version of Coto can’t show bots on your phone yet.",
+      "offOneBody": "To turn them on, open Coto on {{host}} and go to Settings › Bots › Enable bots.",
+      "offServerBody": "To turn them on, open Coto on {{desktop}} and go to Settings › Bots › Enable bots on {{host}}.",
       "offManyTitle": "Bots are off on your computers",
-      "offManyBody": "To turn them on, open Orca on each computer and go to Settings › Bots › Enable bots.",
+      "offManyBody": "To turn them on, open Coto on each computer and go to Settings › Bots › Enable bots.",
       "waits": {
         "questions_one": "question",
         "questions_other": "{{count}} questions",
@@ -891,14 +891,14 @@
       "ignoredNamesMore": "{{names}} and more",
       "ignoredNamesCount": "{{names}} +{{value0}}",
       "ignoredUnchecked": "Ignored files could not be fully checked",
-      "needsUpdate": "Update Orca on your computer to delete this workspace from your phone.",
+      "needsUpdate": "Update Coto on your computer to delete this workspace from your phone.",
       "removeTitle": "Remove Workspace",
-      "removeFolderMessage": "Remove \"{{name}}\" from Orca? The folder on disk is kept."
+      "removeFolderMessage": "Remove \"{{name}}\" from Coto? The folder on disk is kept."
     },
     "hostScreenOverlays": {
       "deleteConfirmMessage": "Delete \"{{name}}\" ({{branch}})?",
-      "deleteDestroysEnvironment": "This also destroys the environment \"{{environment}}\" that Orca created for it, with any uncommitted work and running terminals on it.",
-      "deleteKeepsEnvironment": "The environment \"{{environment}}\" that Orca created for it keeps running: its recipe has no destroy step.",
+      "deleteDestroysEnvironment": "This also destroys the environment \"{{environment}}\" that Coto created for it, with any uncommitted work and running terminals on it.",
+      "deleteKeepsEnvironment": "The environment \"{{environment}}\" that Coto created for it keeps running: its recipe has no destroy step.",
       "sleep": "Sleep",
       "unpin": "Unpin",
       "pin": "Pin",
@@ -926,7 +926,7 @@
       "checksPassing": "Checks: Passing",
       "checksFailing": "Checks: Failing",
       "checksPending": "Checks: Pending",
-      "createdFromCli": "Created from Orca CLI",
+      "createdFromCli": "Created from Coto CLI",
       "createdByNamedAutomation": "Created by automation “{{name}}”",
       "createdByAutomation": "Created by automation",
       "openLinkWithTitle": "Open {{label}}, {{title}}",
@@ -1016,7 +1016,7 @@
   "webShell": {
     "shellStateScreen": {
       "isolationUnavailable": "This device's WebView is too old to open the workspace safely.",
-      "isolationUnavailableAndroid": "Orca needs Android System WebView or Chrome 101 or newer. Update it from the Play Store, or pick a newer one in Developer options > WebView implementation.",
+      "isolationUnavailableAndroid": "Coto needs Android System WebView or Chrome 101 or newer. Update it from the Play Store, or pick a newer one in Developer options > WebView implementation.",
       "webViewInUse": "This device has {{name}} {{version}}.",
       "downloadFailed": "The latest app could not be downloaded from this host.",
       "hostProfileUnreadable": "Could not read this host on your device. Try again.",
@@ -1029,9 +1029,9 @@
       "checkingHost": "Checking host"
     },
     "pageRouteUnavailable": {
-      "updateTitle": "Update Orca",
-      "updateMessage": "This screen needs a newer Orca on your phone or on {{host}}.",
-      "updateMessageNoHost": "This screen needs a newer Orca.",
+      "updateTitle": "Update Coto",
+      "updateMessage": "This screen needs a newer Coto on your phone or on {{host}}.",
+      "updateMessageNoHost": "This screen needs a newer Coto.",
       "serverTitle": "Can’t reach this server",
       "serverMessage": "Your phone can’t reach this workspace’s server through {{host}}."
     }
@@ -1063,7 +1063,7 @@
       "onlyWhenAgentNeedsInputHint": "Permission requests and questions. Skips finished agents."
     },
     "desktopChannel": {
-      "silentName": "Orca silent notifications",
+      "silentName": "Coto silent notifications",
       "name": "Desktop Notifications"
     }
   },
@@ -1073,7 +1073,7 @@
       "notificationsTitle": "Don’t miss when an agent needs you",
       "sessionViewDescription": "Choose whether supported agent sessions open in the terminal or Chat UI on this device. Press and hold a session tab to switch its view, or change the default any time in Settings → Chat UI.",
       "notificationsDescription": "Get a notification on this phone when an agent finishes or is waiting — even if you aren’t using the app.",
-      "notificationsDisclosure": "Delivered through Orca’s push service after your desktop has been idle for 3 minutes. Change this anytime in Settings.",
+      "notificationsDisclosure": "Delivered through Coto’s push service after your desktop has been idle for 3 minutes. Change this anytime in Settings.",
       "useChatUi": "Use Chat UI",
       "openInChatUi": "Open sessions in Chat UI",
       "keepTerminal": "Keep terminal",
@@ -1094,9 +1094,9 @@
   "connection": {
     "connectionHealth": {
       "signInRequired": "Sign-in required on {{host}}",
-      "signInDetail": "Sign in to Orca on your desktop to reconnect",
+      "signInDetail": "Sign in to Coto on your desktop to reconnect",
       "hostOffline": "{{host}} is offline",
-      "hostOfflineDetail": "Check it's awake, Orca is running, and you're signed in",
+      "hostOfflineDetail": "Check it's awake, Coto is running, and you're signed in",
       "relayAccessExpired": "Relay access expired for {{host}}",
       "rePairDetail": "Re-pair with your desktop",
       "relayUnreachable": "Can't reach Relay",
@@ -1164,7 +1164,7 @@
       "permission": "Needs attention"
     },
     "hostWorkspaceListStates": {
-      "checkHost": "Check that your computer is awake and Orca is running",
+      "checkHost": "Check that your computer is awake and Coto is running",
       "loadFailed": "Could not load workspaces from this host",
       "noFilterMatches": "No workspaces match filters",
       "empty": "No workspaces",
@@ -1184,7 +1184,7 @@
   },
   "components": {
     "agentLaunchNotice": {
-      "updateRequired": "Update Orca on this host to start an agent from your phone.",
+      "updateRequired": "Update Coto on this host to start an agent from your phone.",
       "statusUnreadable": "Could not read this host's status. Retrying…",
       "copyFailed": "Couldn't copy",
       "copyPrompt": "Copy prompt"
@@ -1202,7 +1202,7 @@
     },
     "authFailedBannerActions": {
       "repair": "Re-pair",
-      "webNote": "Reconnect or remove this host from the Orca app."
+      "webNote": "Reconnect or remove this host from the Coto app."
     },
     "codexResetCreditAction": {
       "earnedReset": "Earned Codex rate-limit reset",
@@ -1251,10 +1251,10 @@
       "dismissNotice": "Dismiss notice"
     },
     "jiraConnectPrompt": {
-      "updateDesktop": "Update Orca on this host",
+      "updateDesktop": "Update Coto on this host",
       "connectOnDesktop": "Connect Jira on your desktop",
       "credentialUnreadable": "Jira is saved but unreadable: {{credentialError}}",
-      "connectHint": "Add your Jira site in Orca desktop under Settings → Integrations, then check again.",
+      "connectHint": "Add your Jira site in Coto desktop under Settings → Integrations, then check again.",
       "checkAgain": "Check again"
     },
     "dictationSetupSheet": {
@@ -1303,7 +1303,7 @@
       "terminalLabel": "{{title}} ({{id}})",
       "terminal": "Terminal",
       "newAgentSession": "New Agent Session",
-      "updateRequired": "Update Orca on this host",
+      "updateRequired": "Update Coto on this host",
       "statusUnreadable": "Could not read this host's status. Retrying…",
       "copyNotes": "Copy Notes",
       "sendUnsentNotes": "Send Unsent Notes",
@@ -1473,21 +1473,21 @@
       "where": "Where"
     },
     "protocolBlockScreen": {
-      "updateMobileTitle": "Update Orca Mobile",
-      "updateDesktopTitle": "Update Orca on this host",
+      "updateMobileTitle": "Update Coto Mobile",
+      "updateDesktopTitle": "Update Coto on this host",
       "refreshWorkspaceTitle": "Refresh the mobile workspace",
       "refreshWorkspaceBody": "The workspace cached for this host is older than the host expects. Reconnect to this host to download the current one.",
-      "mobileTooOldAppStore": "This host needs a newer Orca Mobile app. Update Orca Mobile from the App Store, then try this host again.",
-      "mobileTooOldGooglePlay": "This host needs a newer Orca Mobile app. Update Orca Mobile from Google Play, then try this host again.",
-      "mobileTooOldGitHubReleases": "This host needs a newer Orca Mobile app. Update Orca Mobile from GitHub Releases, then try this host again.",
-      "workspaceNeedsUpdateAppStore": "This host's mobile workspace needs a newer Orca Mobile app. Update Orca Mobile from the App Store, then try this host again.",
-      "workspaceNeedsUpdateGooglePlay": "This host's mobile workspace needs a newer Orca Mobile app. Update Orca Mobile from Google Play, then try this host again.",
-      "workspaceNeedsUpdateGitHubReleases": "This host's mobile workspace needs a newer Orca Mobile app. Update Orca Mobile from GitHub Releases, then try this host again.",
-      "desktopTooOldBody": "Orca on this host is too old for your current Orca Mobile app. Update Orca there, then try this host again.",
+      "mobileTooOldAppStore": "This host needs a newer Coto Mobile app. Update Coto Mobile from the App Store, then try this host again.",
+      "mobileTooOldGooglePlay": "This host needs a newer Coto Mobile app. Update Coto Mobile from Google Play, then try this host again.",
+      "mobileTooOldGitHubReleases": "This host needs a newer Coto Mobile app. Update Coto Mobile from GitHub Releases, then try this host again.",
+      "workspaceNeedsUpdateAppStore": "This host's mobile workspace needs a newer Coto Mobile app. Update Coto Mobile from the App Store, then try this host again.",
+      "workspaceNeedsUpdateGooglePlay": "This host's mobile workspace needs a newer Coto Mobile app. Update Coto Mobile from Google Play, then try this host again.",
+      "workspaceNeedsUpdateGitHubReleases": "This host's mobile workspace needs a newer Coto Mobile app. Update Coto Mobile from GitHub Releases, then try this host again.",
+      "desktopTooOldBody": "Coto on this host is too old for your current Coto Mobile app. Update Coto there, then try this host again.",
       "openAppStore": "Open App Store",
       "openGooglePlay": "Open Google Play",
       "openGitHubReleases": "Open GitHub Releases",
-      "getVersion": "Get Orca {{version}}",
+      "getVersion": "Get Coto {{version}}",
       "refreshRecoveryNote": "If this message stays, remove this host and pair it again.",
       "updateRecoveryNote": "Already updated? Go back to Hosts and refresh the connection. If this message stays, remove this host and pair it again.",
       "backToHosts": "Back to hosts"
@@ -2154,7 +2154,7 @@
       "newHint": "Create a new local branch",
       "newName": "New branch name",
       "automaticName": "Automatic name",
-      "hostUpdateRequired": "Update Orca on the workspace host to reuse a branch or explicitly create a separate branch."
+      "hostUpdateRequired": "Update Coto on the workspace host to reuse a branch or explicitly create a separate branch."
     },
     "activity": {
       "permission": "Needs permission"
@@ -2197,7 +2197,7 @@
       "dialogAnswerFailed": "That answer did not reach the page."
     },
     "stream": {
-      "updateApp": "Update the Orca app to stream browser tabs here.",
+      "updateApp": "Update the Coto app to stream browser tabs here.",
       "hostCannotStream": "This host can't stream browser tabs here.",
       "checking": "Checking desktop browser streaming support.",
       "pageUnavailable": "Browser page is not available yet.",
@@ -2209,15 +2209,15 @@
       "connectionNotSecure": "Connection isn't secure",
       "certificateNameMismatch": "The certificate doesn't match {{value0}}.",
       "certificateDateInvalid": "The certificate for {{value0}} isn't valid at the current date and time.",
-      "certificateAuthorityInvalid": "Orca doesn't trust the authority that issued the certificate for {{value0}}.",
-      "certificateVerificationFailed": "Orca couldn't verify the certificate for {{value0}}.",
+      "certificateAuthorityInvalid": "Coto doesn't trust the authority that issued the certificate for {{value0}}.",
+      "certificateVerificationFailed": "Coto couldn't verify the certificate for {{value0}}.",
       "proceedUnsafe": "Proceed Anyway (Unsafe)",
       "connecting": "Connecting…",
       "certificateChallengeExpired": "This certificate approval expired. Retry the page to request a new one.",
       "certificateChallengeChanged": "The certificate request changed. Retry the page and review the new warning.",
-      "certificateProceedFailed": "Orca could not approve this certificate request. Retry the page and try again.",
+      "certificateProceedFailed": "Coto could not approve this certificate request. Retry the page and try again.",
       "certificateChallengeUnavailable": "This certificate request is no longer available. Retry the page to request a new one.",
-      "certificateProceedNeedsHostUpdate": "Update Orca on this host to accept certificate warnings from your phone."
+      "certificateProceedNeedsHostUpdate": "Update Coto on this host to accept certificate warnings from your phone."
     },
     "pagePrompt": {
       "downloadStarted": "Downloading to {{path}} on the host",
@@ -2316,7 +2316,7 @@
     },
     "pdfPreview": {
       "openFailed": "Unable to open this PDF",
-      "updateRequired": "Update Orca Mobile to open PDFs",
+      "updateRequired": "Update Coto Mobile to open PDFs",
       "opening": "Opening PDF...",
       "open": "Open PDF"
     },
@@ -2571,7 +2571,7 @@
       "prompt": "Prompt",
       "commandText": "Command Text",
       "promptPlaceholder": "Ask the agent to investigate this workspace",
-      "olderHostPromptTooLong": "Too long for this host. Update Orca on the host to save longer prompts.",
+      "olderHostPromptTooLong": "Too long for this host. Update Coto on the host to save longer prompts.",
       "promptTooLong": "Too long to save.",
       "promptSizeKilobytes": "{{used}} KB / {{max}} KB",
       "promptSizeCharacters": "{{used}} / {{max}} characters",
@@ -2616,8 +2616,8 @@
     },
     "aiVaultResumePreparation": {
       "openInChat": "This {{agent}} conversation is open in a chat. Refresh Session History to open it.",
-      "ownershipUnknown": "Orca could not confirm who owns this {{agent}} conversation. Refresh Session History and try again.",
-      "preparationRefused": "Orca could not prepare this {{agent}} conversation. Start a new chat to continue.",
+      "ownershipUnknown": "Coto could not confirm who owns this {{agent}} conversation. Refresh Session History and try again.",
+      "preparationRefused": "Coto could not prepare this {{agent}} conversation. Start a new chat to continue.",
       "prepareFailed": "Could not prepare this legacy Codex session. Retry resume."
     },
     "floatingWorkspace": {
@@ -2715,7 +2715,7 @@
     "diffReviewLoaders": {
       "committedChangesUnavailable": "Committed changes unavailable",
       "committedChangesFailed": "Committed changes failed",
-      "desktopUpdateRequired": "Update Orca on this host to review changes on mobile.",
+      "desktopUpdateRequired": "Update Coto on this host to review changes on mobile.",
       "reviewNotesLoadFailed": "Unable to load review notes",
       "diffLoadFailed": "Unable to load diff",
       "committedDiffUnavailable": "Committed diff is unavailable",
@@ -2842,7 +2842,7 @@
     },
     "prAiTriageLaunch": {
       "promptNotSent": "The agent started, but the prompt wasn't sent.",
-      "updateRequired": "Update Orca on this host to start an agent from your phone.",
+      "updateRequired": "Update Coto on this host to start an agent from your phone.",
       "loadFailed": "Could not load the available agents.",
       "emptyPrompt": "This action's saved prompt is empty. Update Source Control AI settings on your computer.",
       "agentStartedIn": "Agent started in {{label}}",
@@ -2858,7 +2858,7 @@
     "useDiffReviewController": {
       "missingWorktree": "Missing worktree",
       "loadFailed": "Unable to load review",
-      "commitMissing": "Update the Orca app to open commit files here."
+      "commitMissing": "Update the Coto app to open commit files here."
     },
     "useDiffReviewDiffLoading": {
       "loadFailed": "Unable to load diff"
@@ -2906,7 +2906,7 @@
     },
     "useCloseActions": {
       "closeFailed": "Couldn't close the tab. Try again.",
-      "closeFailedDesktopNotReady": "Couldn't close the tab. Orca on your computer is still loading. Try again in a moment."
+      "closeFailedDesktopNotReady": "Couldn't close the tab. Coto on your computer is still loading. Try again in a moment."
     },
     "useContentCreateActions": {
       "noteCreateFailed": "Failed to create markdown note",
@@ -2944,7 +2944,7 @@
       "copyNotesHint": "Copy notes instead"
     },
     "useStartup": {
-      "wakeAgents": "Open Orca on the host to wake sleeping agents."
+      "wakeAgents": "Open Coto on the host to wake sleeping agents."
     },
     "useTerminalInput": {
       "clearFailed": "Couldn't clear terminal",
@@ -2996,9 +2996,9 @@
       "backgroundTasksNotStopped": "The background tasks weren't stopped.",
       "answerUnconfirmed": "Your answer was recorded but the agent did not confirm it.",
       "pluginInputRequired": "{{agent}} stopped because the \"{{plugin}}\" plugin is waiting for input in a terminal pane. Disable the plugin for chat sessions, or run the task in a {{agent}} terminal.",
-      "hostFault": "Orca ran into a problem, so this didn't go through.",
-      "hostFaultTryAgain": "Orca ran into a problem, so this didn't go through. Try again.",
-      "hostStopped": "{{agent}} never finished starting, so Orca stopped it.",
+      "hostFault": "Coto ran into a problem, so this didn't go through.",
+      "hostFaultTryAgain": "Coto ran into a problem, so this didn't go through. Try again.",
+      "hostStopped": "{{agent}} never finished starting, so Coto stopped it.",
       "providerRateLimited": "{{agent}} is rate-limited and retrying.",
       "providerRetrying": "{{agent}} hit a temporary problem and is retrying.",
       "providerRetryingQuoted": "{{agent}} is retrying: {{detail}}.",
@@ -3045,10 +3045,10 @@
       "emptyMessage": "This message is empty, so it was not sent.",
       "commandUnavailable": "This command isn't available in {{agent}} chats, so it was not sent.",
       "queueFull": "Too many messages were waiting for the agent, so this one was not sent.",
-      "writeFailed": "Orca couldn't hand this message to the agent, so it was not sent.",
+      "writeFailed": "Coto couldn't hand this message to the agent, so it was not sent.",
       "cancelled": "This message was withdrawn before the agent started it.",
       "chatClosed": "The chat closed before this message was sent.",
-      "hostRestarted": "Orca restarted before this message was sent.",
+      "hostRestarted": "Coto restarted before this message was sent.",
       "notDelivered": "This message was not delivered.",
       "notDeliveredSendAgain": "This message was not delivered. Send it again to continue.",
       "commandRefused": "This command didn't run.",
@@ -3096,13 +3096,13 @@
       "historyInOtherAccount": "This chat's history is in another Claude account. Switch back to that account to continue it.",
       "claudeAccountFolderMissing": "The selected Claude account's folder is missing. Sign in to it again or choose another account.",
       "claudeAccountSetupFailed": "The selected Claude account could not be set up. Try again or choose another account.",
-      "agentCommandNotRunnable": "{{agent}}'s Command in Settings → Agents must be a program path or name Orca can find, with no arguments or variables. Change it or reset it.",
+      "agentCommandNotRunnable": "{{agent}}'s Command in Settings → Agents must be a program path or name Coto can find, with no arguments or variables. Change it or reset it.",
       "agentCommandFailed": "{{agent}}'s Command in Settings → Agents didn't start {{agent}}: {{detail}}. Change it or reset it.",
-      "runtimeNotInstalled": "{{agent}} isn't installed on the computer running this chat. Install it from the chat in a current version of Orca.",
+      "runtimeNotInstalled": "{{agent}} isn't installed on the computer running this chat. Install it from the chat in a current version of Coto.",
       "fullAccessAsRoot": "{{agent}} won't use Full access while it runs as root. Choose another permission for {{agent}} in Settings → Agents for the computer running this chat, then start a new chat.",
       "botToolsNeedStatusHooks": "{{agent}} bots need Agent status hooks: they are how a bot's tools act as the bot. Turn them on for {{agent}} in Settings → Agents, then start a new chat.",
-      "botToolsGatewayOutdated": "{{agent}}'s gateway is still running an older copy of Orca's plugin, so this bot's tools can't act as the bot. Run `hermes gateway stop`, then start a new chat.",
-      "launchPreparationFailed": "Orca couldn't prepare {{agent}} to start on the computer running this chat.",
+      "botToolsGatewayOutdated": "{{agent}}'s gateway is still running an older copy of Coto's plugin, so this bot's tools can't act as the bot. Run `hermes gateway stop`, then start a new chat.",
+      "launchPreparationFailed": "Coto couldn't prepare {{agent}} to start on the computer running this chat.",
       "conversationOpenElsewhere": "Codex is still holding this conversation open. Try again in a moment, or close other Codex terminals.",
       "conversationOpenInTerminal": "{{agent}} is already running this conversation in another terminal. Quit {{agent}} there or close that terminal to continue here.",
       "chooseClaudeAccount": "Choose or add one in Claude Accounts settings.",
@@ -3124,27 +3124,27 @@
       "notDoneGoalChangeIncomplete": "Couldn't finish changing the goal. Check the chat.",
       "notDoneQueuedEdit": "Your edit wasn't saved.",
       "restartFailed": "The agent couldn't restart.",
-      "capacity": "Orca on the computer running this chat has hit a request limit. Update Orca there, then try again.",
-      "outcomeUnknown": "Orca couldn't confirm what happened. Check the chat.",
-      "sendOutcomeLost": "Orca couldn't confirm your message reached the agent. Check the chat, then send it again if needed.",
+      "capacity": "Coto on the computer running this chat has hit a request limit. Update Coto there, then try again.",
+      "outcomeUnknown": "Coto couldn't confirm what happened. Check the chat.",
+      "sendOutcomeLost": "Coto couldn't confirm your message reached the agent. Check the chat, then send it again if needed.",
       "continuationSuperseded": "This chat has moved on. Check the latest messages before continuing.",
       "questionChanged": "This question was already answered or has changed.",
       "cancelNotSaved": "Couldn't cancel this question or approval.",
-      "historyUnreadable": "Orca couldn't read this chat's saved history.",
+      "historyUnreadable": "Coto couldn't read this chat's saved history.",
       "historyUnusable": "Unable to load this chat.",
-      "historyUnavailable": "Orca couldn't open this chat's history right now.",
+      "historyUnavailable": "Coto couldn't open this chat's history right now.",
       "diskFull": "The disk on the computer running this chat is full.",
       "freeDiskSpace": "Free up space on that disk, then try again.",
       "savedInOtherFolder": "This conversation was saved in another folder.",
-      "savedByNewerOrca": "Chats were saved by a newer Orca.",
-      "updateOrcaToKeepUsing": "Update Orca to keep using them.",
-      "chatSavedByNewerOrca": "This chat was saved by a newer Orca.",
-      "updateOrcaToOpenChat": "Update Orca to open it.",
-      "unsupported": "This needs a newer Orca on the computer running this chat. Update Orca there, then try again.",
+      "savedByNewerOrca": "Chats were saved by a newer Coto.",
+      "updateOrcaToKeepUsing": "Update Coto to keep using them.",
+      "chatSavedByNewerOrca": "This chat was saved by a newer Coto.",
+      "updateOrcaToOpenChat": "Update Coto to open it.",
+      "unsupported": "This needs a newer Coto on the computer running this chat. Update Coto there, then try again.",
       "notAvailable": "This isn't available in this chat.",
-      "cannotRunHere": "Orca can't run this agent in a chat here.",
-      "unreachable": "Orca couldn't reach the agent.",
-      "recordFailed": "Orca couldn't save this to the chat's history.",
+      "cannotRunHere": "Coto can't run this agent in a chat here.",
+      "unreachable": "Coto couldn't reach the agent.",
+      "recordFailed": "Coto couldn't save this to the chat's history.",
       "attachmentExpired": "This attachment expired.",
       "reattachFile": "Remove it and attach it again.",
       "reattachFiles": "Remove them and attach them again.",
@@ -3184,11 +3184,11 @@
       "reopenChat": "Reopen the chat to check again.",
       "terminalAgentHoldsChat": "This chat is still open in a terminal agent.",
       "quitTerminalAgent": "Quit that agent to continue the chat here.",
-      "hostReconciling": "Orca is still checking on this chat after restarting.",
+      "hostReconciling": "Coto is still checking on this chat after restarting.",
       "waitMoment": "Wait a moment.",
-      "recordUnreadable": "Orca couldn't read this chat's saved state.",
-      "mailOwnerUnconfirmed": "Orca couldn't confirm this message is still meant for this chat.",
-      "chatNotFound": "Orca can't find this chat.",
+      "recordUnreadable": "Coto couldn't read this chat's saved state.",
+      "mailOwnerUnconfirmed": "Coto couldn't confirm this message is still meant for this chat.",
+      "chatNotFound": "Coto can't find this chat.",
       "startNewChat": "Start a new chat to continue.",
       "tryAgain": "Try again."
     },
@@ -3237,15 +3237,15 @@
     "structuredOpen": {
       "goneGeneric": "Agent's chat is no longer on this host, so it cannot be reopened here.",
       "unknownGeneric": "Agent's chat could not be found on this host. Reconnect to its computer and try again.",
-      "unsupportedGeneric": "Agent's chat can't be reopened until Orca is updated.",
+      "unsupportedGeneric": "Agent's chat can't be reopened until Coto is updated.",
       "unreachableGeneric": "Agent's chat is not available yet. Retry in a moment.",
       "gone": "{{agent}}'s chat is no longer on this host, so it cannot be reopened here.",
       "unknown": "{{agent}}'s chat could not be found on this host. Reconnect to its computer and try again.",
-      "unsupported": "{{agent}}'s chat can't be reopened until Orca is updated.",
+      "unsupported": "{{agent}}'s chat can't be reopened until Coto is updated.",
       "unreachable": "{{agent}}'s chat is not available yet. Retry in a moment.",
       "paneUnavailable": "Agent's pane is no longer available.",
       "worktreeDeleted": "The worktree was deleted.",
-      "projectRemoved": "The project was removed from Orca.",
+      "projectRemoved": "The project was removed from Coto.",
       "folderWorkspaceRemoved": "The folder workspace was removed."
     },
     "nativeChatView": {
@@ -3269,7 +3269,7 @@
       "outsideWorkspace": "This file is outside the workspace. Open it on desktop to view it."
     },
     "linkActionSheet": {
-      "openInOrca": "Open in Orca browser",
+      "openInOrca": "Open in Coto browser",
       "openInBrowser": "Open in system browser",
       "copyLink": "Copy link"
     },
@@ -3393,7 +3393,7 @@
       "reason": "Reason: ",
       "needsAccessTo": "Needs access to: ",
       "planFile": "Plan file: {{filePath}}",
-      "newerVersionRequired": "This request needs a newer version of Orca."
+      "newerVersionRequired": "This request needs a newer version of Coto."
     },
     "promptCard": {
       "terminalExplanation": "Answer this OMP question in the terminal.",
@@ -3422,7 +3422,7 @@
       "waitingFor": "Sends when {{host}} is back",
       "waiting": "Sends when the desktop is back",
       "behind": "Waiting — a message ahead needs attention",
-      "closed": "Not sent before Orca closed"
+      "closed": "Not sent before Coto closed"
     },
     "sessionOptionPickers": {
       "workingAnnouncement": "Agent is working. Model settings unlock when this turn finishes.",
@@ -3615,10 +3615,10 @@
       "continuedOutsideRewound": "Continued outside this chat. Earlier replies above are no longer in this conversation's history."
     },
     "orcaStop": {
-      "update": "Orca on {{machine}} restarted for an update while this response was in progress.",
-      "quit": "Orca on {{machine}} was closed while this response was in progress.",
-      "crash": "Orca on {{machine}} stopped unexpectedly while this response was in progress.",
-      "remote": "Orca on {{machine}} stopped while this response was in progress.",
+      "update": "Coto on {{machine}} restarted for an update while this response was in progress.",
+      "quit": "Coto on {{machine}} was closed while this response was in progress.",
+      "crash": "Coto on {{machine}} stopped unexpectedly while this response was in progress.",
+      "remote": "Coto on {{machine}} stopped while this response was in progress.",
       "canContinue": "You can continue in this conversation.",
       "unnamedServer": "the remote server"
     },
@@ -3627,10 +3627,10 @@
       "explanation": "Continue, and the agent first checks whether its last step finished."
     },
     "restartNote": {
-      "continued": "Orca asked this agent to continue after a restart. Your own prompt was not re-sent.",
-      "refused": "Orca couldn't continue this chat after the restart. Send a message to continue it.",
-      "unconfirmed": "Orca asked this agent to continue after the restart but couldn't confirm it did. Check its latest reply before sending another message.",
-      "notConnected": "Orca couldn't reconnect this chat after the restart, so it didn't ask the agent to continue."
+      "continued": "Coto asked this agent to continue after a restart. Your own prompt was not re-sent.",
+      "refused": "Coto couldn't continue this chat after the restart. Send a message to continue it.",
+      "unconfirmed": "Coto asked this agent to continue after the restart but couldn't confirm it did. Check its latest reply before sending another message.",
+      "notConnected": "Coto couldn't reconnect this chat after the restart, so it didn't ask the agent to continue."
     },
     "sendError": {
       "dismiss": "Dismiss"
@@ -3711,9 +3711,9 @@
       "autoContinueCancel": "Don't continue",
       "statusResetAt": "Reset at {{time}}",
       "statusResetsAt": "Resets at {{time}}",
-      "statusContinuesShortly": "Orca continues shortly",
-      "statusContinuesThen": "Orca continues then",
-      "statusWontContinue": "Orca won't continue automatically"
+      "statusContinuesShortly": "Coto continues shortly",
+      "statusContinuesThen": "Coto continues then",
+      "statusWontContinue": "Coto won't continue automatically"
     },
     "composerPlaceholder": {
       "waitingForTerminal": "Waiting for terminal…",
@@ -3730,7 +3730,7 @@
       "copyFailed": "Couldn't copy image",
       "saveFailed": "Couldn't save image",
       "shareFailed": "Couldn't share image",
-      "photosAccessDenied": "Allow Orca to add photos in Settings",
+      "photosAccessDenied": "Allow Coto to add photos in Settings",
       "imageTooLarge": "This image is too large",
       "previousImage": "Previous image",
       "nextImage": "Next image"
@@ -3801,7 +3801,7 @@
       "incompleteReply": "Attachment changed or its reply was incomplete. Close it and try again.",
       "notText": "This file cannot be previewed as text. Save it to open it in another app.",
       "openFailed": "Unable to open attachment. Try again.",
-      "hostUpdate": "This host cannot open text attachments yet. Update Orca on that host, then retry.",
+      "hostUpdate": "This host cannot open text attachments yet. Update Coto on that host, then retry.",
       "copyTooLarge": "This file is too large to copy. Save it instead.",
       "connectionChanged": "Connection changed. Retry to reopen the attachment.",
       "hostChanged": "The attachment host changed. Close it and reopen it.",
@@ -3881,10 +3881,10 @@
       "historyLimit": "This conversation is too long to go back in. Nothing was changed.",
       "providerRefused": "The agent couldn't go back to this message.",
       "proofMismatch": "The agent's history didn't match this chat. Check the conversation before continuing.",
-      "outcomeUnknown": "Orca couldn't confirm whether the conversation went back to an earlier message. It checks before your next message is sent.",
-      "refused": "Orca couldn't go back to this message. Check the conversation before continuing.",
+      "outcomeUnknown": "Coto couldn't confirm whether the conversation went back to an earlier message. It checks before your next message is sent.",
+      "refused": "Coto couldn't go back to this message. Check the conversation before continuing.",
       "unavailable": "Wait for the chat to finish connecting.",
-      "outcomeUnknownReturned": "Orca couldn't confirm whether the conversation went back to this message. Your message is back in the composer, and Orca checks the conversation before your next message is sent.",
+      "outcomeUnknownReturned": "Coto couldn't confirm whether the conversation went back to this message. Your message is back in the composer, and Coto checks the conversation before your next message is sent.",
       "timeout": "The chat didn't update after going back to this message. Reopen it to see the latest.",
       "pending": "Wait for the conversation to go back to the earlier message."
     },
@@ -3921,7 +3921,7 @@
       },
       "title": "MCP servers",
       "notRunning": "MCP servers connect when you send your next message.",
-      "unsupported": "Update Orca on this chat's host to manage MCP servers here.",
+      "unsupported": "Update Coto on this chat's host to manage MCP servers here.",
       "readFailed": "Couldn't load MCP servers.",
       "retry": "Retry",
       "empty": "No MCP servers are set up for this chat.",
@@ -4044,7 +4044,7 @@
           "guideHere": "Guide me here",
           "guideBrowser": "Guide me in my browser",
           "doItNote": "{{bot}} clicks through it",
-          "guideHereNote": "You click, in Orca",
+          "guideHereNote": "You click, in Coto",
           "guideBrowserNote": "You click, in your browser"
         },
         "notNow": "Not now",
@@ -4071,7 +4071,7 @@
         "connect": {
           "titleAccount": "Sign in to connect {{email}}",
           "title": "Sign in to connect",
-          "onComputer": "Sign in to Google in Orca on your computer.",
+          "onComputer": "Sign in to Google in Coto on your computer.",
           "signIn": "Sign in to Google"
         },
         "movedDown": "Continued further down.",
@@ -4081,7 +4081,7 @@
         },
         "copied": "Copied. Send it to your Google admin.",
         "action": {
-          "onComputer": "For “{{action}}”, use Orca on your computer.",
+          "onComputer": "For “{{action}}”, use Coto on your computer.",
           "makeNewKey": "Make a new key",
           "importKey": "Import a key file",
           "allow": "Allow {{services}}",
@@ -4131,7 +4131,7 @@
           },
           "branding": {
             "start": "Click <b>Get started</b>.",
-            "name": "App name <b>Orca</b>, and your email as the support email.",
+            "name": "App name <b>Coto</b>, and your email as the support email.",
             "external": "Audience: <b>External</b>.",
             "internal": "Audience: <b>Internal</b>.",
             "either": "Audience: <b>External</b> for a Gmail account, <b>Internal</b> for a work account.",
@@ -4150,7 +4150,7 @@
           "client": {
             "type": "Application type: <b>Desktop app</b>, then <b>Create</b>.",
             "agent": "If you see <b>Use this client for an AI-powered agent</b>, tick it.",
-            "download": "Click <b>Download JSON</b>. Orca saves the key."
+            "download": "Click <b>Download JSON</b>. Coto saves the key."
           }
         },
         "blocker": {
@@ -4158,7 +4158,7 @@
           "stopped": "Setup stopped.",
           "paused": "The setup paused at {{step}}. Everything so far is saved.",
           "yourTurn": "Your turn: {{step}}.",
-          "noKey": "Orca needs the app’s key first.",
+          "noKey": "Coto needs the app’s key first.",
           "keyGone": "This app’s key no longer works: it was removed in Google Cloud.",
           "keyOtherProject": "The saved key is for project {{keyProject}}, not {{project}}.",
           "otherAccount": "You signed in as {{signedIn}}; this setup was for {{wanted}}.",
@@ -4166,7 +4166,7 @@
           "needsPermission": "Almost there: allow {{services}}. Google shows a box for each one; tick them all.",
           "apiOff": "{{services}} is turned off in Google Cloud.",
           "adminBlocked": "Your company’s Google admin blocked {{services}}.",
-          "checkFailed": "Orca couldn’t check {{services}}."
+          "checkFailed": "Coto couldn’t check {{services}}."
         },
         "ownerStep": "Step {{step}} of 3",
         "adminRequest": "Please mark this Google app as Trusted in the Admin console (Security › API controls › Manage third-party app access): {{clientId}}"
@@ -4178,7 +4178,7 @@
         "stayed": "Stayed in {{app}}: {{things}}. Nothing in {{app}} was changed.",
         "unchanged": "Nothing in {{app}} was changed.",
         "paused": "Automations are paused so nothing runs twice. Turn them on once the old bot is switched off in {{app}}.",
-        "soulOnComputer": "Open the soul and memory in Orca on your computer."
+        "soulOnComputer": "Open the soul and memory in Coto on your computer."
       },
       "importPlan": {
         "comes": "Comes over",
@@ -4206,8 +4206,8 @@
         "checkAgain": "Check again",
         "connectTitle": "Connect {{app}}",
         "connecting": "Waiting for you to finish signing in, in your browser",
-        "connectKeyNote": "Opens Composio to enter your {{app}} API key. Composio keeps it, not Orca.",
-        "connectNote": "Opens {{app}}’s sign-in from Composio in your browser. Composio keeps this sign-in, not Orca.",
+        "connectKeyNote": "Opens Composio to enter your {{app}} API key. Composio keeps it, not Coto.",
+        "connectNote": "Opens {{app}}’s sign-in from Composio in your browser. Composio keeps this sign-in, not Coto.",
         "signInOnComposio": "Sign in to {{app}} on Composio’s page.",
         "openAgain": "Open again",
         "cancel": "Cancel",
@@ -4217,10 +4217,10 @@
         "byHandPaste": "In Composio, open your project’s settings, then Webhooks, and paste it.",
         "byHandOpen": "Open Composio",
         "byHandDone": "Done",
-        "byHandDoneNote": "Orca then turns on {{trigger}} and saves Composio’s signing secret.",
+        "byHandDoneNote": "Coto then turns on {{trigger}} and saves Composio’s signing secret.",
         "eventsTitle": "Have Composio call {{bot}} on {{trigger}}",
         "eventsReplaceNote": "Your Composio project already sends its events to another address. Setting this up sends them here instead, and that address stops getting them.",
-        "eventsOneAddressNote": "Orca turns on {{trigger}} for your sign-in. Your Composio project’s events come to Orca at one address, and each goes to the bot it’s for.",
+        "eventsOneAddressNote": "Coto turns on {{trigger}} for your sign-in. Your Composio project’s events come to Coto at one address, and each goes to the bot it’s for.",
         "eventsDone": "✓ Set up",
         "eventsChosenByHand": "Doing it in Composio",
         "eventsReplace": "Replace and set up",
@@ -4247,7 +4247,7 @@
         "goneDetail": "Set it up again from the bot’s Tools.",
         "readyAs": "As {{label}}. Your app sign-ins are held by Composio.",
         "custody": "Your app sign-ins are held by Composio.",
-        "browseOnComputer": "Browse more apps from the bot’s Tools in Orca on your computer.",
+        "browseOnComputer": "Browse more apps from the bot’s Tools in Coto on your computer.",
         "browse": "Browse more apps"
       },
       "webhookSetup": {
@@ -4358,8 +4358,8 @@
       "notReady": "This branch is not ready for a {{reviewLabel}} yet.",
       "existingNumber": "{{titleLabel}} #{{number}} is already open.",
       "existing": "{{titleLabel}} is already open.",
-      "createdNotRefreshed": "{{titleLabel}} created, but Orca could not refresh it yet.",
-      "lookupUnconfirmed": "Orca could not confirm whether this branch already has a {{reviewLabel}}. Try again in a moment.",
+      "createdNotRefreshed": "{{titleLabel}} created, but Coto could not refresh it yet.",
+      "lookupUnconfirmed": "Coto could not confirm whether this branch already has a {{reviewLabel}}. Try again in a moment.",
       "dirty": "Commit changes before creating a {{reviewLabel}}.",
       "detachedHead": "Check out a branch before creating a {{reviewLabel}}.",
       "defaultBranch": "Switch to a feature branch before creating a {{reviewLabel}}.",
@@ -4582,7 +4582,7 @@
       "createFailed": "Could not create a worktree in {{repo}}.",
       "loadReposRetry": "Load repositories",
       "setupChoiceTitle": "Retry without setup?",
-      "setupChoiceMessage": "Orca couldn't confirm the last create in {{repo}}. Retrying it needs a setup choice; it will be created without running the repository's setup.",
+      "setupChoiceMessage": "Coto couldn't confirm the last create in {{repo}}. Retrying it needs a setup choice; it will be created without running the repository's setup.",
       "setupChoiceSkip": "Retry without setup",
       "checking": "A worktree from {{repo}} may already have been created. Checking the folder…"
     },
@@ -4690,7 +4690,7 @@
       "actionFailed": "Source control action failed"
     },
     "loaders": {
-      "updateDesktop": "Update Orca on this host to use Source Control on mobile.",
+      "updateDesktop": "Update Coto on this host to use Source Control on mobile.",
       "loadFailed": "Unable to load source control"
     },
     "runners": {
@@ -4704,7 +4704,7 @@
       "antigravityInvalidEvents": "Antigravity returned invalid JSON events.",
       "antigravityInvalidResult": "Antigravity returned an invalid result.",
       "antigravityNoFinalResult": "Antigravity returned no final result.",
-      "kimiUnreadableOutput": "Kimi returned output Orca couldn't read. Try again.",
+      "kimiUnreadableOutput": "Kimi returned output Coto couldn't read. Try again.",
       "kimiSessionOccupied": "Kimi couldn't use this session because it is active in another client. Stop the session there or exit that client, then try again.",
       "kimiInterrupted": "Kimi was interrupted before it finished generating text. Try again.",
       "kimiFailed": "Kimi couldn't finish generating text. Open Kimi on the execution host to check the failure before retrying.",
@@ -4739,7 +4739,7 @@
       "agentBinaryNotFound": "{{binary}} not found on PATH. Install {{label}} to use AI commit messages.",
       "timedOut": "Generation timed out after {{seconds}}s.",
       "outputTooLarge": "{{label}} CLI command produced too much output. Check the agent CLI configuration and try again.",
-      "windowsBatchUnsafeArguments": "{{label}} runs through a Windows batch script that cannot take the multi-line prompt as an argument. Point Settings at the agent's executable, or use a custom command without {prompt} so Orca sends the prompt on stdin.",
+      "windowsBatchUnsafeArguments": "{{label}} runs through a Windows batch script that cannot take the multi-line prompt as an argument. Point Settings at the agent's executable, or use a custom command without {prompt} so Coto sends the prompt on stdin.",
       "cliTerminated": "{{label}} CLI command was terminated before exiting.",
       "cliTerminatedWithDetail": "{{label}} CLI command was terminated before exiting: {{detail}}",
       "cliFailed": "{{label}} CLI command failed with code {{exitCode}}.",
@@ -4784,7 +4784,7 @@
     },
     "conflictActions": {
       "resolveFile": "{{action}}: {{path}}",
-      "needsNewerHost": "Update Orca on the computer running this workspace to resolve merge conflicts from your phone.",
+      "needsNewerHost": "Update Coto on the computer running this workspace to resolve merge conflicts from your phone.",
       "markResolved": "Mark as resolved",
       "keepFile": "Keep file",
       "keepDeletion": "Keep deletion",
@@ -4881,7 +4881,7 @@
       "downloadProgress": "Downloading… {{progress}}"
     },
     "createdSetupReview": {
-      "hostUnsupported": "Approved. Update Orca on the workspace host to run setup for an existing workspace.",
+      "hostUnsupported": "Approved. Update Coto on the workspace host to run setup for an existing workspace.",
       "changedAgain": "Setup didn't run: this workspace's orca.yaml changed again since you reviewed it.",
       "runFailed": "Could not start setup."
     }
@@ -5012,7 +5012,7 @@
       "noMoreProjects": "No more projects.",
       "chooseView": "Choose Project View",
       "view": "Project View",
-      "unsupportedLayout": "Orca doesn't support this GitHub Project layout yet."
+      "unsupportedLayout": "Coto doesn't support this GitHub Project layout yet."
     },
     "githubViewControls": {
       "openView": "Open view in GitHub"
@@ -5099,8 +5099,8 @@
       "displayPropertiesTitle": "Display Properties"
     },
     "listSurface": {
-      "updateDesktopTitle": "Update Orca on this host",
-      "updateDesktopMessage": "This mobile Tasks view needs a newer Orca on this host.",
+      "updateDesktopTitle": "Update Coto on this host",
+      "updateDesktopMessage": "This mobile Tasks view needs a newer Coto on this host.",
       "jiraStatusFailed": "Failed to read Jira status",
       "connectLinearTitle": "Connect your Linear account",
       "connectLinearMessage": "Browse and start work on your assigned Linear issues directly from Tasks.",
@@ -5174,8 +5174,8 @@
       "reply": "Reply"
     },
     "projectDetailDrawer": {
-      "repositoryNotInOrca": "Repository not in Orca",
-      "addRepositoryFromDesktop": "{{repository}} is not added to Orca. Add this repository from the desktop app, then refresh mobile Tasks.",
+      "repositoryNotInOrca": "Repository not in Coto",
+      "addRepositoryFromDesktop": "{{repository}} is not added to Coto. Add this repository from the desktop app, then refresh mobile Tasks.",
       "openInGitHub": "Open in GitHub",
       "copyRepository": "Copy repository",
       "projectSubtitle": "GitHub Project · {{repository}}{{itemNumber}}",
@@ -5196,7 +5196,7 @@
       "reopenItem": "Reopen item",
       "closeItem": "Close item",
       "mergePullRequest": "Merge pull request",
-      "mergeRepositoryRequirement": "Merge requires this repository in Orca."
+      "mergeRepositoryRequirement": "Merge requires this repository in Coto."
     },
     "projectFieldEditors": {
       "projectFields": "Project fields",
@@ -5519,7 +5519,7 @@
   },
   "bots": {
     "link": {
-      "updateOrca": "Update Orca",
+      "updateOrca": "Update Coto",
       "openRequestFailed": "Couldn’t open request",
       "botNotFound": "Bot not found",
       "openOn": "Open {{name}} On",
@@ -5527,14 +5527,14 @@
       "pairRequired": "To open this link, pair this phone with a computer, then open the link again.",
       "pairAction": "Pair a computer",
       "openFailed": "Couldn’t open this link",
-      "ambiguous": "This bot is on {{names}}. Open the chat in Orca on the one you want.",
+      "ambiguous": "This bot is on {{names}}. Open the chat in Coto on the one you want.",
       "computer": "your computer",
-      "updateNeeded": "Update Orca on {{names}} to open this link.",
-      "unreachable": "Couldn’t reach {{names}}. Make sure Orca is running on one, then try again.",
+      "updateNeeded": "Update Coto on {{names}} to open this link.",
+      "unreachable": "Couldn’t reach {{names}}. Make sure Coto is running on one, then try again.",
       "missing": "None of your paired computers has this bot.",
       "offline": "{{name}} is offline. Open the link again when it’s back online.",
       "chatOpenFailed": "{{name}} couldn’t open this chat. Try the link again.",
-      "unreachableSingle": "Couldn’t reach {{name}}. Make sure Orca is running there, then try again.",
+      "unreachableSingle": "Couldn’t reach {{name}}. Make sure Coto is running there, then try again.",
       "workspaceDeleted": "This chat’s workspace was deleted on {{name}}."
     },
     "activity": {
@@ -5597,10 +5597,10 @@
       "whoCanAsk": "Who can ask",
       "deleteBot": "Delete bot…",
       "accountChecking": "Checking…",
-      "signedOut": "Signed out of Orca",
+      "signedOut": "Signed out of Coto",
       "computerFoot": "Its connectors, tools and files live on {{host}}.",
       "computerDetail": "Runs this bot’s chats, tools and automations",
-      "orcaAccount": "Orca account",
+      "orcaAccount": "Coto account",
       "folder": "Folder",
       "copyPath": "Copy path",
       "pathCopied": "Path copied",
@@ -5617,7 +5617,7 @@
       "backToAgent": "Back to Agent and model",
       "useChatDefaults": "Use chat defaults",
       "modelDefault": "Default",
-      "signInChanged": "Orca sign-in changed",
+      "signInChanged": "Coto sign-in changed",
       "whoCanAskName": "Who can ask {{name}}",
       "you": "You",
       "owner": "Owner",
@@ -5732,7 +5732,7 @@
       "takesOverList": "Takes over {{names}}. Their agents keep running.",
       "runsOn": "Runs on",
       "cantReach": "Can’t reach {{host}}. Pick another computer.",
-      "otherAccount": "{{host}} uses its own Orca account ({{email}}). Its bots post and connect as that account.",
+      "otherAccount": "{{host}} uses its own Coto account ({{email}}). Its bots post and connect as that account.",
       "agent": "Agent",
       "computer": "Computer",
       "computerMessage": "Where the bot runs.",
@@ -5740,15 +5740,15 @@
       "noAgent": "None",
       "noChatAgents": "No chat agents available on {{host}}.",
       "botsOffOn": "Bots are off on {{host}}",
-      "updateDesktopFirst": "Update Orca on {{host}} first",
+      "updateDesktopFirst": "Update Coto on {{host}} first",
       "checking": "Checking…"
     },
     "connectorOffer": {
       "connected": "Connected",
-      "paused": "Paused until {{host}} signs in to Orca.",
-      "onComputer": "Connect it in Orca on your computer, from the card in this chat.",
-      "addGitHubAccess": "Add repositories or organizations in Orca on your computer, from the card in this chat.",
-      "addWorkspace": "Add another workspace in Orca on your computer, from the card in this chat.",
+      "paused": "Paused until {{host}} signs in to Coto.",
+      "onComputer": "Connect it in Coto on your computer, from the card in this chat.",
+      "addGitHubAccess": "Add repositories or organizations in Coto on your computer, from the card in this chat.",
+      "addWorkspace": "Add another workspace in Coto on your computer, from the card in this chat.",
       "slack": "Chat with the bot from Slack channels and direct messages.",
       "google": "Let the bot work in your Gmail, Calendar and Drive, and start automations on new mail.",
       "linear": "Hand the bot issues by @mentioning or assigning it, and start automations on Linear events.",
@@ -5831,7 +5831,7 @@
       "remoteMayAnswer": "May still answer on {{computer}}.",
       "remoteShortened": "Shortened. Full answer is on {{computer}}.",
       "needsLocalBot": "This group needs at least one bot on this computer.",
-      "remoteOnComputer": "Add or remove bots from other computers in Orca on {{host}}.",
+      "remoteOnComputer": "Add or remove bots from other computers in Coto on {{host}}.",
       "stopCouldNotBeConfirmed": "Stop could not be confirmed.",
       "notStarted": "Not started",
       "workingCount_one": "{{count}} working",
@@ -5855,7 +5855,7 @@
       "title": "Bot templates",
       "blank": "Blank bot",
       "blankLine": "Tell it what it’s for in its first chat.",
-      "byOrca": "{{category}} · by Orca",
+      "byOrca": "{{category}} · by Coto",
       "useTemplate": "Use template…",
       "backToTemplates": "Back to templates",
       "firstChat": "What it does first",
@@ -5928,8 +5928,8 @@
       "unreviewed-work": {
         "name": "Unreviewed agent work",
         "line": "A daily list of finished agent work nobody has looked at yet.",
-        "firstChat": "Lists workspaces whose agent finished with changes you haven’t reviewed or turned into a pull request. Orca already tells you when an agent is waiting on you; this covers what’s done.",
-        "watches": "Your Orca workspaces",
+        "firstChat": "Lists workspaces whose agent finished with changes you haven’t reviewed or turned into a pull request. Coto already tells you when an agent is waiting on you; this covers what’s done.",
+        "watches": "Your Coto workspaces",
         "does": "Lists workspaces whose agent finished with changes nobody reviewed or opened a pull request for.",
         "reports": "Here, weekdays at 9 AM",
         "example1": "mobile-pairing finished yesterday with a 340-line diff, no pull request.",
@@ -5945,7 +5945,7 @@
         "name": "Workspace cleanup",
         "line": "Finds finished or abandoned workspaces and offers to remove them.",
         "firstChat": "Lists workspaces whose pull request merged or that haven’t changed in two weeks, with any uncommitted changes. It removes only the ones you pick.",
-        "watches": "Your Orca workspaces and their pull requests",
+        "watches": "Your Coto workspaces and their pull requests",
         "does": "Lists workspaces that are done or abandoned, with uncommitted changes; removes only the ones you pick.",
         "reports": "Here, Fridays at 4 PM",
         "example1": "6 workspaces are done: their pull requests merged this week.",
@@ -6307,11 +6307,11 @@
       "showPausedAction": "Show paused"
     },
     "list": {
-      "updateOrcaOn": "Update Orca on {{host}}",
+      "updateOrcaOn": "Update Coto on {{host}}",
       "cantReach": "Can’t reach {{host}}. Its bots show when it’s back.",
       "noBotsYet": "No bots yet.",
       "offline": "Offline",
-      "updateToSee": "Update Orca on {{host}} to see its bots.",
+      "updateToSee": "Update Coto on {{host}} to see its bots.",
       "offEnd": "Bots are off on {{host}}.",
       "readFailed": "Couldn’t load the bots on {{host}}."
     },
@@ -6733,8 +6733,8 @@
     },
     "accessDecide": {
       "expired": "This request was already answered or has expired.",
-      "grantedNotAdded": "Access was given, but {{person}} isn’t listed yet. Orca will add them.",
-      "signedOut": "Sign in to Orca on your computer to answer requests.",
+      "grantedNotAdded": "Access was given, but {{person}} isn’t listed yet. Coto will add them.",
+      "signedOut": "Sign in to Coto on your computer to answer requests.",
       "whatTheyCanDoMany": "What they can do"
     },
     "tabs": {
@@ -6790,7 +6790,7 @@
       "pause": "Pause",
       "back": "Back to Webhooks",
       "more": "More actions",
-      "orphanedNote": "{{bot}}’s Orca no longer lists this automation, so calls aren’t run.",
+      "orphanedNote": "{{bot}}’s Coto no longer lists this automation, so calls aren’t run.",
       "url": "URL",
       "copy": "Copy",
       "copyUrl": "Copy URL",
@@ -6828,9 +6828,9 @@
         "changeTitle": "Change signing secret",
         "addTitle": "Add signing secret",
         "sender": "Sender",
-        "modeGenerate": "Orca makes one",
+        "modeGenerate": "Coto makes one",
         "modePaste": "Paste the sender’s",
-        "generateNote": "Orca makes this secret. You copy it into {{sender}} next.",
+        "generateNote": "Coto makes this secret. You copy it into {{sender}} next.",
         "paste": "{{sender}} secret",
         "save": "Save",
         "back": "Back to signing secret",
@@ -6892,7 +6892,7 @@
       },
       "everyCall": "Every call",
       "hostOffline": "{{bot}}’s computer is offline",
-      "hostNeedsUpdate": "Your Orca needs an update before {{bot}} can do this.",
+      "hostNeedsUpdate": "Your Coto needs an update before {{bot}} can do this.",
       "errors": {
         "notFound": "This webhook was deleted.",
         "unavailable": "Webhooks aren’t available right now."
@@ -6949,9 +6949,9 @@
       "reading": "Getting to know your setup…",
       "read": "Getting to know your setup",
       "namesMore": "{{names}} and {{count}} more",
-      "projectsReading": "Projects: looking at what you have in Orca…",
+      "projectsReading": "Projects: looking at what you have in Coto…",
       "projectsDone": "Looked at your projects",
-      "projectsNone": "No projects in Orca yet",
+      "projectsNone": "No projects in Coto yet",
       "projectsOne": "Found 1 project: {{names}}",
       "projectsMany": "Found {{count}} projects: {{names}}",
       "githubReading": "GitHub: reading your open PRs…",
@@ -6980,7 +6980,7 @@
     "picture": {
       "invalid": "That picture could not be used. Pick a PNG or JPG image.",
       "permissionDenied": "Photo permission denied",
-      "unreadable": "Orca can't read that image. Try PNG or JPEG.",
+      "unreadable": "Coto can't read that image. Try PNG or JPEG.",
       "colorSky": "Sky",
       "colorWhite": "White",
       "colorLavender": "Lavender",
@@ -7054,7 +7054,7 @@
         "needsSignIn": "Needs sign-in",
         "finishInBrowser": "Finish in browser",
         "finishing": "Finishing sign-in…",
-        "updateHost": "Update Orca on {{host}}",
+        "updateHost": "Update Coto on {{host}}",
         "cantReach": "Can’t reach",
         "unsupported": "This app isn’t supported yet"
       },
@@ -7065,7 +7065,7 @@
         "step2": "Copy the address",
         "step2Detail": "The last page won’t load. That’s expected. Copy its address.",
         "step3": "Paste it here",
-        "step3Detail": "Orca finishes the sign-in on {{host}}.",
+        "step3Detail": "Coto finishes the sign-in on {{host}}.",
         "title": "Sign in to {{app}}",
         "pastePlaceholder": "Paste the address",
         "openAgain": "Open page again",
@@ -7074,7 +7074,7 @@
         "notThisSignIn": "That address isn’t from this sign-in. Paste the address you landed on.",
         "pasteLanded": "After you sign in, paste the address you landed on."
       },
-      "updateHost": "Update Orca on {{host}} to sign in to apps",
+      "updateHost": "Update Coto on {{host}} to sign in to apps",
       "none": "None",
       "from": "{{count}} from {{agent}}",
       "more": "{{count}} more from {{agent}}",
@@ -7113,7 +7113,7 @@
         "unsupported": "This app isn’t supported yet.",
         "unavailable": "Can’t reach this app. Check the address, then try again.",
         "noTool": "This bot no longer has that tool.",
-        "desktopOnly": "Sign in from Orca on {{host}}.",
+        "desktopOnly": "Sign in from Coto on {{host}}.",
         "denied": "Access wasn’t allowed.",
         "expired": "The sign-in expired. Try again.",
         "couldNotSignIn": "Couldn’t sign in. Try again."
@@ -7191,9 +7191,9 @@
     },
     "host": {
       "errors": {
-        "signedOut": "Sign {{host}} in to Orca Cloud to connect {{service}}.",
-        "accountChanged": "{{host}}’s Orca sign-in changed. Start again.",
-        "notRouted": "{{service}}’s page has to open in Orca’s browser for {{host}}. Reconnect {{host}}, then start again."
+        "signedOut": "Sign {{host}} in to Coto Cloud to connect {{service}}.",
+        "accountChanged": "{{host}}’s Coto sign-in changed. Start again.",
+        "notRouted": "{{service}}’s page has to open in Coto’s browser for {{host}}. Reconnect {{host}}, then start again."
       }
     },
     "slack": {
@@ -7203,10 +7203,10 @@
         "rateLimited": "Too many tries. Wait a minute, then try again.",
         "slackUnavailable": "Slack did not answer. Try again.",
         "slackRefused": "Slack refused to set up the app.",
-        "unknownBot": "Orca Cloud has not seen this bot yet. Try again in a minute.",
+        "unknownBot": "Coto Cloud has not seen this bot yet. Try again in a minute.",
         "wrongWorkspace": "This bot’s Slack app is in another workspace. Remove it from Slack first.",
         "notInstalled": "Add this bot to Slack first.",
-        "unreachable": "Orca Cloud could not be reached. Check your connection and try again."
+        "unreachable": "Coto Cloud could not be reached. Check your connection and try again."
       },
       "setup": {
         "checking": "Checking Slack…",
@@ -7223,7 +7223,7 @@
         "approve": "Approve in Slack",
         "waiting": "Waiting for Slack…",
         "newLink": "Get a new link",
-        "uncertain": "Slack may have created an app named {{name}} that Orca cannot use. Delete it in Slack app settings if it is there, then set up again.",
+        "uncertain": "Slack may have created an app named {{name}} that Coto cannot use. Delete it in Slack app settings if it is there, then set up again.",
         "uncertainChecked": "I checked Slack: there is no such app, or I deleted it",
         "again": "Set up again",
         "tryIt": "Try it in any channel or DM",
@@ -7253,10 +7253,10 @@
       "postAs": {
         "title": "Post as",
         "changeOn": "Change it on {{host}}",
-        "orcaUser": "Orca user",
-        "viaOrca": "{{name}} (via Orca)",
+        "orcaUser": "Coto user",
+        "viaOrca": "{{name}} (via Coto)",
         "sample": "Ship it after that",
-        "linePlain": "When you reply to a Slack thread from Orca, it posts as {{name}}.",
+        "linePlain": "When you reply to a Slack thread from Coto, it posts as {{name}}.",
         "approve": "Approve in Slack",
         "waitingOn": "Switching to {{name}} needs {{installer}} to approve in Slack.",
         "waiting": "Switching to {{name}} needs approval in Slack."
@@ -7269,7 +7269,7 @@
         "label": "Configuration refresh token",
         "paste": "Paste",
         "accessPasted": "That is the Access Token. Copy the Refresh Token, the one next to it.",
-        "kept": "Orca Cloud keeps this token encrypted, so your next bots in this workspace need one click.",
+        "kept": "Coto Cloud keeps this token encrypted, so your next bots in this workspace need one click.",
         "step2Title": "Pick the workspace",
         "step3Title": "Paste the Refresh Token"
       },
@@ -7283,7 +7283,7 @@
         "workspace": "Workspace"
       },
       "reconnect": {
-        "whyNeeded": "Orca has no working Slack token for this workspace.",
+        "whyNeeded": "Coto has no working Slack token for this workspace.",
         "continue": "Continue",
         "stopped": "Slack stopped accepting the token {{host}} uses."
       }
@@ -7486,9 +7486,9 @@
       "safetyCheck": "Safety check",
       "done": "Done",
       "waitingSignIn": "Waiting for sign-in in your browser",
-      "signInFor": "Signs {{host}} in to Orca.",
+      "signInFor": "Signs {{host}} in to Coto.",
       "cancelSignIn": "Cancel sign-in",
-      "signIn": "Sign in to Orca to share.",
+      "signIn": "Sign in to Coto to share.",
       "signInToPublish": "Sign in to publish",
       "reload": "Reload",
       "updateLink": "Update link",
@@ -7543,11 +7543,11 @@
         "prepareAgain": "This bot was shared from another window meanwhile. Open Share bot again.",
         "stopped": "This link was stopped. Publish to make a new link.",
         "moved": "This link was updated somewhere else. Open Share bot again to see it.",
-        "unavailable": "Orca Cloud doesn’t accept bot shares yet.",
-        "avatarRefused": "Orca Cloud refused the bot’s picture. Pick another picture, then try again.",
+        "unavailable": "Coto Cloud doesn’t accept bot shares yet.",
+        "avatarRefused": "Coto Cloud refused the bot’s picture. Pick another picture, then try again.",
         "tooLarge": "This bot is too large to share. Leave out some memory or skills, then try again."
       },
-      "reconnect": "Sign in to Orca again to share.",
+      "reconnect": "Sign in to Coto again to share.",
       "flag": {
         "secret": "Secret",
         "pipeToShell": "Runs a downloaded script",
@@ -7638,7 +7638,7 @@
       "search": "Search projects",
       "noMatch": "No projects match your search.",
       "remoteShort": "On another host",
-      "missingShort": "No longer in Orca",
+      "missingShort": "No longer in Coto",
       "remove": "Remove",
       "removeProject": "Remove {{project}}"
     },
@@ -7669,23 +7669,23 @@
       "errors": {
         "off": "Linear is coming soon.",
         "replaced": "Linear didn’t finish. A newer Linear or GitHub connect may have replaced it. Start again.",
-        "wrongAccount": "This sign-in was started from another Orca account. Connect Linear again from this one.",
-        "alreadyLinked": "This Orca account is linked to another Linear user in that workspace. Unlink it from ⋯ on the Linear page first.",
+        "wrongAccount": "This sign-in was started from another Coto account. Connect Linear again from this one.",
+        "alreadyLinked": "This Coto account is linked to another Linear user in that workspace. Unlink it from ⋯ on the Linear page first.",
         "notAMember": "Only full members of the Linear workspace can pick people from it.",
         "rateLimited": "Too many tries. Wait a minute, then try again.",
         "unavailable": "Linear did not answer. Try again."
       },
       "connection": {
-        "removeNote": "People in {{workspace}} can no longer hand it issues, and its Linear people are cleared. Orca stays installed there.",
+        "removeNote": "People in {{workspace}} can no longer hand it issues, and its Linear people are cleared. Coto stays installed there.",
         "removeConfirm": "Remove",
         "finishSetup": "Finish setup"
       },
-      "howToAskPlain": "Mention @Orca {{handle}} on an issue, or add the label bot:{{handle}}.",
+      "howToAskPlain": "Mention @Coto {{handle}} on an issue, or add the label bot:{{handle}}.",
       "setup": {
         "isOn": "{{name}} is on Linear",
         "checking": "Checking Linear…",
         "retry": "Try again",
-        "install": "Orca is not installed in {{workspace}} yet. A Linear admin installs it once for everyone.",
+        "install": "Coto is not installed in {{workspace}} yet. A Linear admin installs it once for everyone.",
         "copyForAdmin": "Copy admin link",
         "installing": "Waiting for the install…",
         "copied": "Link copied.",
@@ -7696,7 +7696,7 @@
       },
       "connect": {
         "another": "Use another workspace",
-        "stuck": "Stuck on a Linear page that says “Could not find OAuth client”? Orca’s Linear app isn’t open to this workspace yet. An admin of the workspace that owns the app must make it public.",
+        "stuck": "Stuck on a Linear page that says “Could not find OAuth client”? Coto’s Linear app isn’t open to this workspace yet. An admin of the workspace that owns the app must make it public.",
         "pick": "Choose a Linear workspace.",
         "handoffPick": "Pick the workspace and choose Authorize.",
         "signIn": "Sign in to Linear",
@@ -7720,8 +7720,8 @@
       "errors": {
         "off": "GitHub is coming soon.",
         "replaced": "GitHub didn’t finish. A newer Linear or GitHub connect may have replaced it. Start again.",
-        "wrongAccount": "This sign-in was started from another Orca account. Sign in with GitHub again from this one.",
-        "alreadyLinked": "This Orca account is linked to another GitHub user. Unlink it from ⋯ on the GitHub page first.",
+        "wrongAccount": "This sign-in was started from another Coto account. Sign in with GitHub again from this one.",
+        "alreadyLinked": "This Coto account is linked to another GitHub user. Unlink it from ⋯ on the GitHub page first.",
         "unavailable": "GitHub did not answer. Try again."
       },
       "setup": {
@@ -7730,7 +7730,7 @@
         "checking": "Checking GitHub…",
         "retry": "Try again",
         "installing": "Waiting for the install, or for an owner of the organization to approve…",
-        "install": "Install the Orca app",
+        "install": "Install the Coto app",
         "finish": "Done",
         "connectTitle": "Connect GitHub",
         "close": "Close",
@@ -7741,7 +7741,7 @@
         "pushesOnHost": "{{name}} pushes code from {{host}} with its git login."
       },
       "connection": {
-        "removeNote": "People can no longer ask it on GitHub, and its GitHub people are cleared. The Orca app stays installed.",
+        "removeNote": "People can no longer ask it on GitHub, and its GitHub people are cleared. The Coto app stays installed.",
         "removeConfirm": "Remove",
         "finishSetup": "Finish setup",
         "refresh": "Refresh",
@@ -7756,9 +7756,9 @@
       "addMore": "Add repositories or an organization",
       "checkingInstalls": "Checking GitHub for changes…",
       "connect": {
-        "readsOnly": "Orca only reads your GitHub username and id.",
-        "requested": "An owner of the organization has been asked to approve the Orca app.",
-        "notInstalled": "The Orca app is not on any of your repositories yet.",
+        "readsOnly": "Coto only reads your GitHub username and id.",
+        "requested": "An owner of the organization has been asked to approve the Coto app.",
+        "notInstalled": "The Coto app is not on any of your repositories yet.",
         "handoffPick": "Sign in and choose the repositories.",
         "signIn": "Sign in to GitHub",
         "pickSubtitle": "Choose the repositories it can work in"
@@ -7766,13 +7766,13 @@
       "allRepositoriesShort": "all repositories"
     },
     "connect": {
-      "finishOnHost": "Finish connecting {{service}} in Orca on {{host}}.",
+      "finishOnHost": "Finish connecting {{service}} in Coto on {{host}}.",
       "otherComputer": "A bot on another computer",
       "askEachTime": "Ask which bot",
       "account": "Account",
       "linkedAs": "Linked as",
       "defaultBot": "Default bot for my requests",
-      "opensOnHost": "Opens in Orca’s browser on {{host}}.",
+      "opensOnHost": "Opens in Coto’s browser on {{host}}.",
       "signedInAs": "Signed in as {{who}}",
       "continueOn": "Continue on {{host}}",
       "openSignInPage": "Open sign-in page",
@@ -7800,7 +7800,7 @@
         "description": "Choose how {{bot}} signs in to your Gmail, Calendar and Drive.",
         "self": "Self hosted",
         "selfNote": "Your own Google app.",
-        "orca": "Orca hosted",
+        "orca": "Coto hosted",
         "orcaNote": "Sign in with Google.",
         "soon": "Soon"
       },
@@ -7849,7 +7849,7 @@
       },
       "disconnect": {
         "title": "Disconnect {{email}}?",
-        "revokeNote": "Bots stop using this account here, and Google cancels Orca’s access everywhere it was allowed.",
+        "revokeNote": "Bots stop using this account here, and Google cancels Coto’s access everywhere it was allowed.",
         "removeOneNote": "Bots stop using this account here.",
         "removeNote": "Bots stop using this account here. Bot settings stay, so Connect Google turns it back on.",
         "promotes": "{{email}} becomes the default.",
@@ -7865,7 +7865,7 @@
       "addAccount": "Add another account",
       "signIn": "Sign in to Google",
       "handoff": "Pick your account and choose Allow.",
-      "signInWarning": "Google will show a warning because this app is yours and brand new. Choose Advanced, then Go to Orca, and tick every box on the next screen.",
+      "signInWarning": "Google will show a warning because this app is yours and brand new. Choose Advanced, then Go to Coto, and tick every box on the next screen.",
       "signInRun": {
         "failed": "The Google sign-in failed. Try again."
       }
@@ -7873,7 +7873,7 @@
     "failures": {
       "lookUnfinished": "The last look didn't finish.",
       "lookTimedOut": "The last look was stopped after {{minutes}} min.",
-      "lookInterrupted": "Orca stopped during the last look.",
+      "lookInterrupted": "Coto stopped during the last look.",
       "lookCouldNotStart": "The last look couldn't start.",
       "lookAsleep": "The last look was missed because this computer was asleep.",
       "tidyUpUnfinished": "The last tidy-up didn't finish.",
@@ -7882,11 +7882,11 @@
       "tidyUpAsleep": "The last tidy-up was missed because this computer was asleep.",
       "tidyUpUnreadChats": "The last tidy-up couldn't read its chats, so it didn't run.",
       "tidyUpNoDraft": "The last tidy-up didn't reply with a new MEMORY.md.",
-      "tidyUpNoOps": "The last tidy-up's reply wasn't a list of changes Orca could read.",
-      "tidyUpAllSkipped": "Orca skipped every change the last tidy-up asked for, so nothing changed. ({{detail}})",
+      "tidyUpNoOps": "The last tidy-up's reply wasn't a list of changes Coto could read.",
+      "tidyUpAllSkipped": "Coto skipped every change the last tidy-up asked for, so nothing changed. ({{detail}})",
       "tidyUpNotListLines": "The last tidy-up didn't run: MEMORY.md has more than a few lines that aren't list lines, and ops Tidy-up reads only list lines.",
-      "tidyUpMovedOnly": "The last tidy-up moved status lines to memory/journal/, but Orca could not use the rest of its reply. ({{detail}})",
-      "tidyUpBadTopic": "The last tidy-up named a topic file Orca can't write, so nothing changed.",
+      "tidyUpMovedOnly": "The last tidy-up moved status lines to memory/journal/, but Coto could not use the rest of its reply. ({{detail}})",
+      "tidyUpBadTopic": "The last tidy-up named a topic file Coto can't write, so nothing changed.",
       "tidyUpTooLong": "The last tidy-up's MEMORY.md was over {{max}} lines and no shorter, so nothing changed.",
       "tidyUpTooManyRemoved": "The last tidy-up took out too many lines at once, so nothing changed.",
       "tidyUpTooManyAdded": "The last tidy-up added too many new lines at once, so nothing changed.",
@@ -7900,9 +7900,9 @@
       "toolSavedValueGone": "That saved value is no longer available. Re-enter it or remove its row.",
       "toolValueMissing": "Enter a value for each row, or remove the row.",
       "toolCredentialsUnreadable": "The bot’s saved tool credentials are unreadable. Re-enter the tool’s values.",
-      "toolSignInManaged": "Orca signs in to this tool. Sign it in or out instead.",
-      "toolCredentialsRaced": "The bot’s tool credentials changed in another Orca. Try again.",
-      "toolSourceManaged": "Orca manages this tool. Change it where you set it up.",
+      "toolSignInManaged": "Coto signs in to this tool. Sign it in or out instead.",
+      "toolCredentialsRaced": "The bot’s tool credentials changed in another Coto. Try again.",
+      "toolSourceManaged": "Coto manages this tool. Change it where you set it up.",
       "toolValuesUnmoved": "A tool still holds its saved values. Reopen the bot’s tools to move them.",
       "googleAccountsChanged": "Its Google accounts changed since you opened them. Check them and save again.",
       "toolCodexCheckFailed": "Codex could not check or connect the tools. Check its setup and try again.",
@@ -7918,7 +7918,7 @@
       "toolSignInEnded": "The sign-in had already ended or timed out. Start it again with Connect.",
       "toolNotFound": "This bot has no tool named {{name}}.",
       "toolNeedsNoSignIn": "{{name}} uses its saved values and needs no sign-in.",
-      "toolSignInAgentUnsupported": "Orca signs {{name}} in only for Claude Code and Codex. Add it with its sign-in values instead.",
+      "toolSignInAgentUnsupported": "Coto signs {{name}} in only for Claude Code and Codex. Add it with its sign-in values instead.",
       "toolCodexNoSignInPage": "Codex gave no sign-in page for {{name}}.",
       "toolClaudeSignInFailed": "Claude couldn't start signing in to {{name}}.",
       "toolClaudeNoSignInPage": "Claude didn't open a sign-in page for {{name}}.",
@@ -7937,7 +7937,7 @@
       "groupNeedsLocalBot": "This group needs at least one bot on this computer.",
       "groupNameTaken": "{{name}} is already in this group. Members need different names so mentions stay unambiguous.",
       "groupPostFromHost": "To post in a group with bots on other computers, use {{host}}.",
-      "groupPeerTooOld": "Update Orca on {{host}} to add its bots to a group.",
+      "groupPeerTooOld": "Update Coto on {{host}} to add its bots to a group.",
       "attachmentUnreadable": "{{name}} can't be read.",
       "attachmentTooLarge": "{{name}} is over {{maxMb}} MB.",
       "attachmentUploading": "{{name}} is still uploading.",
@@ -8118,7 +8118,7 @@
       "invalidDestination": "That host is no longer available on this authority. Pick a host and try again.",
       "agentDiscoveryUnavailable": "Agent discovery is unavailable for this project host. Saved agent choices are preserved.",
       "agentVerificationUnavailable": "This host cannot verify agents for this project. Update the host and try again.",
-      "hostUnavailable": "Automations are unavailable on this host. Update Orca on that host and reconnect.",
+      "hostUnavailable": "Automations are unavailable on this host. Update Coto on that host and reconnect.",
       "hostUnreachable": "Could not reach this host. Reconnect, then refresh to check its current state.",
       "actionFailed": "Could not complete this action on the host. Refresh and try again.",
       "pending": "Pending",
@@ -8158,19 +8158,19 @@
       "workspaceHostAmbiguous": "Its workspace spans more than one host, so it has no single owner."
     },
     "runFailures": {
-      "noDispatchHost": "No Orca window was available to launch the automation.",
-      "unevaluableSchedule": "Orca could not evaluate this automation and skipped the occurrence.",
+      "noDispatchHost": "No Coto window was available to launch the automation.",
+      "unevaluableSchedule": "Coto could not evaluate this automation and skipped the occurrence.",
       "noRunnableHost": "This automation has no host to run on.",
-      "wslMoveInProgress": "This automation's project is moving to its WSL host, so Orca skipped this run. Runs resume when the move finishes.",
-      "wslMoveOwnedByHost": "This automation's project now runs on its WSL host, which runs this automation there. Orca no longer runs this local copy.",
+      "wslMoveInProgress": "This automation's project is moving to its WSL host, so Coto skipped this run. Runs resume when the move finishes.",
+      "wslMoveOwnedByHost": "This automation's project now runs on its WSL host, which runs this automation there. Coto no longer runs this local copy.",
       "managedHostServer": "Needs migration to {{host}}",
-      "missedGraceWindow": "This run was past its missed-run grace window when Orca next checked.",
+      "missedGraceWindow": "This run was past its missed-run grace window when Coto next checked.",
       "targetMissing": "The automation host is no longer registered, so this automation has nowhere to run.",
       "targetReplaced": "The automation host was removed and re-registered, so this automation must be re-adopted before it can run.",
-      "workspaceHostAmbiguous": "The automation workspace spans more than one host, so Orca cannot tell which one to run it on.",
-      "legacyTwinHosts": "This automation was saved before Orca tracked which host it runs on, and its project is on more than one host. Open the automation and pick the host it should run on.",
+      "workspaceHostAmbiguous": "The automation workspace spans more than one host, so Coto cannot tell which one to run it on.",
+      "legacyTwinHosts": "This automation was saved before Coto tracked which host it runs on, and its project is on more than one host. Open the automation and pick the host it should run on.",
       "targetUnavailable": "Automation run target is no longer available.",
-      "remoteSchedulingUnavailable": "Remote-server automation scheduling is not available from this Orca client yet. Run this automation on the remote server or update Orca when durable remote scheduling is available.",
+      "remoteSchedulingUnavailable": "Remote-server automation scheduling is not available from this Coto client yet. Run this automation on the remote server or update Coto when durable remote scheduling is available.",
       "projectSetupMissing": "Project is not set up on the selected automation host anymore.",
       "targetSetupMismatch": "Automation run target no longer matches the selected project host setup.",
       "repoUnavailable": "Repository for the selected automation host is no longer available.",
@@ -8182,7 +8182,7 @@
       "agentNeverStarted": "Automation agent never started after the prompt was submitted.",
       "agentNoCompletion": "Automation agent did not report completion.",
       "agentInterrupted": "The agent was interrupted before it finished this run.",
-      "watchTimedOut": "Orca stopped watching this run after 6h without a completion signal.",
+      "watchTimedOut": "Coto stopped watching this run after 6h without a completion signal.",
       "projectSetupState": {
         "notSetUp": "The project is not set up on the selected automation host.",
         "settingUp": "The project is still being set up on the selected automation host.",
@@ -8190,11 +8190,11 @@
         "unsupported": "The selected automation host does not support this project."
       },
       "wslDistroStopped": "The WSL distro {{distro}} is stopped, so this scheduled run did not start it. Start the distro or use Run now; later runs go ahead while it runs.",
-      "botsOff": "Bots are turned off in Settings, so Orca skipped this run.",
-      "botsOffByTeam": "Bots are turned off by your team, so Orca skipped this run.",
+      "botsOff": "Bots are turned off in Settings, so Coto skipped this run.",
+      "botsOffByTeam": "Bots are turned off by your team, so Coto skipped this run.",
       "botMissing": "The bot this automation runs as no longer exists.",
       "botFolderMissing": "The bot's folder is no longer available.",
-      "botPaused": "{{bot}} is paused, so Orca skipped this run."
+      "botPaused": "{{bot}} is paused, so Coto skipped this run."
     },
     "botTarget": {
       "fieldLabel": "Bot or project",
@@ -8343,7 +8343,7 @@
             "cursor": {
               "expired": {
                 "label": "Sign-in expired",
-                "message": "Run cursor-agent login in a terminal on the computer running Orca, then retry usage."
+                "message": "Run cursor-agent login in a terminal on the computer running Coto, then retry usage."
               }
             },
             "usage": {
@@ -8354,8 +8354,8 @@
             "7ad719c4bf": "Limited",
             "e740f92596": "Refresh failed",
             "2c35eca8d4": "Unable to fetch usage",
-            "d1b7f509ac": "Run grok in a terminal on the computer running Orca and wait for it to start. If prompted, complete sign-in, then retry usage. You do not need to send a chat message.",
-            "a37e8c15d4": "Run kimi in a terminal on the computer running Orca and wait for it to start, then retry usage.",
+            "d1b7f509ac": "Run grok in a terminal on the computer running Coto and wait for it to start. If prompted, complete sign-in, then retry usage. You do not need to send a chat message.",
+            "a37e8c15d4": "Run kimi in a terminal on the computer running Coto and wait for it to start, then retry usage.",
             "3d3c9c0c1f": "Claude usage will refresh after the live Claude terminal rotates its credentials.",
             "42fdd4da1d": "Claude sign-in is being refreshed. Agent sessions may still be signed in.",
             "c06c1d215d": "Claude usage could not be refreshed because the network request failed.",
@@ -8397,7 +8397,7 @@
           "grokNotSignedIn": "Not signed in to Grok — run grok login",
           "grokAuthInvalid": "Grok auth file is invalid",
           "grokAuthUnreadable": "Unable to read Grok auth file",
-          "grokSignInExpired": "Grok sign-in expired — run grok on the computer running Orca; sign in if prompted. No chat message is needed.",
+          "grokSignInExpired": "Grok sign-in expired — run grok on the computer running Coto; sign in if prompted. No chat message is needed.",
           "grokBillingConfigMissing": "Grok billing response did not include config",
           "grokBillingUsageMissing": "Grok billing response did not include credit usage",
           "grokUsageUnauthorizedHttp": "Grok usage request unauthorized (HTTP {{status}})",
@@ -8456,7 +8456,7 @@
   },
   "hostMutation": {
     "renameOffline": "{{host}} is offline. Your text stays here until you can save.",
-    "renameUnconfirmed": "Not confirmed yet. Orca checks the name when {{host}} is back.",
+    "renameUnconfirmed": "Not confirmed yet. Coto checks the name when {{host}} is back.",
     "saving": "Saving",
     "serverUnreachable": "Its server can't be reached."
   },
@@ -8534,7 +8534,7 @@
       "clear": "Clear"
     },
     "activity": {
-      "needsWindow": "Couldn’t update. Open Orca on {{desktop}}.",
+      "needsWindow": "Couldn’t update. Open Coto on {{desktop}}.",
       "failed": "Couldn’t update the agent list."
     }
   },

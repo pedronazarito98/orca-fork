@@ -60,21 +60,21 @@ export default function AboutScreen({
           key="website"
           title="orca.dev"
           leading={<Globe size={18} color={colors.textSecondary} />}
-          accessibilityLabel={t('settings.aboutScreen.website', 'Orca website')}
+          accessibilityLabel={t('settings.aboutScreen.website', 'Coto website')}
           onPress={() => openLink('https://orca.dev')}
         />
         <ListRow
           key="source"
           title="stablyai/orca"
           leading={<GithubIcon size={18} />}
-          accessibilityLabel={t('settings.aboutScreen.sourceCode', 'Orca source code')}
+          accessibilityLabel={t('settings.aboutScreen.sourceCode', 'Coto source code')}
           onPress={() => openLink('https://github.com/stablyai/orca')}
         />
         <ListRow
           key="social"
           title="@orca_build"
           leading={<XIcon size={18} />}
-          accessibilityLabel={t('settings.aboutScreen.socialProfile', 'Orca on X')}
+          accessibilityLabel={t('settings.aboutScreen.socialProfile', 'Coto on X')}
           onPress={() => openLink('https://x.com/orca_build')}
         />
       </SettingsSection>

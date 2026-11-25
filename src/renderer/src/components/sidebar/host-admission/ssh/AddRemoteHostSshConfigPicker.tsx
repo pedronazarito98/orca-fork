@@ -72,7 +72,7 @@ export function AddRemoteHostSshConfigPicker({
         <DialogDescription>
           {t(
             'auto.components.sidebar.AddRemoteHostDialog.sshConfigPickerImportDescription',
-            'Pick a host to fill the form, or add every new host to Orca’s host list.'
+            'Pick a host to fill the form, or add every new host to Coto’s host list.'
           )}
         </DialogDescription>
       </DialogHeader>
@@ -195,7 +195,7 @@ export function AddRemoteHostSshConfigPicker({
                     >
                       {t(
                         'auto.components.sidebar.AddRemoteHostDialog.sshConfigPickerInOrca',
-                        'In Orca'
+                        'In Coto'
                       )}
                     </Badge>
                   ) : host.previouslyRemoved ? (
@@ -205,7 +205,7 @@ export function AddRemoteHostSshConfigPicker({
                     >
                       {t(
                         'auto.components.sidebar.AddRemoteHostDialog.sshConfigPickerPreviouslyRemoved',
-                        'Removed from Orca'
+                        'Removed from Coto'
                       )}
                     </Badge>
                   ) : null}
@@ -253,7 +253,7 @@ export function AddRemoteHostSshConfigPicker({
                   )
                 : t(
                     'auto.components.sidebar.AddRemoteHostDialog.sshConfigPickerAddAllEmpty',
-                    'Add all to Orca'
+                    'Add all to Coto'
                   )}
         </Button>
         <Button

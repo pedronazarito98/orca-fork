@@ -81,7 +81,7 @@ export function RuntimeServersHeaderActions(): React.JSX.Element {
             label={t('auto.components.settings.serverList.pasteAccessLink', 'Paste access link')}
             description={t(
               'auto.components.settings.serverList.pasteAccessLinkHelp',
-              'Pair with Orca already running on another machine.'
+              'Pair with Coto already running on another machine.'
             )}
             onSelect={() => setDialog('add', addMenuTriggerRef.current)}
           />
@@ -91,7 +91,7 @@ export function RuntimeServersHeaderActions(): React.JSX.Element {
               label={t('auto.components.settings.serverList.installViaSsh', 'Install via SSH')}
               description={t(
                 'auto.components.settings.managedServers.description',
-                'Orca installs itself on an empty SSH host and keeps itself up to date.'
+                'Coto installs itself on an empty SSH host and keeps itself up to date.'
               )}
               onSelect={() => setDialog('install')}
             />

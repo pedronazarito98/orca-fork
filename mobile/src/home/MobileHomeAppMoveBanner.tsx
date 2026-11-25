@@ -16,8 +16,8 @@ export function MobileHomeAppMoveBanner() {
     return null
   }
   const title = playStoreAvailable
-    ? t('appMove.play.title', 'Orca is now on Google Play')
-    : t('appMove.download.title', 'Get the new Orca app')
+    ? t('appMove.play.title', 'Coto is now on Google Play')
+    : t('appMove.download.title', 'Get the new Coto app')
   const link = t('appMove.banner.seeHowToSwitch', 'See how to switch')
   return (
     <Pressable

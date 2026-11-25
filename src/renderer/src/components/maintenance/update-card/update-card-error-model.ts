@@ -54,14 +54,14 @@ export function buildUpdateCardErrorModel(
     return {
       variant: 'waiting',
       title: t('updates.installOnQuit.title', 'Update ready to install'),
-      summary: t('updates.installOnQuit.summary', 'Quit Orca. Reopen after installation.'),
+      summary: t('updates.installOnQuit.summary', 'Quit Coto. Reopen after installation.'),
       // Coded messages are retry instructions with no cause; only uncoded host text is a diagnostic.
       detail:
         installError ??
         (status.state === 'error' && !status.messageCode ? status.message : undefined),
       compactActions: true,
       primaryAction: {
-        label: t('updates.installOnQuit.quit', 'Quit Orca'),
+        label: t('updates.installOnQuit.quit', 'Quit Coto'),
         onClick: onQuitToInstall
       },
       deferLabel: t('updates.installOnQuit.later', 'Later')
@@ -96,7 +96,7 @@ export function buildUpdateCardErrorModel(
       footnote: {
         text: t(
           'updates.installBlock.retainedDownload',
-          'Orca stays open. No need to download again.'
+          'Coto stays open. No need to download again.'
         )
       },
       primaryAction: {
@@ -140,7 +140,7 @@ export function buildUpdateCardErrorModel(
       title: t('auto.components.UpdateCard.1339b82cee', 'HTTP/2 Download Blocked'),
       summary: t(
         'auto.components.UpdateCard.http1RetryAvailable',
-        'Orca can retry through HTTP/1.1 compatibility mode.'
+        'Coto can retry through HTTP/1.1 compatibility mode.'
       ),
       explainer: t(
         'auto.components.UpdateCard.90559b14e3',
@@ -162,7 +162,7 @@ export function buildUpdateCardErrorModel(
       title: t('auto.components.UpdateCard.5b309b19f3', "Update Wasn't Installed"),
       summary: t(
         'auto.components.UpdateCard.092f09fc14',
-        "The installer's publisher doesn't match Orca, so we stopped the update. Don't install this download; check official releases for a corrected version."
+        "The installer's publisher doesn't match Coto, so we stopped the update. Don't install this download; check official releases for a corrected version."
       ),
       detail: message,
       releaseUrl: getReleaseNotesUrlForVersion(null),

@@ -96,7 +96,7 @@ function McpTrayBody(props: MobileNativeChatMcpPanelProps & { t: Translate }) {
       <Notice
         text={t(
           'chat.mcp.unsupported',
-          "Update Orca on this chat's host to manage MCP servers here."
+          "Update Coto on this chat's host to manage MCP servers here."
         )}
       />
     )

@@ -133,11 +133,11 @@ export class DeepLinkState {
     const accessRequest = this.consumeAccessRequest()
     const botShareId = this.consumeBotShare()
     return [
-      ...(shareId ? [`orca://skills/share/${shareId}`] : []),
+      ...(shareId ? [`coto://skills/share/${shareId}`] : []),
       ...(bot ? [formatBotDeepLink(bot)] : []),
       ...connectorLinks.map(formatConnectorLinkDeepLink),
       ...(accessRequest ? [formatBotAccessRequestDeepLink(accessRequest)] : []),
-      ...(botShareId ? [`orca://bots/share/${botShareId}`] : [])
+      ...(botShareId ? [`coto://bots/share/${botShareId}`] : [])
     ]
   }
 }

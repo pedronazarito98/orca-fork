@@ -92,7 +92,7 @@ export function WorkspaceDeleteConfirmSheet(props: {
           {isFolder
             ? t(
                 'hostScreen.deleteConfirm.removeFolderMessage',
-                'Remove "{{name}}" from Orca? The folder on disk is kept.',
+                'Remove "{{name}}" from Coto? The folder on disk is kept.',
                 { name }
               )
             : t(
@@ -109,12 +109,12 @@ export function WorkspaceDeleteConfirmSheet(props: {
             {row.recipeEnvironment.destroys === false
               ? t(
                   'hostScreen.hostScreenOverlays.deleteKeepsEnvironment',
-                  'The environment "{{environment}}" that Orca created for it keeps running: its recipe has no destroy step.',
+                  'The environment "{{environment}}" that Coto created for it keeps running: its recipe has no destroy step.',
                   { environment: row.recipeEnvironment.name }
                 )
               : t(
                   'hostScreen.hostScreenOverlays.deleteDestroysEnvironment',
-                  'This also destroys the environment "{{environment}}" that Orca created for it, with any uncommitted work and running terminals on it.',
+                  'This also destroys the environment "{{environment}}" that Coto created for it, with any uncommitted work and running terminals on it.',
                   { environment: row.recipeEnvironment.name }
                 )}
           </Text>

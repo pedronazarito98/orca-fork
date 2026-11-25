@@ -23,5 +23,5 @@ export function hostManualUpdateSteps(
   if (support.reason === 'unpackaged-build') {
     return t('host.edit.updateStepsSourceCheckout', 'Update it from its source checkout.')
   }
-  return t('host.edit.updateStepsServer', 'Update Orca on the server, then restart it.')
+  return t('host.edit.updateStepsServer', 'Update Coto on the server, then restart it.')
 }

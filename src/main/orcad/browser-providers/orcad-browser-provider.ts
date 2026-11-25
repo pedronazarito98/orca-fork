@@ -83,16 +83,16 @@ export function installedElectronCandidates(
   const joinPath = platform === 'win32' ? win32.join : posix.join
   if (platform === 'darwin') {
     return [
-      '/Applications/Orca.app/Contents/MacOS/Orca',
-      joinPath(homePath, 'Applications', 'Orca.app', 'Contents', 'MacOS', 'Orca')
+      '/Applications/Coto.app/Contents/MacOS/Coto',
+      joinPath(homePath, 'Applications', 'Coto.app', 'Contents', 'MacOS', 'Coto')
     ]
   }
   if (platform === 'win32') {
     return [
       ...(environment.LOCALAPPDATA
-        ? [joinPath(environment.LOCALAPPDATA, 'Programs', 'Orca', 'Orca.exe')]
+        ? [joinPath(environment.LOCALAPPDATA, 'Programs', 'Coto', 'Coto.exe')]
         : []),
-      ...(environment.ProgramFiles ? [joinPath(environment.ProgramFiles, 'Orca', 'Orca.exe')] : [])
+      ...(environment.ProgramFiles ? [joinPath(environment.ProgramFiles, 'Coto', 'Coto.exe')] : [])
     ]
   }
   const servedAppImage = environment[ORCA_SERVE_APPIMAGE_ENV]

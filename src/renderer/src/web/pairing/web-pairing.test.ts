@@ -31,14 +31,14 @@ describe('web pairing input', () => {
 
     expect(parseWebPairingInput(oversizedRawCode)).toBeNull()
     expect(
-      parseWebPairingInput(`orca://pair${oversizedQuery.replace('pairing=', 'code=')}`)
+      parseWebPairingInput(`coto://pair${oversizedQuery.replace('pairing=', 'code=')}`)
     ).toBeNull()
     expect(readPairingInputFromLocation(location)).toBeNull()
   })
 
-  it('rejects orca URLs outside the exact pairing route', () => {
-    expect(parseWebPairingInput(`orca://pairing?code=${encodeOffer()}`)).toBeNull()
-    expect(parseWebPairingInput(`orca://pair-extra?code=${encodeOffer()}`)).toBeNull()
+  it('rejects coto URLs outside the exact pairing route', () => {
+    expect(parseWebPairingInput(`coto://pairing?code=${encodeOffer()}`)).toBeNull()
+    expect(parseWebPairingInput(`coto://pair-extra?code=${encodeOffer()}`)).toBeNull()
   })
 
   it('auto-saves a runtime link only when it targets the saved server', () => {

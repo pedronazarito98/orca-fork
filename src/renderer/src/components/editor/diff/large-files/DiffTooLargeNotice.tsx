@@ -22,7 +22,7 @@ export function DiffTooLargeNotice({
               )
             : t(
                 'editor.diffTooLarge.detail',
-                'One version of this file is over 10 MB, so Orca doesn’t load it for a text diff.'
+                'One version of this file is over 10 MB, so Coto doesn’t load it for a text diff.'
               )}
         </div>
       </div>

@@ -184,7 +184,7 @@ export function useMobileBrowserStream(args: MobileBrowserStreamArgs) {
       if (!binaryScreencastGranted) {
         // Check app-local limitation before desktop reply; desktop updates cannot change phone build.
         setError(
-          translate('browser.stream.updateApp', 'Update the Orca app to stream browser tabs here.')
+          translate('browser.stream.updateApp', 'Update the Coto app to stream browser tabs here.')
         )
       } else if (screencastSupported === false) {
         // Every host new enough to pair streams when it has a browser window, so a refusal means it has none.

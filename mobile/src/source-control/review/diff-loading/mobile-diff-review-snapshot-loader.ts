@@ -79,7 +79,7 @@ async function buildWorktreeSnapshot(
       kind: 'unavailable',
       message: translate(
         'session.diffReviewLoaders.desktopUpdateRequired',
-        'Update Orca on this host to review changes on mobile.'
+        'Update Coto on this host to review changes on mobile.'
       )
     }
   }

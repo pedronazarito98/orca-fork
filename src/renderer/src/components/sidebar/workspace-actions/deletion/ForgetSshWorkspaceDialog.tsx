@@ -150,7 +150,7 @@ export function ForgetSshWorkspaceDialog(): React.JSX.Element | null {
           <DialogTitle>
             {t(
               'components.sidebar.ForgetSshWorkspaceDialog.removeFromOrcaTitle',
-              'Remove {{name}} from Orca?',
+              'Remove {{name}} from Coto?',
               { name: displayName }
             )}
           </DialogTitle>
@@ -187,7 +187,7 @@ export function ForgetSshWorkspaceDialog(): React.JSX.Element | null {
           <Button size="sm" onClick={() => void handleForget()} disabled={busy}>
             {busy
               ? t('components.sidebar.ForgetSshWorkspaceDialog.removing', 'Removing…')
-              : t('auto.components.sidebar.ForgetSshWorkspaceDialog.forget', 'Remove from Orca')}
+              : t('auto.components.sidebar.ForgetSshWorkspaceDialog.forget', 'Remove from Coto')}
           </Button>
         </DialogFooter>
       </DialogContent>

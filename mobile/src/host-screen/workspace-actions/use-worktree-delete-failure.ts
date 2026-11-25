@@ -19,7 +19,7 @@ function deleteFailureReason(cause: DeleteFailureCause): string | null {
   return isMobileMethodUnavailableError(code, cause.message)
     ? translate(
         'hostScreen.deleteConfirm.needsUpdate',
-        'Update Orca on your computer to delete this workspace from your phone.'
+        'Update Coto on your computer to delete this workspace from your phone.'
       )
     : cause.message
 }

@@ -34,11 +34,11 @@ function operationError(status: string): string {
   return status === 'reconnect-required'
     ? translate(
         'auto.components.skills.SkillShareDialog.reconnect',
-        'Reconnect your Orca account before sharing.'
+        'Reconnect your Coto account before sharing.'
       )
     : translate(
         'auto.components.skills.SkillShareDialog.unconfigured',
-        'Connect an Orca Cloud account before sharing.'
+        'Connect an Coto Cloud account before sharing.'
       )
 }
 
@@ -250,7 +250,7 @@ export function SkillShareDialog({
       setError(
         t(
           'auto.components.skills.SkillShareDialog.cancelRequestFailed',
-          'Orca could not send the cancellation request. The upload may still finish.'
+          'Coto could not send the cancellation request. The upload may still finish.'
         )
       )
     }

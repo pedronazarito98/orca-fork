@@ -72,7 +72,7 @@ export function forceUpdateMessage(t: Translate = translate, uncounted = false):
   }
   return t(
     'auto.components.settings.managedServers.row.forceUpdate',
-    'Terminals are running on this host. They keep running through the update, and their panes reconnect when Orca’s server restarts.'
+    'Terminals are running on this host. They keep running through the update, and their panes reconnect when Coto’s server restarts.'
   )
 }
 
@@ -80,7 +80,7 @@ export function forceUpdateMessage(t: Translate = translate, uncounted = false):
 export function uncountedForceUpdateMessage(t: Translate = translate): string {
   return t(
     'auto.components.settings.managedServers.row.forceUpdateUncounted',
-    'Orca couldn’t count the terminals on this host. The update goes ahead only if no terminal daemon is running there, and any terminals Orca’s server runs itself will end.'
+    'Coto couldn’t count the terminals on this host. The update goes ahead only if no terminal daemon is running there, and any terminals Coto’s server runs itself will end.'
   )
 }
 
@@ -95,7 +95,7 @@ export function conversionBlockerLabel(blocker: OrcadMigrationBlocker): string {
     case 'orcad_migration_owner_unrecorded':
       return translate(
         'auto.components.settings.managedServers.blocker.owned',
-        'Orca already runs on this SSH host.'
+        'Coto already runs on this SSH host.'
       )
     case 'orcad_migration_direct_ssh_repositories':
     case 'orcad_migration_direct_ssh_folder_workspaces':
@@ -127,7 +127,7 @@ export function conversionBlockerLabel(blocker: OrcadMigrationBlocker): string {
     case 'orcad_migration_dependency_unverifiable':
       return translate(
         'auto.components.settings.managedServers.blocker.unverifiable',
-        'Orca could not read its saved {{sources}}, so it cannot tell what would move.',
+        'Coto could not read its saved {{sources}}, so it cannot tell what would move.',
         { sources: blocker.sources.map(dependencyKindLabel).join(', ') }
       )
   }
@@ -185,13 +185,13 @@ export function managedServerOutcomeLabel(
   if (result.verdict === 'unverifiable' || UNVERIFIABLE_CODES.has(code)) {
     return t(
       'auto.components.settings.managedServers.outcome.unverifiable',
-      'Not done: Orca couldn’t confirm what is running on this server. Try again when the host is reachable.'
+      'Not done: Coto couldn’t confirm what is running on this server. Try again when the host is reachable.'
     )
   }
   if (code === ORCAD_UPDATE_WSL_MOVE_RUNNING_CODE) {
     return t(
       'auto.components.settings.managedServers.outcome.wslMoveRunning',
-      'Not done: a project is moving onto this server. Orca updates it once the move finishes.'
+      'Not done: a project is moving onto this server. Coto updates it once the move finishes.'
     )
   }
   if (MIGRATION_CODES.has(code)) {
@@ -208,6 +208,6 @@ export function managedServerOutcomeLabel(
   }
   return t(
     'auto.components.settings.managedServers.outcome.failed',
-    'Orca couldn’t finish this on the server. Try again.'
+    'Coto couldn’t finish this on the server. Try again.'
   )
 }

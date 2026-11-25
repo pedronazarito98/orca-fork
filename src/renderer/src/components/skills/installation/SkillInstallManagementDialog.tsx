@@ -83,7 +83,7 @@ export function SkillInstallManagementDialog({
       setError(
         translate(
           'auto.components.skills.install.inspectManagedFailed',
-          'Orca could not inspect managed installs on this machine.'
+          'Coto could not inspect managed installs on this machine.'
         )
       )
     } finally {
@@ -117,7 +117,7 @@ export function SkillInstallManagementDialog({
           operation.status === 'reconnect-required'
             ? t(
                 'auto.components.skills.install.reconnectForVersionHistory',
-                'Reconnect your Orca account to load version history.'
+                'Reconnect your Coto account to load version history.'
               )
             : operation.message
         )
@@ -201,7 +201,7 @@ export function SkillInstallManagementDialog({
             operation.status === 'reconnect-required'
               ? t(
                   'auto.components.skills.install.reconnectBeforeVersionChange',
-                  'Reconnect your Orca account before changing versions.'
+                  'Reconnect your Coto account before changing versions.'
                 )
               : operation.message
           )
@@ -230,7 +230,7 @@ export function SkillInstallManagementDialog({
           operation.status === 'reconnect-required'
             ? t(
                 'auto.components.skills.install.reconnectBeforeVersionChange',
-                'Reconnect your Orca account before changing versions.'
+                'Reconnect your Coto account before changing versions.'
               )
             : operation.message
         )
@@ -248,7 +248,7 @@ export function SkillInstallManagementDialog({
       setError(
         t(
           'auto.components.skills.install.versionVerificationFailed',
-          'Orca could not verify the requested version.'
+          'Coto could not verify the requested version.'
         )
       )
     } finally {
@@ -315,7 +315,7 @@ export function SkillInstallManagementDialog({
     } catch (cause) {
       console.warn('[skills] managed removal failed:', cause)
       setError(
-        t('auto.components.skills.install.removeFailed', 'Orca could not safely remove this skill.')
+        t('auto.components.skills.install.removeFailed', 'Coto could not safely remove this skill.')
       )
     } finally {
       setBusy(false)

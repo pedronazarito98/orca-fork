@@ -48,7 +48,7 @@ export function parseBotDeepLink(value: string): BotDeepLink | null {
   } catch {
     return null
   }
-  if (url.protocol !== 'orca:' || url.host !== 'bot') {
+  if (url.protocol !== 'coto:' || url.host !== 'bot') {
     return null
   }
   const botId = url.pathname.match(/^\/([^/]+)\/?$/)?.[1]
@@ -82,7 +82,7 @@ export function parseBotDeepLink(value: string): BotDeepLink | null {
 }
 
 export function formatBotDeepLink({ botId, conversation, sessionId, itemId }: BotDeepLink): string {
-  const url = new URL(`orca://bot/${botId}`)
+  const url = new URL(`coto://bot/${botId}`)
   if (conversation) {
     url.searchParams.set('conversation', `${conversation.source}:${conversation.externalId}`)
     if (sessionId) {
@@ -103,7 +103,7 @@ export function parseBotAccessRequestDeepLink(value: string): BotAccessRequestDe
     return null
   }
   if (
-    url.protocol !== 'orca:' ||
+    url.protocol !== 'coto:' ||
     url.host !== 'bot' ||
     url.pathname !== `/${ACCESS_REQUEST_PATH}`
   ) {
@@ -114,5 +114,5 @@ export function parseBotAccessRequestDeepLink(value: string): BotAccessRequestDe
 }
 
 export function formatBotAccessRequestDeepLink({ token }: BotAccessRequestDeepLink): string {
-  return `orca://bot/${ACCESS_REQUEST_PATH}?t=${encodeURIComponent(token)}`
+  return `coto://bot/${ACCESS_REQUEST_PATH}?t=${encodeURIComponent(token)}`
 }

@@ -33,16 +33,16 @@ export function renderOrcaAccountSettingsSection(
   return model.showDesktopOnlySettings ? (
     <SettingsSection
       id="orca-account"
-      title={t('auto.components.settings.orcaAccount.title', 'Orca Account')}
+      title={t('auto.components.settings.orcaAccount.title', 'Coto Account')}
       description={
         serverName === null
           ? t(
               'auto.components.settings.orcaAccount.description',
-              'Share work instantly and reach your desktop from Orca Mobile wherever you are.'
+              'Share work instantly and reach your desktop from Coto Mobile wherever you are.'
             )
           : t(
               'components.settings.orcaAccount.server.sectionDescription',
-              'The Orca account {{host}} runs as, for its bots’ Slack, GitHub, Linear and webhooks.',
+              'The Coto account {{host}} runs as, for its bots’ Slack, GitHub, Linear and webhooks.',
               { host: serverName }
             )
       }
@@ -74,7 +74,7 @@ export function renderSetupGuideSettingsSection(
       title={t('auto.components.settings.Settings.6d119427ef', 'Onboarding checklist')}
       description={t(
         'auto.components.settings.Settings.6855b0f77d',
-        'Finish the core workflows that make Orca useful for parallel agent work.'
+        'Finish the core workflows that make Coto useful for parallel agent work.'
       )}
       searchEntries={navigation.getSectionSearchEntries('setup-guide')}
       bodyClassName="overflow-hidden"
@@ -269,7 +269,7 @@ export function renderSessionHistorySettingsSection(
       title={t('sessionHistory.settings.title', 'Agent Session Search')}
       description={t(
         'sessionHistory.settings.description',
-        'Search everything your agents have said and done, on this computer and on any paired Orca server.'
+        'Search everything your agents have said and done, on this computer and on any paired Coto server.'
       )}
       searchEntries={navigation.getSectionSearchEntries('session-history')}
     >
@@ -295,7 +295,7 @@ export function renderWorkspaceCleanupSettingsSection(
       title={t('components.settings.workspaceCleanup.title', 'Workspace Cleanup')}
       description={t(
         'components.settings.workspaceCleanup.description',
-        "Remove workspaces you're done with. Before removing anything, Orca checks again for unsaved work."
+        "Remove workspaces you're done with. Before removing anything, Coto checks again for unsaved work."
       )}
       searchEntries={navigation.getSectionSearchEntries('workspace-cleanup')}
     >

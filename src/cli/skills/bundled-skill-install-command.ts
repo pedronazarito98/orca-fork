@@ -118,8 +118,8 @@ function formatSkillSelectionHelp(verb: SkillMutationVerb, skillNames: string[])
     `Choose one or more skills to ${verb}:`,
     ...skillNames.map((name) => `  ${name}`),
     '',
-    `Usage: orca skills ${verb} --skill <name> [--skill <name> ...]`,
-    `   or: orca skills ${verb} --all`
+    `Usage: coto skills ${verb} --skill <name> [--skill <name> ...]`,
+    `   or: coto skills ${verb} --all`
   ].join('\n')
 }
 
@@ -209,8 +209,8 @@ export function createSkillMutationHandler(verb: SkillMutationVerb): CommandHand
     if (process.env.ORCA_CLI_CWD) {
       throw new RuntimeClientError(
         'invalid_environment',
-        `orca skills ${verb} writes to the machine that runs it, but this shell forwards ` +
-          `orca to the Orca host. Run the same orca skills ${verb} command on the machine ` +
+        `coto skills ${verb} writes to the machine that runs it, but this shell forwards ` +
+          `coto to the Coto host. Run the same coto skills ${verb} command on the machine ` +
           "you want it on, where it can detect that host's agents."
       )
     }
@@ -241,7 +241,7 @@ export function createSkillMutationHandler(verb: SkillMutationVerb): CommandHand
         : []
     const notInstalledLines = notInstalled.map(
       (name) =>
-        `${name}: not installed, so skipped. Install it with: orca skills install --skill ${name}`
+        `${name}: not installed, so skipped. Install it with: coto skills install --skill ${name}`
     )
     // Why the home's own separator: path.join would mix them for a home from another OS.
     const backupFolder = collapseHomePath(
@@ -252,7 +252,7 @@ export function createSkillMutationHandler(verb: SkillMutationVerb): CommandHand
       ? [
           '',
           'Rerun with --force to replace skipped copies where possible. ' +
-            `Orca moves each copy it replaces, including any extra files, to ${backupFolder} first.`
+            `Coto moves each copy it replaces, including any extra files, to ${backupFolder} first.`
         ]
       : []
 
@@ -311,7 +311,7 @@ export function createSkillMutationHandler(verb: SkillMutationVerb): CommandHand
       })
     ])
     if (lines.length === 0 && notInstalledLines.length === 0) {
-      lines.push('No Orca skills are installed here, so there is nothing to update.')
+      lines.push('No Coto skills are installed here, so there is nothing to update.')
     }
     writeStdoutLine([...lines, ...notInstalledLines, ...forceHint].join('\n'))
   }

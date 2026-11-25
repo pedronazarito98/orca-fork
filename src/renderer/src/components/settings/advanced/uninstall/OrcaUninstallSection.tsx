@@ -29,7 +29,7 @@ function describePlanParts(plan: OrcaUninstallPlan, t: Translate, intlLocale: st
     )
   }
   if (plan.backgroundService) {
-    parts.push(t('settings.uninstall.summary.service', 'the <cmd>orca serve</cmd> server'))
+    parts.push(t('settings.uninstall.summary.service', 'the <cmd>coto serve</cmd> server'))
   }
   if (plan.terminalDaemon) {
     parts.push(t('settings.uninstall.summary.terminalDaemon', 'the terminal background process'))
@@ -57,8 +57,8 @@ function OrcaUninstallSummary({
     return (
       <>
         {model.loadFailed
-          ? t('settings.uninstall.loadFailed', 'Orca could not check what it installed.')
-          : t('settings.uninstall.summary.loading', 'Checking what Orca installed…')}
+          ? t('settings.uninstall.loadFailed', 'Coto could not check what it installed.')
+          : t('settings.uninstall.summary.loading', 'Checking what Coto installed…')}
       </>
     )
   }
@@ -69,7 +69,7 @@ function OrcaUninstallSummary({
         <>
           {t(
             'settings.uninstall.summary.stillInUse',
-            'Some Orca files are still in use, so they stay for now.'
+            'Some Coto files are still in use, so they stay for now.'
           )}
         </>
       )
@@ -103,7 +103,7 @@ export function OrcaUninstallPanel({ model }: { model: OrcaUninstallModel }): Re
   const t = useTranslate()
   return (
     <SettingsGroupDisclosure
-      label={t('settings.uninstall.title', 'Uninstall Orca')}
+      label={t('settings.uninstall.title', 'Uninstall Coto')}
       summary={<OrcaUninstallSummary model={model} />}
     >
       <div className="divide-y divide-border border-t border-border">

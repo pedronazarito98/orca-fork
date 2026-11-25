@@ -169,13 +169,13 @@ function certificateFailureDescription(t: Translate, code: number, host: string)
   if (reason === 'authority-invalid') {
     return t(
       'browser.loadFailure.certificateAuthorityInvalid',
-      "Orca doesn't trust the authority that issued the certificate for {{value0}}.",
+      "Coto doesn't trust the authority that issued the certificate for {{value0}}.",
       { value0: host }
     )
   }
   return t(
     'browser.loadFailure.certificateVerificationFailed',
-    "Orca couldn't verify the certificate for {{value0}}.",
+    "Coto couldn't verify the certificate for {{value0}}.",
     { value0: host }
   )
 }
@@ -187,7 +187,7 @@ function certificateProceedFailureText(
   if (reason === 'host-update-needed') {
     return t(
       'browser.loadFailure.certificateProceedNeedsHostUpdate',
-      'Update Orca on this host to accept certificate warnings from your phone.'
+      'Update Coto on this host to accept certificate warnings from your phone.'
     )
   }
   const kind = browserCertificateProceedFailureKind(reason)
@@ -206,7 +206,7 @@ function certificateProceedFailureText(
   if (kind === 'request-failed') {
     return t(
       'browser.loadFailure.certificateProceedFailed',
-      'Orca could not approve this certificate request. Retry the page and try again.'
+      'Coto could not approve this certificate request. Retry the page and try again.'
     )
   }
   return t(

@@ -12,7 +12,7 @@ import { hasTrackedAgentDashboardActiveToday } from '../telemetry/agent-dashboar
 import { persistBannerAcknowledgeWithoutEmitting, setOptIn, track } from '../telemetry/client'
 import { getCohortAtEmit } from '../telemetry/cohort-classifier'
 import { getOnboardingCohortAtEmit } from '../telemetry/onboarding-cohort-classifier'
-import { resolveConsent, type ConsentState } from '../telemetry/consent'
+import type { ConsentState } from '../telemetry/consent'
 import type { Store } from '../persistence/loading-store/store'
 import {
   isCohortExtendedEvent,
@@ -141,11 +141,8 @@ export function registerTelemetryHandlers(store: Store): void {
 
   // Privacy UI cannot directly read main's environment-based telemetry blocks.
   ipcMain.handle('telemetry:getConsentState', (): ConsentState => {
-    if (!storeRef) {
-      // Missing settings cannot establish enabled consent.
-      return { effective: 'pending_banner' }
-    }
-    return resolveConsent(storeRef.getSettings())
+    // Telemetry is compiled out in Coto; report it as disabled so onboarding/settings reflect reality.
+    return { effective: 'disabled', reason: 'orca_disabled' }
   })
 
   ipcMain.handle('telemetry:acknowledgeBanner', (_event): Promise<void> | void => {

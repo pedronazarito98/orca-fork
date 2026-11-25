@@ -78,7 +78,7 @@ export function botToolSignInFailureWords(
     case 'no-tool':
       return t('bots.tools.signInFailure.noTool', 'This bot no longer has that tool.')
     case 'desktop-only':
-      return t('bots.tools.signInFailure.desktopOnly', 'Sign in from Orca on {{host}}.', { host })
+      return t('bots.tools.signInFailure.desktopOnly', 'Sign in from Coto on {{host}}.', { host })
     case 'denied':
       return t('bots.tools.signInFailure.denied', 'Access wasn’t allowed.')
     case 'expired':

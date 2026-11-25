@@ -61,7 +61,7 @@ const contributionGrowthLabel = (point: PluginContributionPoint, t: Translate): 
   if (point === 'events') {
     return t(
       'auto.components.settings.PluginUpdateAllDialog.newEvents',
-      'Reacts to more Orca events'
+      'Reacts to more Coto events'
     )
   }
   if (point === 'vmRecipes') {
@@ -79,7 +79,7 @@ const contributionGrowthLabel = (point: PluginContributionPoint, t: Translate): 
   if (point === 'hooks') {
     return t(
       'auto.components.settings.PluginUpdateAllDialog.newHooks',
-      'Can change or stop what Orca and your agents do'
+      'Can change or stop what Coto and your agents do'
     )
   }
   if (point === 'settings') {
@@ -131,7 +131,7 @@ function editorGrowthLines(
 const replacementLine = (command: string, action: string, t: Translate): string =>
   t(
     'auto.components.settings.PluginUpdateAllDialog.replacesAction',
-    '{{value0}} runs instead of Orca’s {{value1}}',
+    '{{value0}} runs instead of Coto’s {{value1}}',
     { value0: command, value1: builtInActionTitle(action) }
   )
 
@@ -289,7 +289,7 @@ export function CandidateRow({
       <p className="text-xs text-status-warning-text">
         {t(
           'auto.components.settings.PluginUpdateAllDialog.needsOrca',
-          'Needs Orca {{value0}} or later',
+          'Needs Coto {{value0}} or later',
           { value0: needsOrca }
         )}
       </p>

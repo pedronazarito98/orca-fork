@@ -38,7 +38,7 @@ export async function launchAgentWithPrompt(args: {
       kind: 'not-started',
       message: translate(
         'session.prAiTriageLaunch.updateRequired',
-        'Update Orca on this host to start an agent from your phone.'
+        'Update Coto on this host to start an agent from your phone.'
       )
     }
   }

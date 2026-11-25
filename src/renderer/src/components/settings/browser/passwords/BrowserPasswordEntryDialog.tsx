@@ -145,7 +145,7 @@ function BrowserPasswordEntryForm({
         <DialogDescription>
           {t(
             'settings.browser.passwords.form.description',
-            'Orca fills it when you pick it under a sign-in field on this site.'
+            'Coto fills it when you pick it under a sign-in field on this site.'
           )}
         </DialogDescription>
       </DialogHeader>

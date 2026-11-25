@@ -104,7 +104,7 @@ export function WorktreeCardRuntimeHostMark({
               )
             : t(
                 'auto.components.sidebar.WorktreeCard.runtimeHostProject',
-                'Project on Orca server'
+                'Project on Coto server'
               )}
       </TooltipContent>
     </Tooltip>

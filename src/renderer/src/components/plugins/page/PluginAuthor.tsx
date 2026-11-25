@@ -49,7 +49,7 @@ function pluginAuthorClaim(author: PluginAuthor, t: Translate = translate): stri
     case 'git':
       return t(
         'auto.components.settings.PluginAuthor.gitClaim',
-        'Publisher derived by Orca from the repository URL. Authorship is not verified.'
+        'Publisher derived by Coto from the repository URL. Authorship is not verified.'
       )
     case 'manifest':
       return t(

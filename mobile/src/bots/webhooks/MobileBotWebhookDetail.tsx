@@ -118,7 +118,7 @@ export function MobileBotWebhookDetail(props: DetailProps) {
         <SettingsNote>
           {t(
             'bots.webhooks.orphanedNote',
-            '{{bot}}’s Orca no longer lists this automation, so calls aren’t run.',
+            '{{bot}}’s Coto no longer lists this automation, so calls aren’t run.',
             { bot: props.botName }
           )}
         </SettingsNote>

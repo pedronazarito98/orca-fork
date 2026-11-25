@@ -40,7 +40,7 @@ export function PRAutoRefreshControl({
   const disabledReason = unsupported
     ? t(
         'auto.components.settings.GitPane.prAutoRefreshUnsupportedHost',
-        'Update Orca on {{host}} to change this',
+        'Update Coto on {{host}} to change this',
         {
           host:
             remoteHostName ??

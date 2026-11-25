@@ -27,7 +27,7 @@ export function WorktreeContextMenuDeleteItems({ model }: { model: WorktreeConte
       : folderWorkspaceId
         ? t('auto.components.sidebar.WorktreeContextMenu.250de158fd', 'Remove Workspace')
         : removesProject
-          ? t('auto.components.sidebar.WorktreeContextMenu.f5ac91531d', 'Remove Project from Orca')
+          ? t('auto.components.sidebar.WorktreeContextMenu.f5ac91531d', 'Remove Project from Coto')
           : lineageDescendantCount > 0
             ? t(
                 'auto.components.sidebar.WorktreeContextMenu.deleteWithDescendants',

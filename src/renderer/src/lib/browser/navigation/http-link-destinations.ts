@@ -101,7 +101,7 @@ export function httpLinkDestinationLabel(
   t: Translate = translate
 ): string {
   return destination === 'orca'
-    ? t('auto.components.terminal.pane.TerminalLinkActionPopover.orcaBrowser', 'Orca Browser')
+    ? t('auto.components.terminal.pane.TerminalLinkActionPopover.orcaBrowser', 'Coto Browser')
     : t('auto.components.terminal.pane.TerminalLinkActionPopover.systemBrowser', 'System Browser')
 }
 

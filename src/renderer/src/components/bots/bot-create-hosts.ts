@@ -106,13 +106,13 @@ export function botCreateHostBlockedHint(
   }
   if (host.blocked === 'no-bots') {
     return updatable
-      ? t('bots.new.hostUpdate', 'Update Orca on {{host}}', { host: host.label })
-      : t('bots.new.hostNoBots', 'Orca on {{host}} can’t run bots yet', { host: host.label })
+      ? t('bots.new.hostUpdate', 'Update Coto on {{host}}', { host: host.label })
+      : t('bots.new.hostNoBots', 'Coto on {{host}} can’t run bots yet', { host: host.label })
   }
   if (host.blocked === 'needs-server') {
     return t(
       'bots.new.hostNeedsServerHint',
-      'Set up an Orca server on {{host}} in Settings → Remote Orca Servers to run bots.',
+      'Set up an Coto server on {{host}} in Settings → Remote Coto Servers to run bots.',
       {
         host: host.label
       }
